@@ -1,203 +1,162 @@
 ------------------------------------------------------------------------------
 HSP : Hot Soup Processor  
-ホットスーププロセッサ  
 copyright 1997-2018 (c) onion software/onitama  
 ------------------------------------------------------------------------------
 
-# はじめに
+# Introduction
 
-このフォルダには、OpenHSP/Hot Soup Processorビルド用のファイルが含まれています。
-HSP3の機能やSDKを検証することが可能です。
-βなどテスト用ブランチに含まれる内容は、未実装の機能や、不具合が含まれていることをご了承の上お使い下さい。
-
-
-# 動作環境
-
-LinuxのGUI環境(X Window System)で動作します。
-一部の機能は、OpenGL及びSDLライブラリを使用して動作します。
+This folder contains files for OpenHSP / Hot Soup Processor build.
+It is possible to verify HSP3 function and SDK.
 
 
-# インストール
+# Operating environment
 
-githubから最新のリポジトリを取得してご使用ください。
+It works with Linux GUI environment (X Window System).
+Some functions will work using the OpenGL and SDL libraries.
+
+
+# Installation
+
+Please obtain the latest repository from github and use it.
 
 	git clone http://github.com/onitama/OpenHSP
 
-ダウンロードしたアーカイブのを展開することも可能です。
+It is also possible to expand the downloaded archive from the [Clone or download] button.
 
-	tar -vxzf hsplinux-???.tar.gz   (???はバージョン)
+Compile the source of the acquired repository.
+For compiling, you need an environment that can run gcc and make.
+When compiling, you need the following libraries, please check in advance.
 
-取得したリポジトリのソースをコンパイルしてください。
-コンパイルには、gcc及びmakeを実行できる環境が必要です。
-コンパイルの際には、以下のライブラリが必要になりますので、あらかじめ確認を行なって下さい。
-
-	OpenGLES2.0以降 / EGL
+	OpenGLES 2.0 or later / EGL
 	SDL1.2
 	gtk+-2
 
-アーカイブにはソースのみが含まれていますので、makeによってコンパイルする必要があります。
-(Linuxのバージョンやディストリビューションによって正しくコンパイルされない場合は、修正が必要になります。)
-
+Since the archive contains only the source, you need to compile with make.
+(If it does not compile properly depending on Linux version or distribution, you will need to modify it.
+ It seems that it is confirmed that it can be compiled with Lubuntu 16.04 at present.)
 
 	make
 
-アーカイブの内容が展開されたディレクトリでmakeコマンドを実行してください。
-必要なツールのコンパイルが行なわれ、HSP3が使用できる状態になります。
+Execute the make command in the directory where the contents of the archive was expanded.
+The required tools are compiled and the HSP3 is ready for use.
 
 
-# Raspberry Piインストール
+# Raspberry Pi installation
 
-Raspberry Pi上のRaspbian上で動作します。(推奨バージョンは、September 2017 Kernel version4.9です)
-hsp3dish及び、hsed(スクリプトエディタ)は、GUI環境でのみ動作します。
-(描画に関する機能は、OpenGL及びSDLライブラリを使用して動作しています。)
-アーカイブの内容を任意のディレクトリに展開して、ソースをコンパイルしてください。
-コンパイルには、gcc及びmakeを実行できる環境が必要になります。
-コンパイルの際には、追加のライブラリが必要になります。ネットワークに
-接続されている状態で以下のコマンドを実行することで取得できます。
+It works on Raspbian on Raspberry Pi. (The recommended version is September 2017 Kernel version 4.9)
+hsp3dish and hsed (script editor) only work in the GUI environment.
+(The drawing related functions are running using the OpenGL and SDL libraries.)
+Extract the contents of the archive to an arbitrary directory and compile the source.
+For compiling, you need an environment that can run gcc and make.
+Additional libraries are required for compilation.
+You can acquire it by executing the following command while it is connected to the network.
 
 	sudo apt-get install libgtk2.0-dev
 	sudo apt-get install libglew-dev
 	sudo apt-get install libsdl1.2-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev
 
-hsplinuxリポジトリの最新版を取得してください。
-アーカイブ、hsplinux???.tgzファイルを取得した場合は、解凍を行ってください。
-
-	tar -vxzf hsplinux???.tgz   (???はバージョン)
-
-githubから最新のリポジトリを取得して使用することも可能です。
+Please obtain the latest repository from github and use it.
 
 	git clone http://github.com/onitama/OpenHSP
 
-hsplinuxアーカイブにはソースのみが含まれていますので、makeによってコンパイルする必要があります。
+It is also possible to expand the downloaded archive from the [Clone or download] button.
+
+Since the hsplinux archive contains only the source, you need to compile with make.
 
 	make -f makefile.raspbian
 		
-アーカイブの内容が展開されたディレクトリでmakeコマンドを実行してください。
-必要なツールのコンパイルが行なわれ、HSP3が使用できる状態になります。
+Execute the make command in the directory where the contents of the archive was expanded.
+The required tools are compiled and the HSP3 is ready for use.
 
 	./hsed
 
-上記のプログラムを起動することで、スクリプトエディタ(簡易版)がGUIで動作します。
-HSP3のスクリプトを記述して、実行することのできる簡易的なエディタです。
-
-Raspberry Pi版では、フルスクリーンで実行を行ないます。
-実行の中断は、[ctrl]+[C]か[esc]キーを押してください。
-キーボードだ正しく認識されていない場合など、中断ができなくなることがありますので注意してください。
-GUIエディタだけでなく、コマンドラインから「./hsp3dish ****.ax」の形で実行を行なうことも可能です。
+By activating the above program, the script editor (simplified version) operates in the GUI.
+It is a simple editor that can write and execute HSP3 script.
 
 
-# 使用方法
+In Raspberry Pi version, it runs in full screen.
+To interrupt the execution, press the [ctrl] + [C] or [esc] key.
+Please note that interruption may not be possible, such as when it is not properly recognized as a keyboard.
+In addition to the GUI editor, you can also execute from the command line in the form "./hsp3dish ****.ax".
 
-HSP3は、オープンソースとして公開されているOpenHSP技術をベースに、
-Linux上で手軽にプログラミングを楽しむことができるよう構成されています。
-インストールを行なうと、以下のコマンドが生成されます。
 
-	hsed		スクリプトエディタ(簡易版)
-	hspcmp		HSP3コードコンパイラ
-	hsp3cl		HSP3コマンドラインランタイム
-	hsp3dish	HSP3Dishランタイム
-	hsp3gp		HGIMG4ランタイム
+# how to use
 
-スクリプトエディタ(簡易版)は、HSP3のスクリプトを記述して、実行することのできる
-GUIアプリケーションです。
-基本的なスクリプトの編集、及びロード・セーブ機能を持っています。
-[F5]キー、または「HSP」メニューから「Run」を選択することで編集している
-スクリプトを実行できます。
-現在のバージョンでは、標準ランタイムとしてhsp3dishが使用されます。
-HSP3Dishに対応するサンプルコードがsampleフォルダに含まれていますので、
-お試しください。
-スクリプトの文字コードはUTF-8として扱われます。Windowsが使用する文字コード
-(SJIS)とは異なりますので注意してください。
+HSP3 is based on OpenHSP technology which is open source,
+It is structured to be able to enjoy programming easily on Linux.
+After installation, the following command is generated.
 
-コマンドラインからスクリプトの実行を行なう場合は、hspcmpにより
-HSPオブジェクトファイルを作成する必要があります。
+	hsed		script editor (simplified version)
+	hspcmp		HSP3 code compiler
+	hsp3cl		HSP3 command line runtime
+	hsp3dish	HSP3Dish runtime
+	hsp3gp		HGIMG4 runtime
+
+The Script Editor (Simplified Version) is a GUI application that allows you to write scripts of HSP 3 and execute them.
+It has basic script editing and load / save function.
+You can execute the script you are editing by selecting [F5] key or [Run] from [HSP] menu.
+In the current version, hsp3dish is used as the standard runtime.
+Sample code corresponding to HSP 3 Dish is included in the sample folder, please try.
+The character code of the script is treated as UTF-8.
+Please note that it is different from the character code (SJIS) used by Windows.
+
+When executing a script from the command line,
+it is necessary to create an HSP object file with hspcmp.
 
 	./hspcmp -d -i -u test.hsp
 
-上の例では、「test.hsp」ファイルからオブジェクトファイル「test.ax」を生成します。
-生成されたオブジェクトファイルを、ランタイムに渡して実行を行ないます。
+In the example above, we generate the object file "test.ax" from the "test.hsp" file.
+It passes the generated object file to the runtime and executes it.
 
 	./hsp3cl test.ax
 
-上の例では、「test.ax」をHSP3コマンドラインランタイムで実行します。
-同様に、「hsp3dish」「hsp3gp」などのランタイムに合わせたスクリプトを
-実行させることができます。
-(「hsp3dish」「hsp3gp」の実行は、GUI環境が必要になります。)
+In the above example, "test.ax" is executed in HSP3 command line runtime.
+Likewise, you can run scripts that match the runtime, such as "hsp3dish" "hsp3gp".
+(Execution of "hsp3dish" "hsp3gp" requires GUI environment.)
 
 
-# exec、devprm命令について
+# About exec and devprm instructions
 
-Linux版、Raspberry Pi版ともにexec命令により、シェルのコマンドを呼び出すことができます。
-また、devprm命令によりファイルシステム上のデバイスに文字列を出力することが可能です。
+Both Linux version and Raspberry Pi version can invoke shell commands by exec command.
+Also, it is possible to output a character string to the device on the file system with the devprm instruction.
 
 	devprm "/sys/class/gpio/export", "2"
 
-のように記述した場合は、「/sys/class/gpio/export」に「2」が出力されます。
-シェルから「echo 2 > /sys/class/gpio/export」を実行するのと同じ動作になります。
+In the above case, "2" is output to "/sys/class/gpio/export".
+It is the same operation as executing "echo 2 > /sys/class/gpio/export" from the shell.
 
 
-# Raspberry PiのGPIO入出力
+# Raspberry Pi's GPIO I/O
 
-Raspberry Pi版では、devprm命令の他にdevcontrol命令によりGPIO入出力を行なう拡張が行われています。
-GPIO出力を制御する場合は、以下のように記述します。
+Besides the devprm instruction, the Raspberry Pi version is extended with GPIO I/O by devcontrol instruction.
+When controlling GPIO output, write as follows.
 
-	devcontrol "gpio", ポート番号, 出力値
+	devcontrol "gpio", port number, output value
 
-ポート番号は、GPIOのポートを数値で指定します。
-出力値は、1(ON)か0(OFF)を数値で指定することで、デジタルポートの出力を制御します。
-入力を行う場合は、以下のように記述します。
+For port number, specify the GPIO port as a numerical value.
+The output value is controlled by specifying 1 (ON) or 0 (OFF) as a numerical value.
+When inputting, write as follows.
 
-	devcontrol "gpioin", ポート番号
+	devcontrol "gpioin", port number
 
-命令の実行後にシステム変数statに0か1が代入されます。
-(エラーが発生した場合は、マイナス値が代入されます)
-GPIO入出力は、hsp3dishだけでなくhsp3clからも使用することが可能です。
+0 or 1 is assigned to the system variable stat after execution of the instruction.
+(If an error occurs, a negative value is assigned)
+GPIO I/O can be used not only from hsp3dish but also from hsp3cl.
 
 
-# オンラインマニュアル
+# Online manual
 
-HSP3.5に関する情報はオンラインマニュアルでご覧いただけます。
+Information on HSP 3.5 can be viewed online manual.
 http://www.onionsoft.net/hsp/v35/
 
-HSPについての最新情報やコミュニティは、HSPTV!サイトにて提供されています。
+The latest information and communities about HSP are provided on the HSPTV! Site.
 http://hsp.tv/
 
 
-# 将来の予定
+# License
 
-HSP3標準ランタイム、及びヘルプリファレンスや周辺ツールなどHSP3で用意されている
-機能なども、今後追加される予定です。
-まだ不備も多く、必要なものが足りない状況ですが、今後整備したいと考えています。
-パッケージの不備やアドバイスなどありましたら、お知らせ頂ければ幸いです。
-
-	onion software (hsp@onionsoft.net)
-	http://www.onionsoft.net/
-
-頂いたメールには、すべて目を通しておりますが、返信や、要望の反映などについては
-作者がすぐに対応できないこともありますので、予めご了承下さい。
-HSPについての一般的な質問や、スクリプトの作り方に関するご質問は、
-ネット上のFAQや、書籍などでも情報を提供していますので、まず調べてみることを
-お勧め致します。
-
-
-# 謝辞
-
-HSPスクリプトエディタ(hsed)は、K-K(瓶詰堂)さんのご協力により作成されています。  
-HSP3及びOpenHSPに多大なご協力を頂いた以下の皆様に感謝致します。  
-  
-Senchaさん、ゆめゆめゆうかさん、Lonely Wolfさん、Shark++さん、
-HyperPageProjectさん、ちょくとさん、S.Programsさん、zakkiさん、
-山田 雄己(Yuki)さん、K-Kさん、USKさん、NGND001さん、yoshisさん、
-nakaさん、JETさん、ellerさん、さくらさん、うすあじさん、悠黒喧史さん、tomさん、
-ぷまさん、arueさん、mjhd_otsukaさん、tds12さん、fujidigさん、naznyarkさん  
-  
-その他、HSP周辺ツール開発者ML(HSPDev-ML)の皆様及び、β版のテスト報告や、
-ご意見をお寄せいただいた多くの方々に感謝致します。  
-
-
-# ライセンス
-
-HSP3 Linuxは、OpenHSPの派生物として取り扱い、ライセンスもOpenHSP/HSP3に準拠した修正BSDライセンスとなります。  
+HSP3 Linux handles it as a derivative of OpenHSP,
+and the license becomes a modified BSD license conforming to OpenHSP/HSP3.
 
 -------------------------------------------------------------------------------
 Hot Soup Processor (HSP) / OpenHSP
