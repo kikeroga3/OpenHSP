@@ -3,6 +3,11 @@ HSP : Hot Soup Processor
 copyright 1997-2018 (c) onion software/onitama  
 ------------------------------------------------------------------------------
 
+Original is here.
+
+	http://github.com/onitama/OpenHSP
+
+
 # Introduction
 
 This folder contains files for OpenHSP / Hot Soup Processor build.
