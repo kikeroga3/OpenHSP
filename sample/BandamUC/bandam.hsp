@@ -1,0 +1,222 @@
+#include "hsp3dish.as"
+
+#packopt name "bandam"
+#packopt xsize 320		; 横サイズ
+#packopt ysize 480		; 縦サイズ
+	;
+	;	起動兵士バンダムUCディステニー
+	;	≪緊急出撃コックピットイン！≫
+	;
+
+#module
+#deffunc fprt str _p1
+	;	fprt "message"
+	;	(画像を使用したフォント表示を行ないます)
+	;	"message" : 表示するメッセージ
+	;	表示座標は、posで指定した位置から
+	;
+	i=0:st=_p1
+	gmode 2
+	repeat
+	a1=peek(st,i):i++:if a1=0 : break
+	if a1=13 {
+		a1=peek(st,i)
+		if a1=10 : i++
+		continue	; 改行
+	} else {
+		celput 1,a1
+	}
+	loop
+	return
+#global
+
+	celload "font_csr.png",1
+	celdiv 1,10,20,0,0
+
+	celload "titles.png",2
+	celload "bandam.png",3
+	celdiv 3,,,160,600
+	celload "kou_run.png",4
+	celdiv 4,80,80,40,40
+	celload "cockpit_in.png",5
+	celdiv 5,64,240,0,0
+
+	mmload "bgm0.wav",0,1
+	mmload "hit0.wav",1,0
+	mmload "jump.wav",2,0
+	mmload "bown.wav",3,2
+
+;フォント設定
+font msmincho,20,0
+
+dim pn,16 :dim cpin,8
+dim tx,32 :dim ty,32
+
+cpin=8,16,20,24,28
+pn=0,1,2,3,4,5,6,7,6,5,4,3,2,1
+
+;ハイスコア設定
+fnm="hiscr":notesel ss
+exist fnm
+if strsize>0 :noteload fnm
+noteget s1,0:noteget s2,1
+hi=int(s1):tm=int(s2)
+if abs(gettime(3)-tm)/10=1 :hi=2500
+
+*re_start
+
+;タイトル画面
+by=0:dy=1
+repeat
+	redraw 0 :gosub *cls_4
+	gmode 2
+	pos 0,0:gcopy 3,0,by,320,480
+	gmode 4,,,255
+	pos 0,160:gcopy 2,0,0,320,140
+	pos 50,120:fprt "Please touch a screen"
+	pos 110,330:fprt "HIGH-SCORE"
+	pos 120,350:fprt strf("%08d",hi)
+	stick ky:if ky&256 :break
+	by+=dy :if by>160 or by<0 :dy=-dy
+	await 30
+	redraw 1
+loop
+
+lv=1:gmov=0:sc=0
+
+*start
+
+px=160:py=360
+hp=9:zm=0.0
+repeat 32:ty(cnt)=512:loop
+
+;ステージ開始画面
+redraw 0
+gosub *cls_4
+pos 128,160:fprt "LEVEL "+lv
+gmode 4,,,255
+pos 0,200:gcopy 2,0,140,320,80
+redraw 1
+await 3000
+mmplay 0
+
+;メインルーチン
+repeat 1000
+	redraw 0 :boxf
+	gosub *cls_4
+
+	;バンダム表示
+	zm+=0.001
+	gmode 2
+	pos 160,320:celput 3,0,zm,zm
+
+	po=(mousex-px)/8
+	sc+=abs(po/3+1)
+	;コウ移動＆表示
+	px+=po :if px<8 :px=8
+	if px>312 :px=312
+	gmode 4,,,255
+	ko=pn(cnt\14):if dmg>0 :dmg-:ko=27
+	pos px,py:celput 4,ko,,,double(mousex-px)/314
+
+	;鉄骨発生＆表示
+	repeat 2+lv
+		if ty(cnt)<512 { ty(cnt)+=8
+			if abs(px-tx(cnt))<30 and abs(py-ty(cnt))<40 {
+				dmg=3:ty(cnt)=512 :mmplay 1
+			}
+		}
+		if ty(cnt)>511 and rnd(10)<1 {
+		    tx(cnt)=rnd(320):ty(cnt)=-32
+		}
+		rg=double((tx(cnt)+ty(cnt))\314)/100
+		tz=double(ty(cnt))/800+0.3
+		pos tx(cnt),ty(cnt):celput 4,15,tz,tz,rg
+	loop
+
+	pos 8,8:fprt "LEVEL:"+lv
+	pos 248,8:fprt "LIFE:"+hp
+	pos 120,450:fprt strf("%08d",sc)
+	pos mousex,mousey :fprt "~"
+
+	hp-=(dmg=3)
+	if hp<0 :gmov=1:break
+
+	await 33
+	redraw 1
+loop
+mmstop
+
+;ステージクリア or エンドメッセージ
+redraw 0 :gosub *cls_4
+pos 0,220-40*gmov:gcopy 2,0,324-104*gmov,320,32+72*gmov
+redraw 1 :await 3000
+
+;ゲームオーバーの場合
+if gmov=1 {
+	;コウ倒れる
+	repeat 9
+		redraw 0 :boxf
+		gosub *cls_4
+		pos 160,320 :celput 4,16+cnt
+		redraw 1
+		await 100+10*cnt
+	loop
+	;コウ昇天
+	repeat 40
+		redraw 0 :gosub *cls_4
+		pos 160,320 :celput 4,24
+		pos 160+int(sin(0.2*cnt)*20),280-8*cnt :celput 4,25
+		redraw 1
+		await 66
+	loop
+	await 300
+	;ハイスコア記録
+	if sc>hi :hi=sc
+	ss=str(hi)+"\n"+gettime(3)
+	notesave "hiscr"
+	goto *re_start
+}
+
+;コクピットインアニメ
+mmplay 2
+ko=0
+repeat 28
+	redraw 0 :gosub *cls_4
+	;バンダム表示
+	gmode 2
+	pos 160,320+10*cnt:celput 3,0
+	gmode 4,,,255
+	;イス表示
+	pos 160,cnt*7 :celput 4,13
+	;コウ表示
+	ko+=(cpin(ko)=cnt)
+	pos 160,py :celput 4,8+ko
+	py-=7
+	redraw 1
+	await 60+ko*10
+loop
+await 200
+
+gmode 2
+repeat 10
+	redraw 0 :gosub *cls_4
+	;バンダム表示
+	pos 160,600:celput 3,0
+	pos 128,0:celput 5,cnt
+	redraw 1
+	if cnt=9 :mmplay 3
+	await 200
+loop
+await 400
+
+;次のステージへ
+sc+=(100*hp*lv) :lv+=(lv<30)
+goto *start
+
+stop
+
+*cls_4
+	color 0,0,0 :boxf
+	color 255,255,255
+	return

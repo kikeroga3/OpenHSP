@@ -1,0 +1,419 @@
+#packopt name "sevens"
+#packopt xsize 480		; 横サイズ
+#packopt ysize 320		; 縦サイズ
+
+#include "hsp3dish.as"
+#include "mod_smart.as"
+#include "mod_knjput.as"
+	;
+	;	SevenS(七並べ)
+	;	Created by TURNIP-WORKS
+
+	randomize
+
+	fsz=20
+	celload "font_eng15x20.png",4
+	celdiv 4,15,fsz
+	celload "cards.png",5	;カード画像
+	celdiv 5,32,40
+	celload "chars.png",6	;キャラ画像
+	celdiv 6,48,48
+	celload "back1.png",1	;背景画像１
+	celload "back2.png",2	;背景画像２
+	celdiv 2,480,320,240,160
+
+	mmload "se_click1.wav",0
+	mmload "se_click2.wav",1
+	mmload "se_break.wav",2
+	mmload "se_completion.wav",3
+
+*reset
+	smart_init
+	smart_add :act_num_drag=stat
+
+	sdim po_pnm,12,10	;全員の名前
+	sdim po_fnm,256		;ポイントセーブデータ
+	sdim vs,64,16		;配列変数(汎用文字列)
+	dim vp,16			;配列変数(ポイント値)
+
+	;以前のポイント読込
+	notesel lns
+	po_fnm="point.txt" :exist po_fnm
+	if strsize>0 {
+		noteload po_fnm
+	} else {
+		lns="100,100,100,100,100,100,100,100,100,100"
+	}
+	gosub *split_str
+	gosub *str2int
+
+	sdim txbf,64000		;キャラデータ用テキストバッファ
+	sdim lns,256		;汎用文字列変数
+	sdim moj,256,12		;セリフ用文字列変数(３人分)
+	sdim sym,256,4		;ゲーム中のメッセージ用変数
+
+	sdim msg,256
+	dim card,52		;生成元カード
+	dim fcd,4,16	;場のカード
+	dim cdc,8		;置けるカード
+	dim cdm,8		;マッチするカード
+	dim pid,4		;プレイヤーID
+	dim pie,4		;プレイヤーID+(表情用)
+	sdim pnm,12,4	;プレイヤー名
+	dim pcd,4,16	;プレイヤーの手持ちカード
+	dim jg1,4		;プレイヤーのAI判断値1
+	dim jg2,4		;プレイヤーのAI判断値2
+
+	dim pas,4		;プレイヤーのパス残数
+	dim seq,4,4		;プレイヤー和了順位
+	repeat 4 :c=cnt
+		repeat 4 :seq(c,cnt)=-1 :loop
+	loop
+
+	dim sel,9		;プレイヤーチョイス用の変数
+	repeat 9 :sel(cnt)=1+cnt :loop
+
+	;タイトル画面(Select Eng or Jap)
+	stg=0 :ang=0.0 :eng=1
+	repeat :ang+=0.002 :if ang>6.28 :ang=0.0
+		redraw 0
+		gmode 0 :pos 240,160 :celput 2,0,1.8,1.8,ang
+		gmode 2 :pos 0,0 :gcopy 2,0,320,480,320
+		;クリック＆リリースでループを抜ける(決定)
+		await 10
+		drag=smart_drag(act_num_drag,0,0,480,320,1)
+		if drag=2 :mmplay 1 :break
+		redraw 1
+	loop
+
+	;ゲーム中のメッセージ設定
+	sym(0)="SHUFFLING"
+	sym(1)="DISTRIBUTE CARDS"
+	sym(2)="PLACE A CARD OF 7"
+	sym(3)="YOUR TURN:CHOOSE A CARD or PASS"
+	lns="chars.eng" :po_pnm(0)="YOU"
+
+	;キャラパラメタセット
+	notesel txbf :noteload lns
+
+	;９人全員の名前を取得
+	repeat 9
+		noteget lns,cnt*6+1
+		getstr po_pnm(1+cnt),lns,0,','
+	loop
+
+*stg123
+	repeat 3
+
+*sel3p	;対戦相手３人をランダムチョイス
+		r=rnd(9)
+		if sel(r)!-1 :pid(cnt+1)=sel(r) :sel(r)=-1 :else :goto *sel3p
+
+		n=(pid(cnt+1)-1)*6+1 :noteget lns,n
+		getstr pnm(cnt+1),lns,0,',' :i=strsize
+		jg1(cnt+1)=int(strmid(lns,i,1))
+		jg2(cnt+1)=int(strmid(lns,i+2,1))
+		c=cnt*4
+		noteget moj(c),n+1
+		noteget moj(c+1),n+2
+		noteget moj(c+2),n+3
+		noteget moj(c+3),n+4
+	loop
+
+	;ステージ開始画面
+	redraw 0
+	gmode 0 :pos 240,160 :celput 2,3
+	lns="S T A G E   1" :poke lns,12,49+stg :pos 142,108 :knjput lns,1
+	repeat 3
+		pos 112+100*cnt,144 :celput 6,4*(pid(cnt+1)-1)
+	loop
+	redraw 1
+	tm=500 :gosub *pause
+
+	;パス残数、表情No.変数の初期化
+	repeat 4 :pas(cnt)=3 :pie(cnt)=0 :loop
+
+	;カードマトリクス生成＆場のカードをクリア
+	repeat 52
+		sut=cnt/13+1 :num=cnt\13+1 :card(cnt)=100*sut+num
+		fcd(sut-1,num-1)=0
+	loop
+
+	;シャッフル
+	trn=-1 :msg=sym(0) :gosub *gamen
+	repeat 52
+		r=rnd(52)
+		if r!cnt :a=card(r) :card(r)=card(cnt) :card(cnt)=a
+	loop
+
+	;４人に配布
+	msg=sym(1) :gosub *gamen
+	repeat 52
+		sut=cnt/13 :num=cnt\13 :pcd(sut,num)=card(cnt)
+	loop
+
+	;７を場に出す
+	msg=sym(2) :gosub *gamen
+	repeat 4 :fcd(cnt,6)=100*(1+cnt)+7 :loop
+	repeat 52
+		sut=cnt/13 :num=cnt\13 :a=pcd(sut,num)
+		if a\100=7 :pcd(sut,num)=0
+		if a=307 :trn=sut			;ダイヤの７をだしたプレイヤーより開始
+	loop
+	mmplay 0
+
+*main
+	;全員終了か？
+	a=0 :repeat 4 :a+=(seq(stg,cnt)!-1) :loop
+	if a=4 {
+		gosub *stg_res :stg+
+		if stg<3 :goto *stg123 :else :gosub *po_rank :goto *reset
+	}
+
+	;手持ちが０ならスキップターン
+	a=0 :repeat 13 :a+=pcd(trn,cnt) :loop
+	if a=0 :goto *nxturn
+
+	gosub *mch_cd
+	if trn>0 {
+		if mch=0 {
+			gosub *pass
+		} else {
+			if mch>jg1(trn) {
+				gosub *pas_jg
+			} else {
+				si=rnd(mch) :gosub *put_cd
+			}
+		}
+	} else {
+		repeat
+			;クリック＆リリースでループを抜ける(決定)
+			await 1
+			drag=smart_drag(act_num_drag,8,272,8+33*14,312,1)
+			if drag=1 :mi=(mousex-8)/33
+			gosub *gamen
+			;決定
+			if drag=2 { si=-1 :mmplay 0
+				repeat mch
+					if pcd(0,mi)=cdm(cnt) :si=cnt
+				loop
+				if si!-1 or mi=13 :break
+			}
+		loop
+		if mi=13 :gosub *pass
+		if mi<13 :gosub *put_cd
+	}
+
+	gosub*gamen
+
+*nxturn
+	trn=(trn+1)\4
+	await 500 :goto *main
+
+*put_cd
+	;手持ちから場に出す
+	pie(trn)=0 :a=cdm(si)
+	repeat 13
+		if pcd(trn,cnt)=a :pcd(trn,cnt)=0
+	loop
+	sut=a/100-1 :num=a\100-1 :fcd(sut,num)=a
+	;手持ち０？
+	a=0 :repeat 13 :a+=pcd(trn,cnt) :loop
+	if a=0 {
+		pie(trn)=3 :mmplay 3	;和了
+		repeat 4
+			if seq(stg,cnt)=-1 :seq(stg,cnt)=pid(trn) :break
+		loop
+	} else :mmplay 0
+	return
+
+*pas_jg
+	;パス活用を検討
+	if pas(trn)>jg2(trn) {
+		gosub *pass
+	} else {
+		si=rnd(mch) :gosub *put_cd
+	}
+	return
+
+*pass
+	pie(trn)=1 :pas(trn)-
+	if pas(trn)<0 :gosub *drp_out
+	return
+
+*drp_out
+	;脱落(全カード開放)
+	repeat 13
+		a=pcd(trn,cnt)
+		if a>0 :pcd(trn,cnt)=0 :sut=a/100-1 :num=a\100-1 :fcd(sut,num)=a
+	loop
+	repeat 4
+		if seq(stg,3-cnt)=-1 :seq(stg,3-cnt)=pid(trn) :break
+	loop
+	pie(trn)=2 :mmplay 2 :return
+
+*gamen
+	redraw 0
+	gmode 0 :pos 0,0 :gcopy 1,0,0,480,320	;背景表示
+
+	;パスボタン押し状態表示
+	if mi=13 and drag=1 :pos 438,272 :gcopy 1,437,271,32,40
+
+	;順番のきたプレイヤーのフォーカス＆セリフ表示
+	gmode 5,,,80 :y=150
+	if trn>0 {
+		xx=6+160*trn-160 :pos xx,6 :gcopy 1,xx,6,148,52
+		y=64 :lns=moj(4*(trn-1)+pie(trn)) :gosub *split_str :msg=vs(rnd(c))
+	}
+	if trn=0 {
+		xx=6 :pos xx,270 :gcopy 1,xx,270,465-33,44
+		x=8 :y=64 :msg=sym(3)
+	}
+
+	;文字列を中央に表示する
+	l=strlen(msg)
+	x=240-5*l :if eng :x=(480-15*l)/2
+	if trn=1 :x=8
+	if trn=3 {
+		x=472-10*l :if eng :x=472-15*l
+	}
+	pos x,y :knjput msg,eng
+
+	;プレイヤーパラメタ表示
+	repeat 3 :c=cnt+1
+		pos 64+160*cnt,12 :knjput pnm(c),eng
+		a=0 :repeat 13 :a+=(pcd(c,cnt)>0) :loop
+		s=str(pas(c)) :s=strmid(s,0,1)
+		knjput "#"+a+" $"+s,1
+		pos 8+160*cnt,8 :celput 6,4*(pid(c)-1)+pie(c)
+	loop
+	;場のカードを表示
+	repeat 52
+		sut=cnt/13 :num=cnt\13
+		if fcd(sut,num)>0 {
+			pos 25+33*num,92+42*sut :celput 5,cnt
+		}
+	loop
+	;プレイヤー０の手持ちカード表示
+	repeat 13
+		a=pcd(0,cnt) :b=4*(cnt=mi and drag=1)
+		if a>0 { sut=a/100-1 :num=a\100-1
+			pos 8+33*cnt,272-b :celput 5,13*sut+num
+		}
+	loop
+	s=str(pas(0)) :s=strmid(s,0,1)
+	pos 455,290 :knjput ""+s,1
+	pos mousex,mousey :knjput "$",1
+
+	redraw 1 :if trn!0 :await 100*l
+	return
+
+*mch_cd
+	;場に置けるカードを調査
+	cds=0
+	repeat 4 :sut=cnt
+		repeat 6
+			if fcd(sut,5-cnt)=0 :cdc(cds)=100*(1+sut)+6-cnt :cds+ :break
+		loop
+		repeat 6
+			if fcd(sut,7+cnt)=0 :cdc(cds)=100*(1+sut)+8+cnt :cds+ :break
+		loop
+	loop
+	;手持ちとマッチするカードを調査
+	mch=0
+	repeat cds :c=cnt
+		repeat 13
+			if pcd(trn,cnt)=cdc(c) :cdm(mch)=pcd(trn,cnt) :mch+
+		loop
+	loop
+	return
+
+*stg_res
+	;順位画面
+	redraw 0 :gmode 0 :pos 240,160 :celput 2,0
+	gmode 2 :pos 240,160 :celput 2,2
+	repeat 3 :c=cnt
+		repeat 4
+			a=seq(c,cnt)
+			if a!-1 { a- :if a<0 :a=9
+				pos 128+60*cnt,96+64*c :celput 6,4*a
+			}
+		loop
+	loop
+	redraw 1
+	tm=800 :gosub *pause
+
+	;1～4位のポイント加算(+30,+20,+10,+0)
+	;参加費(-15)
+	repeat 4
+		i=seq(stg,cnt) :vp(i)+=(10*(3-cnt)-15)
+		if vp(i)<0 :vp(i)=0
+	loop
+
+	;負け絵を表示
+	i=seq(stg,3) :lns= "los"+i+".png"
+	exist lns
+	if strsize!-1 {
+		celload lns,7
+		;フェードイン
+		repeat 32
+			redraw 0 :color 0,0,0 :boxf
+			gmode 3,480,320,cnt*8 :pos 0,0 :gcopy 7,0,0
+			redraw 1 :await 33
+		loop
+		tm=-1 :gosub *pause
+		;フェードアウト
+		repeat 32
+			redraw 0 :color 0,0,0 :boxf
+			gmode 3,480,320,(31-cnt)*8 :pos 0,0 :gcopy 7,0,0
+			redraw 1 :await 33
+		loop
+	}
+	return
+
+*split_str
+;	split lns,",",vs
+	i=0
+	repeat 16
+		getstr vs(cnt),lns,i,',' :i+=strsize
+		if strsize<1 :c=cnt :break
+	loop
+	return
+
+*str2int
+	repeat 16 :vp(cnt)=int(vs(cnt)) :loop
+	return
+
+*po_rank
+	;ポイント保存
+	notesel lns
+	lns="" :repeat 10 :lns=lns+str(vp(cnt))+"," :loop
+	notesave po_fnm
+	;ポイントランキング画面
+	redraw 0
+	gmode 0 :pos 240,160 :celput 2,3
+	pos 105,8 :knjput "POINT RANKING TOP5",1
+	;顔絵、名前、ポイント表示
+	repeat 5
+		i=0 :a=-1
+		repeat 10
+			if vp(cnt)>a :a=vp(cnt) :i=cnt
+		loop
+		b=i-1 :if i=0 :b=9
+		pos 152,34+56*cnt :celput 6,4*b
+		pos 208,36+56*cnt :knjput po_pnm(i),eng
+		pos 208,56+56*cnt :knjput strf("%08d",vp(i)*10),1
+		vp(i)=-1
+	loop
+	redraw 1
+	tm=-1 :gosub *pause
+	return
+
+*pause
+	repeat tm
+		await 10		;クリック待ち
+		drag=smart_drag(act_num_drag,0,0,480,320,1)
+		if drag=2 :mmplay 1 :break
+	loop
+	return
+
