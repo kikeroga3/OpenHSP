@@ -1,0 +1,8 @@
+#include "mod_u8knj.as"
+
+	knjini
+	redraw 0 :boxf
+	pos 20,10 :knjput "Hello World!",1
+	pos 20,30 :knjput "Welcome HSP world.",1
+	pos 20,70 :knjput "日本語もオッケーなのね！！"
+	redraw 1
