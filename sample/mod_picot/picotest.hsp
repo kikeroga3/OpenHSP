@@ -1,0 +1,33 @@
+; Picot Map Move
+
+#include "mod_picot.as"
+
+	;Init Map
+	mapini 256,256
+	px=20 :py=20
+
+*main
+	; Draw Map
+	color 0,0,0 :boxf
+	sx=px-9 :sy=py-6
+	pos 16,16 :map sx,sy,19,13,2
+
+	; Hero on Map
+	gmode 2
+	pos 320-16,240-32 :celput 1,224+(px+py)\4,2,2
+
+	; Operating
+	stick ky,15
+	if ky=1 and px>0 :px=px-1
+	if ky=4 and px<255 :px=px+1
+	if ky=2 and py>0 :py=py-1
+	if ky=8 and py<255 :py=py+1
+
+	; Display X Y MapChip.
+	pos 32,448 :fprt "X"+px+" Y"+py+" *"+mget(px,py)
+
+	; Display On
+	redraw 1 :await 80 :redraw 0
+
+	goto *main
+

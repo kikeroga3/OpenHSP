@@ -1,0 +1,76 @@
+; Picot Map Editor
+
+#include "mod_picot.as"
+
+	;Init Map
+	mxs=256 :mys=256
+	mapini mxs,mys
+	sx=0 :sy=0 :ci=0
+
+*main
+	color 0,0,0 :boxf
+	; Draw Map
+	pos 16,16 :map sx,sy,38,20
+	; Draw MapChip
+	pos 16,352 :gcopy 2,0,0,512,128
+	x=ci\32 :y=ci/32 :pos 16+16*x,352+16*y :fprt "("
+	; Draw Button
+	repeat 3
+		color 80,80,48
+		if tm>0 and my=(1+cnt) :color 40,40,24
+		boxf 540,352+23*cnt,620,373+23*cnt
+	loop
+	pos 548,356 :fprt "SAVE"
+	pos 548,379 :fprt "LORD"
+	pos 548,402 :fprt "FILL"
+	pos 548,438 :fprt "*"+ci
+
+	; Operating Range
+	x=mousex/16 :y=mousey/16
+
+	if x=0 :if sx>0 :sx=sx-1
+	if x=39 and sx<218 :sx=sx+1
+	if y=0 and sy>0 :sy=sy-1
+	if y=21 and sy<236 :sy=sy+1
+
+	stick ky,256
+	; Click on Map
+	if x>0 and x<39 and y>0 and y<21 {
+		if ky=256 :mput sx+x-1,sy+y-1,ci
+		if ky=512 :ci=mget(sx+x-1,sy+y-1)
+		if tm=0 :pos 16,0 :fprt "X"+(sx+x-1)+" Y"+(sy+y-1)+" *"+mget(sx+x-1,sy+y-1)
+	}
+	; Click on MapChip
+	if ky=256 {
+		if x>0 and x<33 and y>21 and y<30 :ci=32*(y-22)+x-1
+		; Click Button
+		my=(mousey-352)/23+1
+		if mousex>540 and mousex<620 and my>0 and my<4 {
+			tm=30
+			if my=1 {
+				bsave fnm@mod_picot,mapdt@mod_picot
+				msg="SAVE MAP DATA"
+			}
+			if my=2 {
+				mapini mxs,mys
+				msg="RELOAD MAP DATA"
+			}
+			if my=3 {
+				repeat mxs*mys
+					poke mapdt@mod_picot,cnt,ci
+				loop
+				msg="FILL MAP DATA"
+			}
+		}
+	}
+	; Display Message
+	if tm>0 :tm=tm-1 :pos 16,0 :fprt msg
+
+	; Display Cursor
+	pos mousex,mousey :fprt "~"
+
+	; Display On
+	redraw 1 :await 30 :redraw 0
+
+	goto *main
+
