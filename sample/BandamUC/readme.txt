@@ -3,6 +3,7 @@ Mechanic Soldier Bandam UC Distenney
 
 :: how to play ::
 
+Please load "bandam.hsp" into HSP script editor and press F5 key.
 Click the title screen to start the game.
 Just move the mouse left and right to manipulate the character.
 Please go aiming at the cockpit of Bandam while avoiding the falling steel frame.
@@ -24,6 +25,7 @@ Please go aiming at the cockpit of Bandam while avoiding the falling steel frame
 
 【遊び方】
 
+HSPスクリプトエディタに"bandam.hsp"を読み込んで[F5]キーを押してください。
 タイトル画面をクリックするとゲームスタート。
 キャラクターの操作はマウスを左右に動かすだけです。
 落ちてくる鉄骨をよけながら、バンダムのコックピット目指して突っ走ってください。
