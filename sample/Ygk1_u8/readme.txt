@@ -16,6 +16,7 @@ This software is an adventure game of command selection formula.
 
 1. Game Start
 
+Please read "vc3.hsp" into HSP script editor and press F5 key.
 When you first start the game, the following options will be displayed.
 Please hit key 1 or 2 to the select one.
 
