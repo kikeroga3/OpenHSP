@@ -1,0 +1,696 @@
+@GRP ygk172.png
+@SND se31.wav
+*Lp172
+@TIM 10
+@GCP 1
+@TIM 10
+@GCP 0
+@LOP *Lp172 4
+Arai:STUNNING LIGHT RAY~~~!!!!
+Saito:Heaaahh!!
+@INP
+@SND OFF
+@GRP ygk171.png
+@SND se10.wav
+@ROL 0 40 Up 1 40 5
+@TIM 0
+Arai:What a fool...
+Saito:Ah...Hgh...Ah...Hgh...
+@INP
+
+@GRP gcls.png
+                 ACT 5
+        Last moment of Masamume.
+@INP
+
+@GRP ygk170.png
+Saito:Ggh...Gagh...!!
+Arai:Haa...
+@INP
+@SND bgm30.ogg
+Saito:(What should I do? At this rate...)
+*00
+@INP
+
+@SEL *01 1:Think^about^it
+@SEL *02 2:Beg^for^your^life
+@SEL *03 3:Run^away
+@INP
+
+*01
+@FLG 25 1 *04
+@FLG 25 1
+Saito:Ah...my mind is...blank...can't think...ah...ah...
+@INP
+
+@TIM 5
+@GCP 1
+@TIM 20
+@GCP 2
+@TIM 20
+@GCP 3
+@TIM 20
+@GCP 4
+@TIM 20
+@GCP 5
+@INP
+
+@GRP ygk170a.png
+Arai:Oh! Saito,what's that there?
+ Looks like a stain in your nether region!
+@INP
+Saito:Uh.
+@INP
+
+Arai:It can't be...incontinence?
+ Did you really just wet yourself!?
+@INP
+Saito:Uh. Uh.
+@INP
+
+Arai:Hahaha!! A high school student who pisses himself!!
+ 
+ What a total slob, you must be mentally retarded.
+@INP
+
+Saito:I'll kill you.
+ I will absolutely kill you, Arai!
+@JMP *00
+
+*02
+Saito:No way!! No way that I'm gonna bring myself to beg for my life!!
+@INP
+Saito:That'd be like spitting on the souls of everyone who's fallen!!
+ 
+I can't do it!!
+@JMP *00
+
+*03
+Saito:I...can't run.
+ My...foot is numb...
+
+@FLG 26 1 *06
+@JMP *00
+
+*04
+@FLG 26 1
+Saito:(I can't think, my mind is getting emptier! It must be his stun ray!
+ 
+ He must be using to clear my thoughts!)
+@INP
+
+Saito:(Hold it. He embarassed me by talking about my incontinence...this happened because his beam is loosening my muscles!)
+@INP
+
+Saito:(This stun beam must be using electricity.
+ 
+ In short, it's the same thing as a bolt of lightning!)
+@INP
+
+Saito:(And so now,this thing I'm holding. A Japanese sword,made of metal.
+ 
+ I've got it!
+ I'll use it to break his beam!)
+@INP
+
+Arai:What's wrong? Can't even face me?
+ If so, I'll just put an end to you!
+@INP
+
+Saito:Using your stun beam?
+ Thank god, that sounds good.
+ I want to die by this method, Arai!!
+@INP
+
+Arai:Quit blabbering!!
+@INP
+@SND OFF
+
+@GRP ygk076.png
+@SND se15.wav
+Arai:STUNNING LIGHT RAY~~~!!
+@TIM 200
+@SND se30.wav
+@GCP 1
+@TIM 10
+@GCP 2
+@TIM 10
+@GCP 3
+@TIM 10
+@GCP 4
+@TIM 10
+@GCP 5
+@TIM 10
+@GCP 6
+@TIM 10
+@GCP 7
+@TIM 10
+@GCP 8
+@TIM 30
+
+@GRP ygk204.png
+@SND se42.wav
+@SND se48.wav
+Saito:Watch this, DOOAHH~!!
+@INP
+
+@GRP ygk217.png
+@SND se31.wav
+*Lp217
+@TIM 8
+@GCP 1
+@TIM 8
+@GCP 0
+@LOP *Lp217 8
+Saito:Didn't work!!
+@INP
+
+@GRP ygk147.png
+Arai:Hm‥? What did you try to do just now? Did you use your sword as a lightning rod?
+@INP
+Arai:What would you accomplish by putting it lower than yourself?
+ 
+ You really are an idiot.
+@INP
+
+@GRP ygk179.png
+@SND se29.wav
+@GCP 1
+@TIM 8
+@GCP 2
+@TIM 8
+@GCP 3
+@TIM 8
+@GCP 4
+@TIM 8
+@GCP 5
+@TIM 8
+@GCP 6
+@TIM 8
+@GCP 7
+@TIM 8
+@GCP 6
+@TIM 8
+@GCP 5
+@TIM 8
+@GCP 4
+@TIM 12
+@GCP 3
+@TIM 12
+@GCP 2
+@TIM 14
+@GCP 1
+@TIM 14
+@GCP 0
+@TIM 14
+@GCP 1
+@TIM 8
+@GCP 2
+@TIM 8
+@GCP 3
+@TIM 8
+@GCP 4
+@TIM 8
+@GCP 5
+@TIM 8
+@GCP 6
+@TIM 8
+@GCP 7
+@TIM 8
+@GCP 6
+@TIM 12
+@GCP 5
+@TIM 14
+@GCP 4
+@TIM 16
+@GCP 3
+@TIM 16
+@GCP 2
+@TIM 16
+@GCP 1
+@TIM 14
+@GCP 2
+@TIM 8
+@GCP 3
+@TIM 8
+@GCP 4
+@TIM 8
+@GCP 5
+@TIM 8
+@GCP 6
+@TIM 8
+@GCP 7
+@TIM 8
+@GCP 6
+@TIM 8
+@GCP 5
+@TIM 8
+@GCP 4
+@TIM 12
+@GCP 3
+@TIM 12
+@GCP 2
+@TIM 14
+@GCP 1
+@TIM 14
+Arai:Now, take comfort in your final moment.
+ 
+Saito:It's over, I'm being driven into a corner, Arai is getting closer!
+
+*06
+@INP
+
+Saito:Gh!! I can't let this happen!!
+@INP
+@SND OFF
+
+@SEL *05 1:Beg
+@SEL *03 2:Escape
+@INP
+
+*05
+@SND se37.wav
+@SND bgm13.ogg
+@GRP ygk002.png
+Saito:A...Arai!! N...No,Master Arai!!
+ I screwed up...er...I have sinned against you!!
+@INP
+
+Saito:It's fine if you kill everyone else, but at least spare me!!
+ 
+ Spare my life!!
+@INP
+
+@GRP ygk216.png
+Kuroasawa:We heard that!!
+ Saito...you son of a bitch!!
+Saito:Ah!! Gu..guys...!!
+@INP
+
+Yasuki:You were the one who brought it up!
+@INP
+Nobue:Exactly!!
+ He was the one who mentioned it first, Master Arai!!
+@INP
+
+@SND se07.wav
+Tomizawa:G...go right ahead and kill Saito...but spare me...please spare US!!
+@INP
+
+Ikariya:For god's sake!! Master Arai!!
+@INP
+
+Saito:W...what the--!! Guys!!
+ Aren't we friends?
+ We're on the same team, right?
+@INP
+
+Kurosawa:Shut up! Accept it Saito!!
+ You can use your life to save our five lives! It's a bargain.
+@INP
+Kurosawa:So, Arai, sir!! Don't hurt us!!
+@INP
+
+@GRP ygk216a.png
+@SND se06.wav
+Arai:Hahaha!
+@INP
+Arai:You are an interesting group of people!!
+ 
+ Your friendship is too beautiful, it brings tears to my eyes!!
+@INP
+Arai:I've been deeply moved emotionally!!
+@INP
+
+Nobue:Th...this!!
+Arai:I'm relieved...
+@INP
+@SND OFF
+@GRP ygk245a.png
+@SND se06.wav
+@SND se59.wav
+Arai:Without a doubt, I will now send every single one of you to hell...
+@INP
+
+Kurosawa:W...what! Someone help!
+ Anybody!
+Ikariya:Help!! Help!!
+@INP
+
+@GRP ygk225.png
+@SND se64.wav
+@SND se67.wav
+*Lp225
+@GCP 1
+@TIM 8
+@GCP 2
+@TIM 8
+@GCP 3
+@TIM 8
+@GCP 4
+@TIM 8
+@GCP 5
+@TIM 8
+@GCP 6
+@TIM 8
+@GCP 7
+@TIM 8
+@GCP 0
+@LOP *Lp225 2
+Arai:HAAAA!! DIE!!!
+Saito:Hiiiiiiii!!!!!
+@TIM 400
+@SND OFF
+
+@GRP ygk003.png
+@TIM 100
+@SND se01.wav
+@GCP 1
+@TIM 100
+@GCP 2
+@TIM 100
+@GCP 3
+@TIM 100
+@GCP 4
+@SND bgm32.ogg
+@TIM 300
+
+@GRP ygk042.png
+
+Kuroaswa:We...did it!!
+Nobue:Arai!! He slipped into Tomizawa's trap!!
+@INP
+
+@GRP ygk187.png
+Arai:A c...cheap trick!!
+ But I will easily escape!!
+@INP
+Arai:Uh...Urghh!! WHAT!?
+ My power,my power is gone!!
+@INP
+
+@GRP ygk146.png
+@SND se06.wav
+@SND se48.wav
+@ROL 0 34 Up 1 34 5
+@TIM 0
+Sun Mask:Those who cannot return to heaven must be returned to the earth!
+@INP
+
+@GRP ygk001.png
+@SND se03.wav
+@ROL 0 40 Up 1 40 5
+@TIM 0
+Yugekitai:BURY HIMMMMMMMM!!
+Arai:NO!! NOOO!!
+@INP
+
+@GRP ygk043.png
+Tomizawa:I kicked his ass! I beat that guy! I kicked his ass!!
+@INP
+
+Saito:Tomizawa!! That was freaking AWESOME!!
+@INP
+
+Tomizawa:I kicked his ass!!
+Kurosawa:Right!
+@INP
+
+Tomizawa:I kicked his ass!!!
+Kurosawa:...Yeah!
+@INP
+
+Tomizawa:I KICKED HIS ASS!!!!
+@INP
+
+@SND OFF
+
+@GRP gcls.png
+@TIM 90
+@GRP ygk205.png
+@SND bgm34.ogg
+@TIM 15
+@GCP 1
+@TIM 15
+@GCP 2
+@TIM 15
+@GCP 3
+@TIM 15
+@GCP 4
+@TIM 15
+@GCP 5
+@TIM 15
+@GCP 6
+@TIM 15
+@GCP 7
+@TIM 15
+@GCP 8
+@TIM 15
+@GCP 9
+@TIM 15
+@GCP 10
+@TIM 15
+@GCP 11
+Saito:Arai has returned to the earth from whence he was sprung, huh?
+ 
+Kurosawa:Indeed.
+@INP
+
+@GCP 11
+Saito:That's right...Yoko!!
+@INP
+
+@GRP ygk201.png
+Yoko:Hmm-mm.
+@INP
+
+Saito:Are you okay? Yoko,it's all finally over,it was all just a bad dream.
+ 
+Yoko:Where am I...? Who...are you?
+@INP
+
+Saito:Y...Yoko...It's me.
+ Don't you remember!?
+@INP
+
+Yoko:Yoko? Who...who's that...?
+Saito:It's!
+@INP
+
+Nobue:Amnesia!!
+ The vast amount of energy released must have caused her to lose her memory!
+@INP
+
+Yoko:Yoko is...my name?
+@INP
+
+@GRP ygk202.png
+Saito:Ooh, you don't have to say anything else!! You poor thing‥!!
+ 
+ 
+Saito held Yoko extremely closely.
+@INP
+
+@SND OFF
+
+@GRP ygk228.png
+@SND se68.wav
+*Lp228
+@TIM 10
+@GCP 1
+@TIM 10
+@GCP 0
+@LOP *Lp228 2
+@TIM 10
+@GCP 2
+Yoko:What are you trying to do so quickly, pervert!!
+ 
+Saito:Buh!!
+@INP
+
+@GRP ygk215.png
+Yoko:Ah...? Who are you guys...
+Kurosawa:The six of us are the warriors of the sun.
+@INP
+
+Yoko:I wonder what happened...
+ What time is it?
+Ikariya:Ah...It's 8:35 PM
+@INP
+
+Yoko:It's that late!?
+ I have to return home!
+@INP
+
+Saito:No...it's fine.
+ Yoko, you need to rest.
+@INP
+Saito:On a hospital bed, the two of us can slowly reminiscence about our old times...
+@INP
+
+Yoko:What is this guy talking about?
+Saito:Huh? B...but, you lost your memory...
+@INP
+
+Yoko:What?
+Saito:Huh...?
+@INP
+
+Yoko:I'm going back. Tomorrow, I have a recording on a music station.
+ 
+ I have to go to bed early...
+@INP
+
+Ikariya:I...I will take you back home!!
+@INP
+
+@GRP ygk157.png
+Yoko:Thank you.
+Ikariya:Okay, everyone. I'll be leaving you!!
+@INP
+
+@GRP ygk155.png
+
+Kurosawa:Looks like he's in a daze, huh?
+ 
+Yasuki:Saito, it's just too bad...
+@INP
+
+Nobue:Come to think of it, it looks like she doesn't remember the kidnapping at all.
+ 
+ 
+Saito:...sniff
+@INP
+
+@SND OFF
+
+@GRP ygk145.png
+@SND se32.wav
+@SND bgm34.ogg
+Tomizawa:L...look!!
+ The old man woke up!!
+@INP
+
+@SND bgm35.ogg
+@GRP ygk037.png
+Mitsuki:Grandpa!!
+Kuroumi:Oh!! Mitsuki, Mitsuki!!
+ Forgive me,I must have worried you!!
+@INP
+
+@GRP ygk155a.png
+Saito:That's good. Looks like he's returned back to normal.
+ 
+Yasuki:Arai's curse has been removed...
+@INP
+
+Kurosawa:Everything has been settled, huh.
+ 
+Yasuki:So it seems.
+@INP
+
+Tomizawa:Are we going back?
+Kurosawa:Yeah.
+@INP
+
+Nobue:Hm~~!?
+Saito:What is it,Nobue?
+@INP
+
+@GRP ygk044.png
+
+Nobue:I remembered the end of the Susanoo myth.
+@INP
+Nobue:After he killed the 8-headed serpent he traveled to the world of the dead to see his mother...
+@INP
+Nobue:Perhaps those ruins are where he finally ended up...
+@INP
+
+Saito:The entrance to the underworld?
+@INP
+
+Nobue:I guess so, huh. In ancient times, this area, Tokyo, was the land of the dead.
+@INP
+
+Saito:Do you have any proof?
+Nobue:None.
+@INP
+
+Kurosawa:Well...
+Yasuki:What do you think?
+@INP
+
+Tomizawa:Thinking about these old things, I don't understand 'em at all.
+@INP
+
+Saito:Well guys,for us,tommorow is here!! We can't linger on yesterday Let's go!!
+@INP
+
+@GRP ygk222.png
+@SND se42.wav
+Saito:Everyone,let's race toward the full moon!!
+@INP
+
+@GRP ygk062.png
+Kurosawa:GO!! GO!! Yugekitai!!
+@INP
+Uooh---
+@INP
+
+@GRP ygk148.png
+Mitsuki:Everyone has left, haven't they? They finished off that awful man and returned you back to your old self.
+@INP
+@GRP ygk145a.png
+Kuroumi:I know...They're humans, yet they defeated a man with Susanoo's power. Hm?
+@INP
+
+Mitsuki:What's the matter?
+@INP
+
+@GRP ygk030.png
+Kuromi:Nothing. Just now it looked as if, for a moment, the image of them running off was shining like the sun.
+@INP
+
+@GRP ygk031.png
+Mitsuki:Thank you...thank you!
+ Yugekitai...
+@INP
+
+@GRP ygk144.png
+@ROL 0 20 Up 1 20 7
+@GRP ygk144a.png
+@TIM 120
+@GCP 1
+@TIM 20
+@GCP 2
+@TIM 20
+@GCP 3
+@TIM 20
+@GCP 4
+@TIM 20
+@GCP 5
+@TIM 20
+@GCP 6
+@TIM 20
+@GCP 7
+@TIM 20
+@GCP 8
+@TIM 20
+@GCP 9
+@TIM 20
+@GCP 10
+@TIM 20
+@GCP 11
+@TIM 20
+@GCP 12
+@TIM 20
+@GCP 13
+
+@SND OFF
+
+@GRP gcls.png
+@TIM 300
+
+@SCN ending.eng
+
+

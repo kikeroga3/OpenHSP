@@ -1,0 +1,119 @@
+
+@FLG 9 1
+@GRP ygk039.png
+Saito:Damn! They're endless! Why did this have to happen to me!!
+@INP
+@SND OFF
+
+@GRP ygk153.png
+@SND se42.wav
+@SND se41.wav
+*YG153
+@TIM 15
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 520 0 0
+@TIM 10
+@GCP 600 260 0 780 0 0
+@LOP *YG153 4
+Saito:I'll use this!!
+@INP
+All of the clay warriors turned into dust.
+@INP
+@SND se40.wav
+
+@GRP ygk229.png
+Saito:It's worked,just as I thought...
+ What is this magical item...
+@INP
+Saito:That's it! It must be the crest passed down from generation to generation that Kagawa told me about.
+@INP
+Ikariya:But, that thing is important to him, would he really forget it in the bathroom?
+@INP
+Tomizawa:Maybe Arai is stupid enough to actually leave it in an awkward place.
+@INP
+Saito:This'll be useful! This, this is our trump card!
+@INP
+Saito:Let's go back to that sealed room on the second floor.
+ 
+ There were so many of those things,there must be something.
+@INP
+Saito:We have to get to the bottom of this!
+@INP
+
+@GRP ygk221.png
+Tomizawa:Looks like the door is still open.
+@INP
+Ikariya:Let's go in.
+@INP 
+Saito:Ahh!!! Guys, look at this!
+@INP
+
+@GRP ygk159.png
+@SND se37.wav
+*YG159
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 4
+@GCP 600 260 0 520 0 0
+@LOP *YG159 3
+@TIM 1
+Ikariya:It..they're people!
+Tomizawa:T...they've been nailed in the stomach!
+@INP
+Saito:No...look! This one...the nail is in the head!!
+ 
+Ikariya:.........
+@INP
+Tomizawa:...Saito. Didn't the crew of Yoko's new movie collapse from food poisoing? Maybe these things...
+@INP
+Ikariya:And Kagawa, he had a nosebleed and collapsed...then he lost all of his memories...
+@INP
+Saito:Then...the one with the nail in the head must be...Kagawa!
+@INP
+Tomizawa:Arai...! What a horrible person!
+@INP
+Ikariya:What'll you do with these?
+@INP
+@SEL *00 1:Remove^the^nails
+@SEL *01 2:Leave^it^alone
+@INP
+
+*00
+Saito removed the nails.
+ 
+Saito:I don't want to be in this place... Let's go back.
+@INP
+@JMP *02
+
+*01
+Saito:It might be a bad idea to mess with these...Let's go back.
+@INP
+
+*02
+
+@SAV A^Girl
+
+@SND OFF
+@SND bgm21.ogg
+@GRP ygk194.png
+Went outside.
+ 
+Tomizawa:There isn't anyone in the house...where could Arai have gone...
+@INP 
+Ikariya:Tomi and I,will check the perimeter of the house.
+@INP
+Saito:Okay, I'll check on everyone else.
+@INP 
+@SEL *03 1:See^Nobue
+@SEL *04 2:See^Kurosawa^and^Yasuki
+@INP
+@SND OFF
+
+*03
+@SCN nobue.eng
+
+*04
+@SCN kurosawa.eng
+
+

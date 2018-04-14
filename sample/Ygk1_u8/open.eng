@@ -1,0 +1,3110 @@
+@ENG 1
+
+@SND bgm01.ogg
+@GRP gcls.png
+@TIM 178
+@GRP ygk248.png
+@GCP 600 260 600 780 0 0
+@TIM 15
+@GCP 600 260 600 520 0 0
+@TIM 15
+@GCP 600 260 600 260 0 0
+@TIM 15
+@GCP 600 260 600 0 0 0
+@TIM 15
+@GCP 600 260 0 780 0 0
+@TIM 15
+@GCP 600 260 0 520 0 0
+@TIM 15
+@GCP 600 260 0 260 0 0
+@TIM 15
+@TIM 15
+It is a well-known legend that the god Susanoo slew the eight-headed snake demon Orochi near the end of Japan's mythological age, in Izumo.
+@INP
+However, there are other stories just like this in the city of Usa and the rest of Japan with different names for the god.
+@INP
+There are always two points in common:
+@INP
+Orochi has eight heads, and the demon-slayer is always a descendant of divine blood and as such holds extraordinary power.
+@INP
+
+@GRP gcls.png
+@SND se69.wav
+             - Prologue -
+@INP
+@GRP ygk087c.png
+
+@ACT roll prologue_en.ini
+
+@INP
+@SND bgm02.ogg
+@GRP ygk079.png
+Elder:Ah, This is...
+@INP
+
+@GRP ygk080.png
+ManA:Yes.This Door will not open for any normal human.The X-ray scan and other scans didn't show anything.
+@INP
+ManA:It would seem that some sort of mystic force would be necessary to open this door.
+@INP
+ManA:And so we summoned you.
+...master of ancient Jomon black magic.
+@INP
+
+@GRP ygk079.png
+Elder:Why do you want to open it?
+ManA:We will be investigating what is inside.
+@INP
+Elder:There's no telling what might come out.
+@INP
+
+@GRP ygk080b.png
+ManB:It's our job to worry about what's inside there.
+ 
+ Now please, get started.
+@INP
+
+@GRP ygk081.png
+@SND se01.wav
+@GCP 600 260 0 0 0 0
+@TIM 30
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 520 0 0
+@TIM 10
+@GCP 600 260 0 780 0 0
+@TIM 10
+@GCP 600 260 0 1040 0 0
+@TIM 15
+@GCP 600 260 0 780 0 0
+@TIM 10
+@SND se02.wav
+@GCP 600 260 0 1040 0 0
+@TIM 15
+@GCP 600 260 0 780 0 0
+@TIM 100
+@GRP ygk082.png
+Elder:Om-Ya-Ii-Hoa-Ra-Rii-Soaka...
+@INP
+
+@GRP ygk088.png
+Elder:Om-Ya-Ii-Hoa-Ra-Rii-Soaka...
+@INP
+
+@GRP ygk083.png
+Elder:Nnngh!
+@INP
+
+@GRP ygk080.png
+ManA:What's wrong!?
+@INP
+
+@GRP ygk083a.png
+Elder:Nngh!Nngh!Nngaah!!
+@INP
+@SND OFF
+@SND se64.wav
+@GRP ygk084.png
+*YG84
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 520 0 0
+@TIM 8
+@GCP 600 260 0 780 0 0
+@TIM 8
+@LOP *YG84 5
+Elder:Aaaaagh!!
+@TIM 80
+@SND bgm03.ogg
+@TIM 20
+
+
+@GRP ygk086.png
+@SND se03.wav
+@GCP 600 260 0 0 0 0
+@TIM 15
+@GCP 600 260 0 260 0 0
+@TIM 15
+@GCP 600 260 0 520 0 0
+@TIM 15
+@GCP 600 260 0 780 0 0
+@TIM 15
+@GCP 600 260 0 1040 0 0
+@TIM 15
+@GCP 600 260 0 1300 0 0
+@TIM 15
+@SND se27.wav
+@GCP 600 260 0 1560 0 0
+@TIM 15
+@GCP 600 260 600 0 0 0
+@TIM 15
+@GCP 600 260 600 260 0 0
+@TIM 15
+@GCP 600 260 600 520 0 0
+@TIM 15
+@GCP 600 260 600 780 0 0
+@TIM 15
+@GCP 600 260 600 1040 0 0
+@TIM 15
+@GCP 600 260 600 1300 0 0
+@TIM 15
+@GCP 600 260 600 1560 0 0
+@TIM 300
+
+@GRP ygk065.png
+@SND se02.wav
+ManC:Wh-what on Earth...!?
+@INP
+
+@GRP ygk085.png
+ManB:What in god's name is that!?
+ManA:Aaaah!?
+@INP
+
+@SND se04.wav
+@GRP ygk088.png
+@GCP 600 260 0 0 0 0
+@TIM 15
+@GCP 600 260 0 260 0 0
+@TIM 15
+@GCP 600 260 0 520 0 0
+@TIM 15
+@GCP 600 260 600 0 0 0
+@TIM 15
+@GCP 600 260 600 260 0 0
+@TIM 15
+@GCP 600 260 600 520 0 0
+@TIM 15
+@GCP 600 260 1200 0 0 0
+@TIM 15
+@GCP 600 260 1200 260 0 0
+@TIM 15
+@GCP 600 260 1200 520 0 0
+@TIM 15
+*YG88
+@GCP 600 260 1200 0 0 0
+@TIM 5
+@GCP 600 260 1200 260 0 0
+@TIM 5
+@GCP 600 260 1200 520 0 0
+@TIM 5
+@LOP *YG88 18
+@SND OFF
+@SND se05.wav
+@GRP ygk087.png
+@GCP 600 260 0 0 0 0
+@TIM 30
+@GCP 600 260 0 260 0 0
+@TIM 15
+@GCP 600 260 0 520 0 0
+@TIM 15
+@GCP 600 260 0 780 0 0
+@TIM 15
+@GCP 600 260 0 1040 0 0
+@TIM 15
+@GCP 600 260 0 520 0 0
+@TIM 15
+@GCP 600 260 0 1040 0 0
+@TIM 15
+@GCP 600 260 0 780 0 0
+@TIM 15
+@GCP 600 260 0 520 0 0
+@TIM 15
+@GCP 600 260 0 260 0 0
+@TIM 15
+@GCP 600 260 600 0 0 0
+@TIM 15
+@GCP 600 260 600 260 0 0
+@TIM 15
+@GCP 600 260 600 520 0 0
+@TIM 15
+@GCP 600 260 600 780 0 0
+@TIM 15
+@GCP 600 260 600 1040 0 0
+@TIM 15
+@GCP 600 260 1200 0 0 0
+@TIM 15
+@GCP 600 260 1200 260 0 0
+@TIM 15
+@GCP 600 260 1200 520 0 0
+@TIM 15
+@GCP 600 260 1200 780 0 0
+@TIM 15
+@GCP 600 260 1200 1040 0 0
+@TIM 15
+@GRP gcls.png
+@TIM 200
+
+@SND OFF
+
+@INP
+
+@GRP ygk249a.png
+@SND se33.wav
+@GCP 0
+@TIM 15
+@GCP 1
+@TIM 10
+@GCP 2
+@TIM 15
+@GCP 3
+@TIM 15
+@GCP 4
+@TIM 8
+@GCP 1
+@TIM 2
+@GRP ygk249b.png
+@GCP 11
+@TIM 10
+@GCP 2
+@TIM 10
+@SND se41.wav
+@GCP 4
+@TIM 10
+@GCP 6
+@TIM 10
+@GCP 8
+@TIM 10
+@GCP 10
+@TIM 10
+@GCP 1
+@TIM 8
+@GCP 3
+@TIM 10
+@GCP 5
+@TIM 18
+@SND se06.wav
+@SND se46.wav
+@GCP 7
+@TIM 10
+@GCP 9
+@TIM 18
+@GCP 6
+@TIM 12
+@GCP 0
+@TIM 100
+@SND se70.wav
+
+@ENG 0
+　　　　　　―　最　強　神　復　活　之　巻　―
+@ENG 1
+@INP
+
+@SND OFF
+@SND bgm04.ogg
+@GRP ygk011a.png
+@GCP 4
+@TIM 5
+@GCP 1
+@TIM 5
+@GCP 2
+@TIM 5
+@GCP 3
+@TIM 5
+@GCP 0
+Kouichi Saito(17):
+Katsushikano High School, Class 2-8
+Leader of the punk rock band Yugekitai. Plays the electric drums.
+@INP
+Kouichi Saito(17):
+Has a strong sense of justice with a spineless subservience. Secretly in love with Yoko Inogashira.
+@INP
+
+@GRP ygk012a.png
+@GCP 4
+@TIM 5
+@GCP 1
+@TIM 5
+@GCP 2
+@TIM 5
+@GCP 3
+@TIM 5
+@GCP 0
+Teru Kurosawa(16):
+Katsushikano High School, Class 2-5
+Plays the electric harmonica in Yugekitai.
+@INP
+Teru Kurosawa(16):
+Wants to take over the group, but without disturbing teamwork. A meticulous guy.
+@INP
+
+@GRP ygk013a.png
+@GCP 4
+@TIM 5
+@GCP 1
+@TIM 5
+@GCP 2
+@TIM 5
+@GCP 3
+@TIM 5
+@GCP 0
+Takayoshi Yasuki(16):
+Katsushikano High School, Class 2-5
+Plays the electric ocarina in Yugekitai.
+@INP
+Takayoshi Yasuki(16):
+Developed a strong body by taking swimming and judo in junior high. In love with himself.
+@INP
+
+@GRP ygk014a.png
+@GCP 4
+@TIM 5
+@GCP 1
+@TIM 5
+@GCP 2
+@TIM 5
+@GCP 3
+@TIM 5
+@GCP 0
+Yuichi Nobue(17):
+Katsushikano High School, Class 2-3
+Plays the electric guitar in Yugekitai. A genius with an IQ of 20,000.
+@INP
+Yuichi Nobue(17):
+Went to Cambridge at the age of 5. Graduated top of his class. In the years since he has recieved 5 Nobel Prizes.
+@INP
+
+@GRP ygk015a.png
+@GCP 4
+@TIM 5
+@GCP 1
+@TIM 5
+@GCP 2
+@TIM 5
+@GCP 3
+@TIM 5
+@GCP 0
+Hiroshi Tomizawa(17):
+Katsushikano High School, Class 2-8
+Plays the electric castanets in Yugekitai.
+@INP
+Hiroshi Tomizawa(17):
+His strange face hides talent and secrets. Usually a quiet man.
+@INP
+
+@GRP ygk016a.png
+@GCP 4
+@TIM 5
+@GCP 1
+@TIM 5
+@GCP 2
+@TIM 5
+@GCP 3
+@TIM 5
+@GCP 0
+Kenshiro Ikariya(16):
+Katsushikano High School, Class 2-6
+Ace reporter for the school newspaper.
+@INP
+Kenshiro Ikariya(16):
+He appears to be timid, but he is tenacious. Admires Saito's sense of justice.
+@INP
+
+@GRP ygk017a.png
+@GCP 4
+@TIM 20
+@GCP 1
+@TIM 15
+@GCP 2
+@TIM 10
+@GCP 3
+@TIM 10
+@GCP 0
+Inogashira Yoko(16):
+Katsushikano High School, Class 2-1
+Idol for TKO productions Busy shooting a new movie.
+@INP
+Inogashira Yoko(16):
+Has an haughty personality, but in reality, she's naive.
+@INP
+
+@GRP ygk018a.png
+@GCP 4
+@TIM 20
+@GCP 1
+@TIM 15
+@GCP 2
+@TIM 10
+@GCP 3
+@TIM 5
+@GCP 0
+Yosuke Arai(?):
+Katsushikano High School, Class 2-8
+A youth with strange powers. A demonic man. What are his intentions?
+@INP
+
+@SND OFF
+
+@SND se10.wav
+@SND bgm05.ogg
+@GRP ygk133.png
+@INP 
+
+@GRP ygk089.png
+@SND se72.wav
+Kyaa! So cool! Wonderful!
+@INP
+
+
+@GRP ygk091.png
+Kurosawa:Hmm.They did quite well,those guys.
+ 
+Tomizawa:Are they professionals?
+@INP
+Kurosawa:Still,to reach our level would take several hundred years. Our fashion sense is more than double theirs.
+@INP
+Kurosawa:Isn't that right, Saito?
+@INP
+
+@GRP ygk090.png
+Saito:How many times have I told you?
+At this time, I am the team leader "Vachs".
+@INP
+Kurosawa:Sorry...Vachs. By the way, where is Yasukii?
+@INP
+@SND OFF
+
+@SND se10.wav
+@GRP ygk092.png
+Yasuki:Sorry for the wait, my makeup took forever.
+@INP
+Kurosawa:What's wrong, your eyes are all red.
+@INP
+Yasuki:Nothin'.I couldn't get it right so I wound up pulling an all-nighter.
+@INP
+Saito:You spent the whole night doing makeup? Did you walk all the way here looking like that?
+@INP
+Yasuki:Yeah.
+Saito:...Wow
+
+@INP
+
+@GRP ygk094.png
+Chairman:Next is the band "Yugekitai"!!
+ The elite team led by Vachs to invade Earth!
+@INP
+Saito:It's our turn! Let's go, punks!
+Members:Fuck!!
+@INP
+
+@GRP ygk089.png
+@SND se72.wav
+Kya! Vachs is so cool!
+@INP
+
+@GRP ygk095.png
+Saito:After this we will brainwash you and conquer this hall! Listen to the brainwave! IT'S ELECTRICCCCCCCCCCCCC
+@INP
+
+@SND bgm06.ogg
+@TIM 200
+@INP
+
+@GRP ygk093.png
+StudentA:What is this?
+StudentB:This is punk? It's just noise.
+StudentC:Are they idiots?
+@INP 
+
+@GRP ygk095.png
+Get off the stage! Morons!
+@INP
+@GRP ygk131.png
+The anger reached a head and they threw trash on stage.
+@INP
+
+@SND OFF
+@GRP gcls.png
+@SND bgm07.ogg
+                 ACT 1
+               Gathering
+@INP
+
+@GRP ygk103.png
+Saito:The three day cultural festival ended today.
+@INP
+Kurosawa:Still, isn't tommorow the sports festival?
+ 
+Yasuki:Yep, I can't wait to show off.
+@INP
+Nobue:I despise that sort of uncivilized activity...
+ 
+Tomizawa: Me too.
+@INP
+Kurosawa:Honestly, you guys should just skip class.
+ 
+Saito: Hey, look. That's
+@INP
+@GRP ygk132a.png
+@GCP 5
+@TIM 100
+@GCP 1
+@TIM 10
+@GCP 2
+@TIM 20
+@GCP 3
+@TIM 30
+@GCP 4
+@TIM 30
+@GCP 0
+@TIM 200
+@GRP ygk132.png
+Saito:It's Arai, it looks like he's going to a hill behind the school.
+@INP
+Kurosawa:Arai? Who's that?
+@INP
+Tomizawa:He's a transfer student. He came here just the other day.
+@INP
+Yasuki:Interesting, should we follow him and see what he does?
+@INP
+Tanaka:Hey hey, all of you.
+@INP
+
+@SND OFF
+@SND bgm37.ogg
+@SND se07.wav
+@GRP ygk053.png
+Tanaka:What are you five doing here?
+@INP
+Saito: Y,you're that jock Genji Tanaka! All the chicks dig you 'cause you're better than everyone at sports!
+@INP
+Tanaka:Hahaha! I saw you all on stage.
+ Isn't that noice music simply marvelous?
+ The audience was delighted! Hahaha!
+@INP
+Saito:Grr...! Screw you smartass. You think we're gonna let our art be judged by a guy like you?
+@INP
+Saito:Now get the hell outta my way, you're blocking my view!
+@INP
+Girl:Genji, who are these people?
+Tanaka: Hahaha! They're primates who haven't moved beyond prehistoric noise!
+@INP
+
+@GRP ygk239.png
+Saito:Grr!
+Kurosawa:Stop! Stop, Saito! Wait for some other time, we can't do anything now...
+@INP
+
+@GRP ygk053a.png
+Tanaka:Oops! It'll be dangerous to anger the primates more. Shall we go?
+ 
+Girls: Yes.
+@INP
+
+@GRP gcls.png
+@SAV Festival
+@SND bgm12.ogg
+           The following day
+@INP
+
+@GRP ygk098.png
+The height of the sports festival.
+@INP
+Kurosawa:Aw man, this sucks, sitting in the middle of the freaking schoolyard in this heat!
+ 
+ 
+Nobue:It's starting!
+@INP
+
+@GRP ygk100.png
+Announcer:First track, Taichi Yamanaka.
+ Second track, Youta Ishida.
+ Third track, Genji Tanaka.
+@INP
+
+@GRP ygk098.png
+Kurosawa:I don't like that guy, you want to skip this?
+ 
+Tomizawa:Nah, wait a second.
+@INP
+
+Starter:Are you ready?
+@INP
+@SND OFF
+@SND se14.wav
+@SND se27.wav
+Starter:Goooo!
+@TIM 170
+
+@GRP ygk122.png
+@SND se01.wav
+@SND se08.wav
+@TIM 40
+@SND se07.wav
+@INP
+
+@GRP ygk099.png
+@SND se72.wav
+@SND bgm12.ogg
+Girl:Kya!Genji is~~!
+Tomizawa:Yesterday, I checked which track he would run in and dug a pitfall there. 
+@INP
+Tomizawa:It's quite unfortunate that he had to run there first.
+@INP
+Yasuki:Amazing, Tomi!
+Kurosawa:Well done.
+@INP
+Tomizawa:What? It was merely the will of heaven.
+@INP
+Kurosawa:Dude, there's no one as pissed off as he is right now.
+ 
+Tomizawa:Hm...
+@INP
+Rustle...rustle
+@INP
+Yasuki:?... What is it Saito?
+Saito:I,I gotta go to the bathroom!
+@INP
+
+
+@GRP ygk137.png
+Saito did his business.
+@INP
+Saito:Phew, I almost pissed myself there.
+@INP
+Saito:Being a high school student and wetting myself would've made me a laughing stock, geez...
+@INP
+
+*00
+@SEL *02 1:Try^to^go^to^the^classroom.
+@SEL *01 2:See^if^anyone's^here.
+@SEL *11 3:Return^to^the^festival.
+@INP
+
+*01
+Saito: Anyone there?
+ 
+Saito's voice echoes in vain through the empty corridor.
+@INP
+@JMP *00
+
+*02
+@SND OFF
+@SND bgm07.ogg
+@GRP ygk138a.png
+@GCP 14
+@TIM 15
+@GCP 1
+@TIM 15
+@GCP 2
+@TIM 15
+@GCP 3
+@TIM 15
+@GCP 4
+@TIM 15
+@GCP 5
+@TIM 15
+@GCP 6
+@TIM 15
+@GCP 7
+@TIM 15
+@GCP 8
+@TIM 15
+@GCP 9
+@TIM 15
+@GCP 10
+@TIM 15
+@GCP 11
+@TIM 15
+@GCP 12
+@TIM 15
+@GCP 0
+@TIM 15
+Saito came in front of the classroom.
+@INP
+
+@FLG 0 0 *05
+
+@GRP ygk102.png
+No one is here.
+@INP
+@FLG 1 1 *04
+
+*03
+Saito:Did he...jump out the window...!?
+@FLG 1 1
+
+*04
+@INP 
+@GRP ygk137.png
+@JMP *00
+
+*05
+@GRP ygk007.png
+Arai is standing by the window.
+@INP
+
+*06
+@SEL *07 1:Talk
+@SEL *A6 2:Leave
+@SEL *09 3:Praise
+@SEL *08 4:Fight
+@INP
+
+*A6
+@GRP ygk137.png
+@JMP *00
+
+*07
+@FLG 0 0 *A7
+Saito:What the...? Arai?
+Arai:Fufufu...
+@INP
+@JMP *06
+
+*A7
+@GRP ygk007a.png
+@GCP 11
+@TIM 8
+@GCP 1
+@TIM 8
+@GCP 2
+@TIM 8
+@GCP 3
+@TIM 10
+@GCP 4
+@TIM 12
+@GCP 5
+@TIM 10
+@GCP 6
+@TIM 8
+@GCP 7
+@TIM 12
+@GCP 8
+@TIM 15
+@GCP 9
+@TIM 15
+@GCP 0
+@TIM 30
+Saito:What are you doing here?
+@INP
+Arai:I'm watching her...
+Saito:Her?
+@INP
+Arai:Over there, it seems she's here today with special seating. In the rear, five seats from the left.
+@INP
+Saito:Ah, it's our idol, Yoko Inogashira!! She's at school even though she's starring in a new movie.
+@INP
+Arai:The director let her take today off.
+ 
+Saito:How do you know this...?
+@INP
+Arai:I know...everything about her...
+ even things that she doesn't know...
+@INP
+@FLG 0 1
+@JMP *06
+
+*08
+@GRP ygk060.png
+@SND se07.wav
+@GCP 367 259 116 260 116 0
+@TIM 10
+@GCP 367 259 120 260 116 0
+@TIM 10
+@GCP 367 259 124 260 116 0
+@TIM 10
+@GCP 367 259 128 260 116 0
+@TIM 10
+@GCP 367 259 132 260 116 0
+@TIM 10
+@GCP 367 259 136 260 116 0
+@TIM 10
+@GCP 367 259 140 260 116 0
+@TIM 10
+@GCP 367 259 144 260 116 0
+@TIM 10
+@GCP 367 259 148 260 116 0
+@TIM 10
+@GCP 367 259 152 260 116 0
+@TIM 10
+@GCP 367 259 156 260 116 0
+Arai:What? You want to hit me?
+ No problem, come on, do it!
+ Don't hold back!
+@INP
+Saito:Um,er...pardon me...
+@INP
+
+FLG 0 1 *A8
+@JMP *06
+
+*A8
+@JMP *06
+
+*09
+Arai:Good, good, someone understood my greatness.
+ 
+ Do you want something?
+@INP
+@JMP *06
+
+*10
+@GRP ygk137.png
+@FLG 0 1 *A0
+@JMP *00
+
+*A0
+@JMP *00
+
+*11
+@SND OFF
+@GRP ygk108.png
+@SND bgm12.ogg
+@FLG 0 1 *12
+Yasuki:That was quick.
+@INP
+@JMP *13
+
+*12
+Yasuki:That took a while.
+Saito:Yeah.
+@SND bgm12.ogg
+@INP
+
+*13
+@SEL *14 1:Talk^to^Yasuki
+@SEL *10 2:Return^to^the^school
+@INP
+
+*14
+@FLG 0 1 *15
+Saito:Hey, where's Kurosawa and Tomi?
+Yasuki:I thought you had to go to the bathroom?
+@INP
+@JMP *13
+
+*15
+Yasuki:Yoko came to school today.
+Saito:I know.
+@INP
+Yasuki:Kurosawa and Tomi went to her seat.
+ 
+Saito:I'm going too.
+@INP
+
+@GRP ygk072.png
+For some reason, Kurosawa is inviting Yoko.
+@INP
+Kurosawa:Hey, why don't you join our band? We could use a professional singer.
+@INP
+Yoko:I don't think you know who you're talking to.
+@INP
+
+@GRP ygk097.png
+Saito:Pardon me for the rudeness of my bandmate.
+@INP
+Yoko:You're their leader?
+ If so, you need to exercise more control over your members.
+@INP
+Saito:(grr...she's so arrogant.But,this could be good...)
+@INP
+
+*16
+@SEL *19 1:Talk
+@SEL *18 2:Praise
+@SEL *17 3:Fight
+@INP
+
+*17
+Saito:*shudder*
+ 
+Saito is too big a fan to do that.
+@INP
+@JMP *16
+
+*18
+Saito:Wow! Yoko, you sure are beautiful today!
+ 
+Yoko:What do you want?
+@INP
+Saito:(Ghh...this girl has no charm...! But she's really cute...)
+@INP
+@JMP *16
+
+*19
+Saito:Is it true that the director gave you the day off today?
+@INP
+Yoko:Eh!? Why do you know that?
+ I never told anyone about that. Do you know who told you that?
+@INP
+
+Saito:I heard from that transfer student,Arai. Is he a buddy of yours?
+ 
+Yoko:I don't know him!
+@INP
+Yoko:...and stop talking to me like we're friends!
+@INP
+Saito:(She acts completely different in person compared to when she's on TV)
+@INP
+
+@SND OFF
+Kurosawa:Saito, was Arai the guy we saw going behind the school yesertday?
+ 
+Saito:Yeah, it was.
+@INP
+
+Ikariya:Hm, The beautiful idol Yoko and the mysterious transfer student Arai...This'll be a great article!
+@INP
+
+@SND bgm09.ogg
+@SND se41.wav
+@GRP ygk106a.png
+@GCP 0
+@TIM 15
+@GCP 1
+@TIM 15
+@GCP 0
+@TIM 15
+@GCP 1
+@TIM 15
+@GCP 0
+@TIM 15
+@GCP 1
+@TIM 15
+@GCP 0
+@TIM 15
+@GCP 1
+@TIM 15
+@GCP 
+@GRP ygk106.png
+Kurosawa:Hey! You're that ace of the school paper. Kenshiro Ikariya!
+@INP
+
+*20
+@SEL *23 1:Talk
+@SEL *22 2:Praise
+@SEL *21 3:Fight
+@INP
+
+*21
+@SND OFF
+@GRP ygk234.png
+@SND se11.wav
+Saito:Take this!!
+Ikariya:Ahhh! What did I do!?
+@INP
+
+@GRP ygk106.png
+@JMP *20
+
+*22
+Saito:I'm always hearing about your activities as an ace newspaperman.
+ 
+Ikariya:Heh... I'm flattered.
+@INP
+@JMP *20
+
+*23
+Saito:What makes this so newsworthy?
+@INP
+Ikariya:Heheh..on one hand you have a beautiful girl singer. One the other hand, there's the mystery of where Arai came from.
+@INP
+Ikariya:Yesterday,Arai was up to something at the historic Urayama ruins.
+ 
+ I need to find out what he did there.
+@INP
+Ikariya:But, I have Yoko Inogashira right here!
+@INP
+Ikariya:Let me interview you!
+@INP
+Ikariya:What are your three sizes? Weight? Height? Favorite color? Least favorite color? Favorite food? Least favorite food?
+@INP
+Ikariya:What's your family like? Do you have any hobbies? Special skills?
+@INP
+Yoko:You can find those answers in every entertainment magazine. Now go away.
+@INP
+Ikariya:Then let me hear your feelings.
+ Is there a special man in your life right now?
+@INP
+Yoko:I'm not going to talk about that.
+@INP
+Ikariya:Arai? Is it him?
+Yoko:I've never heard of that guy once in my life! That's enough!!
+@INP
+
+@SND OFF
+@GRP ygk176.png
+@SND se07.wav
+Bodyguards:Soo! YOU're the one who's been bothering Yoko!!
+ 
+Ikariya:Oh!?
+@INP
+
+@GRP ygk051.png
+Ikariya:AHHHHHH!!
+@SND se09.wav
+@INP
+
+@GRP ygk054.png
+Ikariya:Dammit! I'll remember this!
+ I will get this scoop no matter what!
+@INP
+Ikariya:Ah! My Turbo Hurricane's lens is cracked!!
+@INP
+Saito:Ikariya,we're interested in your story.
+@INP
+Kurosawa:We've also been trying to solve the mystery behind Arai. What do you say, do you want to work together with us?
+@INP
+Ikariya:O,okay.
+ It's best if we team up.
+Tomizawa:Hey, let's go get Yasuki and Nobue.
+@INP
+
+@GRP ygk045.png
+@SND bgm21.ogg
+@INP
+
+@GRP ygk230.png
+*YG230
+@GCP 600 260 0 0 0 0
+@TIM 30
+@GCP 600 260 0 260 0 0
+@TIM 15
+@GCP 600 260 0 520 0 0
+@TIM 20
+@LOP *YG230 1
+@INP
+
+@SND se05.wav
+@GRP ygk123.png
+Arai:It's as I thought...
+ I can't do anything here by myself...
+@INP
+@SND se70.wav
+Arai:Wha! Footsteps. Someones coming!
+@INP
+@SND OFF
+
+@GRP ygk071.png
+Yasuki:Hey, it looks like this place is off-limits.
+@INP
+Yasuki:What'll we do?
+@INP
+
+@SEL *24 1:Go^inside^anyway
+@SEL *24 2:Look^around
+@SEL *24 3:Turn^back
+@INP
+
+*24
+@GRP ygk052.png
+@SND bgm14.ogg
+ManA:Hey! What are you doing here!?
+@INP
+
+*25
+@SEL *28 1:Talk
+@SEL *26 2:Apologize
+@SEL *30 3:Keep^going
+@SEL *29 4:Look
+@SEL *31 5:Turn^back
+@SEL *27 6:Praise
+@SEL *31 7:Fight
+@INP
+
+*26
+Saito:S,sorry...
+ManA:Can't you see this area is off-limits. Get out of here.
+@INP
+@JMP *25
+
+*27
+Saito:That mustache sure is dead sexy.
+ManA:Wh...what?
+@INP
+@JMP *25
+
+*28
+ManA:This place isn't open to the general public. Hurry up and leave.
+@INP
+@JMP *25
+
+*29
+There isn't a sign of other people, but things feel strange here.
+@INP
+@JMP *25
+
+*30
+ManA:Hey! You can't enter!
+@INP
+@JMP *25
+
+*31
+@SND OFF
+@GRP ygk117.png
+@SND se11.wav
+*YG117
+@GCP 600 260 0 260 0 0
+@TIM 7
+@GCP 600 260 0 0 0 0
+@TIM 7
+@LOP *YG117 10
+Suddenly, Yasuki knocked down the man.
+@TIM 100
+
+@GRP ygk104.png
+@SND se22.wav
+*YG104
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 0 0 0
+@TIM 8
+@LOP *YG104 5
+Followed by Kurosawa.
+@TIM 100
+
+@GRP ygk022.png
+@SND se08.wav
+*YG22
+@GCP 600 260 0 260 0 0
+@TIM 12
+@GCP 600 260 0 0 0 0
+@TIM 12
+@LOP *YG22 3
+Nobue:Kiii!
+@TIM 100
+
+@GRP ygk073.png
+@SND se21.wav
+Saito:Great! Well done!
+Yasuki:Heh...it's unfair that he lets Arai come here but not us.
+@INP
+Kurosawa:Besides, this guy is pretty suspicous...
+@INP
+Nobue:I'm taking away this label.
+ Now, shall we go inside?
+@INP
+
+@SND se53.wav
+@GRP ygk055.png
+@GCP 600 260 600 780 0 0
+@TIM 10
+@GCP 600 260 600 520 0 0
+@TIM 10
+@GCP 600 260 600 260 0 0
+@TIM 10
+@GCP 600 260 600 0 0 0
+@TIM 10
+@GCP 600 260 0 780 0 0
+@TIM 10
+@GCP 600 260 0 520 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@SND bgm14.ogg
+Elder:Hey! You can't go there!
+@INP
+Kurosawa:Wh, that geezer...!?
+Yasuki:Is he a partner of the first guy?
+@INP
+Ikariya:Everyone, be careful...this old man's eyes...they aren't normal...
+@INP
+Tomizawa:What should we do?
+@INP
+
+*32
+@SEL *33 1:Talk
+@SEL *34 2:Apologize
+@SEL *37 3:Go^inside
+@SEL *36 4:Look
+@SEL *35 5:Praise
+@SEL *3a 6:Fight
+@INP
+
+*33
+Elder:You cannot enter, this is not a place for you.
+@INP
+@JMP *32
+
+*34
+Saito:Sorry.
+Elder:Depart this place immediately.
+@INP
+@JMP *32
+
+*35
+Saito:That's a really shiny head, do you wipe bird shit off it everyday?
+ 
+Elder: ...........
+@INP
+@JMP *32
+
+*36
+There is no one else here,but it still feels strange here.
+@INP
+@JMP *32
+
+*3a
+@GRP ygk020.png
+@SND se53.wav
+@SND se14.wav
+Saito:U...What? This old guy!
+ 
+The old man deflected the attack.
+@INP 
+
+@GRP ygk055.png
+@JMP *32
+
+*37
+@SND OFF
+@SND se15.wav
+@GRP ygk175.png
+@GCP 600 260 0 780 0 0
+@TIM 50
+@GCP 600 260 0 520 0 0
+@TIM 15
+@GCP 600 260 0 260 0 0
+@TIM 15
+@SND bgm11.ogg
+Elder:Ghaa!
+ 
+The old man attacked with intense strength!
+@INP 
+
+@GRP ygk063.png
+@SND se22.wav
+Yasuki:Gaa!
+@TIM 100
+@SND se20.wav
+Kurosawa:Oooh!
+@TIM 100
+@SND se23.wav
+Ikariya:Wahh!
+@TIM 100
+@SND se24.wav
+Tomizawa:Hnngh!
+@TIM 100
+@SND se08.wav
+Nobue:BAWWWWW!
+@TIM 140
+Everyone has been defeated.
+@INP
+
+
+@GRP ygk023.png
+@SND se10.wav
+Saito:It looks like it's my turn...!
+@INP
+
+*4a
+@SEL *3b 1:Mighty^Kick
+@SEL *3c 2:Mighty^Punch
+@SEL *3e 3:Flying^Kick
+@SEL *3d 4:Grab
+@SEL *3f 5:Run^away
+@INP
+
+*3b
+@GRP ygk024.png
+@SND se17.wav
+Saito:HIYAA!
+@INP
+@JMP *4a
+
+*3c
+@GRP ygk025.png
+@SND se16.wav
+Saito:!!?
+@INP
+@JMP *4a
+
+*3d
+@GRP ygk026.png
+@SND se18.wav
+Saito:Ah!
+@INP
+@JMP *4a
+
+*3e
+@SND se53.wav
+@GRP ygk027.png
+@SND se17.wav
+Saito:DOOAAH!
+@INP
+@JMP *4a
+
+*3f
+@GRP ygk107.png
+@SND se07.wav
+Saito:Run!
+Members:Wait up!
+@INP
+Tomizawa:Run awaaaayyy!
+@INP
+@SND OFF
+@SND se69.wav
+@GRP ygk107a.png
+Elder:.............
+@TIM 250
+@GRP ygk107b.png
+@TIM 30
+@GRP ygk107c.png
+@TIM 30
+@GRP ygk107d.png
+@TIM 200
+@SND OFF
+@GRP gcls.png
+@GCP 600 260 0 0 0 0
+@TIM 150
+
+@GRP ygk109.png
+@GCP 600 260 600 1040 0 0
+@TIM 15
+@GCP 600 260 600 780 0 0
+@TIM 15
+@GCP 600 260 600 520 0 0
+@TIM 15
+@GCP 600 260 600 260 0 0
+@TIM 15
+@GCP 600 260 600 0 0 0
+@TIM 15
+@GCP 600 260 0 1040 0 0
+@TIM 15
+@GCP 600 260 0 780 0 0
+@TIM 15
+@GCP 600 260 0 520 0 0
+@TIM 15
+@GCP 600 260 0 260 0 0
+@TIM 15
+Kurosawa:Huff...huff, what kind of old man...
+ 
+Tomizawa:We shouldn't go there anymore!
+@INP
+Ikariya:Hey! There's no way I'm giving up after getting this far. That old man's behavior made it CLEAR that somethings up.
+@INP
+Ikariya:It's up to us to find out.
+@INP
+Nobue:I concur. There's something there, and Arai must be involved in some manner. I think we need to continue investigating.
+@INP
+Nobue:What do you say, Saito?
+@INP
+
+*38
+@SEL *39 1:We^should^give^up
+@SEL *40 2:Hear^everyone's^opinion.
+@SEL *41 3:Let's^keep^investigating
+@INP
+
+*39
+Ikariya:Well...
+Yasuki:Chicken. You're really gonna be a coward, Saito?
+@INP
+@JMP *38
+
+*40
+Kurosawa:I agree with Nobue.
+Yasuki:We gotta fire back three times as strong as they hit us!
+@INP
+Nobue:You already heard my opinion.
+@INP
+Tomizawa:I...I'm fine either way.
+@INP
+@JMP *38
+
+*41
+Ikariya:All right! Let's do it!
+@INP
+Saito:I guess so.
+ But let's not go there until tommorow.
+ We need to make a plan.
+@INP
+Arai:A plan?
+@INP
+
+@GRP ygk075.png
+@SND se07.wav
+Ikariya:Y...you're Arai...!
+Arai:Hey Saito. Thanks for earlier.
+@INP
+Arai:It's good that you got Yoko to know about me. But if you keep sniffing around me, it'll be real sad when you die.
+@INP
+Yasuki:What...?
+Nobue:What is the meaning of this, Arai?
+@INP
+Arai:You know exactly what I mean, Nobue.
+@INP
+Tomizawa:Is this a threat?
+Arai:It's a warning, Tomizawa, not a threat.
+@INP
+Kurosawa:No, this is a threat.
+ His eyes give off the impression that he will kill us if we discover too much.
+@INP
+Arai:Hahaha! You're funny, Kurosawa!
+@INP
+Ikariya:I,I won't take this threat...!
+ A,Arai...t...tell the tru...er...Tell us what you're doing!
+@INP
+@SND se53.wav
+@GRP ygk075a.png
+@GCP 11
+@TIM 12
+@GCP 1
+@TIM 12
+@GCP 2
+@TIM 12
+@GCP 3
+@TIM 12
+@GCP 4
+@TIM 8
+@GCP 5
+@TIM 8
+@GCP 6
+@TIM 12
+@GCP 7
+@TIM 12
+@GCP 8
+@TIM 16
+@SND se10.wav
+@GCP 9
+@TIM 12
+@GCP 10
+@TIM 12
+@GCP 0
+@TIM 16
+@SND bgm21.ogg
+Arai:How brazen of you, Kenshiro Ikariya.
+ 
+Ikariya:tch...!
+@INP
+Arai:Were you the one looking for information about me?
+@INP
+Arai:As Kurosawa said, if you find out too much then I'll kill you.I'll quash you like a fly.
+@INP
+@GRP ygk075b.png
+@GCP 5
+@TIM 12
+@GCP 4
+@TIM 12
+@GCP 3
+@TIM 16
+@GCP 2
+@TIM 12
+@GCP 1
+@TIM 12
+@GCP 0
+@TIM 16
+Yasuki:Your true character has been reavealed... Arai.
+ 
+Arai:You will not be an exception, Yasuki.
+@INP
+Saito:Arai! What is your goal! You knew things that Yoko never told anyone! You said you knew things she didn't know!
+@INP
+Saito:Wha...what kind of person are you!?
+@INP
+Arai:...Haha
+Saito:...!?
+@INP
+Arai:You must like Yoko.
+Saito:tch...!
+@INP
+Arai:But, it's disappointing that I'll need her for something soon...
+ 
+Saito:...What!?
+@INP
+@GRP ygk075.png
+Arai:But it's too bad you can't do anything! You'll have to give her up!
+ 
+ Hahahaha!
+@INP
+Suddenly, Arai left...
+@INP
+
+@GRP ygk101.png
+Nobue:Did everyone notice something?
+Yasuki:Something?
+@INP
+Kurosawa:He was quite blunt to us.
+@INP
+Tomizawa:Well, he's in the same class with Saito and me... but he knew all of our names without ever meeting us.
+@INP
+@SND OFF
+Saito:Yoko...
+@INP
+
+@GRP gcls.png
+@SAV Explore
+@SND bgm09.ogg
+           The following day
+@INP
+@GRP ygk064.png
+Saito and Ikariya began to investigate for further information related to Arai.
+@INP
+Ikariya:Let's ask all the second year classes. I'll do 2-6 to 2-9.
+ 
+ You do classes 2-1 to 2-5.
+@INP
+Saito:Gotcha.
+@INP
+Ikariya:Once we get enough information, let's meet at the connecting hall.
+@INP
+Ikariya:And we'll have to be careful that Arai doesn't become aware of our investigation.
+@INP
+Saito:Right.
+@INP
+Ikariya:Okay, see ya later.
+@INP
+@GRP ygk064b.png
+@SND se41.wav
+Ikariya:UOOOH!
+@INP
+@SND OFF
+@SND bgm12.ogg
+@GRP ygk064a.png
+Saito:Now, where to go...
+@INP
+
+*42
+
+@GRP ygk064a.png
+@SEL *45 1:class^2-1
+@SEL *51 2:class^2-2
+@SEL *52 3:class^2-3
+@SEL *70 4:class^2-4
+@SEL *64 5:class^2-5
+@SEL *59 6:Physics^room
+@SEL *43 7:Girl's^locker^room
+@SEL *75 8:Connecting^Hall
+@INP
+
+*43
+@GRP ygk113.png
+Saito went to the back of the girl's locker room. Voices and noises can be heard, so it seems to be occupied.
+@INP
+Take a quick peek?
+@INP
+@SEL *44 1:Take^a^look
+@SEL *42 2:Turn^around.
+@INP
+@SND OFF
+
+*44
+@SND bgm37.ogg
+Saito:Well... I doubt there's any relevant information here...
+@INP
+
+@GRP ygk110.png
+Girl:Yaa! A peeker!
+Saito:Th! That's not it! This is an investigation! Does anyone know Ar-
+@FLG 7 1
+@INP
+
+@GRP ygk209.png
+@SND OFF
+The excuse did not work.
+Saito was left alone in a corridor after being beaten by the girls.
+@INP
+@SND bgm12.ogg
+@JMP *42
+
+*45n
+@GRP ygk207c.png
+Saito:Huh, where did Yoko go?
+@INP
+Rumiko:She said she had to do something and left...
+ 
+Saito:She...had to do something...?
+@INP
+Haruna:She was acting kinda strange...
+@INP
+@JMP *42
+
+*45
+@FLG 4 1 *45n
+@GRP ygk207.png
+Yoko is here.
+@INP
+@GRP ygk207a.png
+@GCP 1
+@TIM 10
+@GCP 2
+@TIM 10
+@GCP 3
+@TIM 10
+@GCP 4
+@TIM 10
+@GCP 5
+@TIM 10
+@GCP 0
+@TIM 10
+Girl with glasses:Oh,it's Vachs.
+Saito:Eh, who's that? I don't know him!
+@INP
+@GRP ygk207.png
+
+*46
+@GRP ygk207.png
+@SEL *49 1:Speak
+@SEL *42 2:Leave
+@SEL *48 3:Praise
+@SEL *47 4:Fight
+@INP
+
+*47
+Saito:Ahaahaaa...
+ 
+Saito is unable to do that.
+@INP
+@JMP *46
+
+*48
+Saito:You look nice today, Yoko.
+Yoko:Stop joking around with me.
+@INP
+Saito:(Ugh...)
+@INP
+@JMP *46
+
+*49
+@FLG 31 1 *50a
+@FLG 2 1 *50
+Saito:Hey! Is there no shooting today as well?
+@INP
+@GRP ygk207b.png
+@GCP 1
+@TIM 10
+@GCP 2
+@TIM 10
+@GCP 3
+@TIM 10
+@GCP 4
+@TIM 10
+@GCP 5
+@TIM 10
+@GCP 6
+@TIM 10
+@GCP 7
+@TIM 12
+@GCP 8
+@TIM 12
+@GCP 9
+@TIM 15
+@SND se32.wav
+@GCP 10
+@TIM 14
+@GCP 11
+@TIM 14
+@GCP 0
+@TIM 10
+
+Yoko:Ah...it's weird. Last night, the director and crew all collapsed from food poisoning.
+@INP
+Yoko:I've got a bad feeling about it.
+@FLG 2 1
+@INP
+@GCP 11
+@TIM 8
+@GCP 10
+@TIM 8
+@GCP 9
+@TIM 6
+@GCP 8
+@TIM 6
+@GCP 7
+@TIM 6
+@GCP 6
+@TIM 6
+@GCP 5
+@TIM 6
+@GCP 4
+@TIM 6
+@GCP 3
+@TIM 6
+@GCP 2
+@TIM 8
+@GCP 1
+@TIM 8
+
+@GRP ygk207.png
+
+Yoko:What do you want this time Koichi?
+@INP
+Saito's heart swelled...
+Because Yoko called him by his first name.
+@INP
+But this wasn't the time to go further.
+@INP
+Yoko:...What.
+@INP
+Saito:I just looked into stuff about that transfer student...
+@INP
+Yoko:Transfer student? You mean Arai?
+@INP
+Saito:You know Arai!?
+@INP
+Yoko:Of course, he has great grades and good at sports.
+@INP
+Yoko:And his long hair... he's popular with female students these days.
+ 
+Haruna:He's handsome...
+@INP
+Saito felt strange and wasn't able to move.
+@INP
+Rumiko:What's wrong Vachs? Your face looks strange.
+@INP
+Saito wiped the sweat from his forehad and returned to normal. 
+@INP
+Saito:I just remembered I have to do something!
+ 
+Sorry, I'll be back!
+@INP
+Yoko:...Come back?
+Saito:Yeah!
+@INP
+@JMP *46
+
+*50
+@FLG 31 1
+@INP
+Yoko:Is this about Arai again?
+@INP
+Yoko. I don't know him and never to him...
+@INP
+@JMP *46
+
+*50a
+Yoko:I don't want to talk anymore.
+@INP
+Haruna:I don't like Arai, he has a creepy way of looking at people.
+@INP
+@JMP *46
+
+*52
+@GRP ygk102.png
+In class 2-3
+ 
+Saito:No one is here, weird...
+@INP
+@JMP *42
+
+*51
+@FLG 2 0 *51a
+@FLG 6 0 *51a
+@FLG 3 1 *51a
+@GRP ygk218a.png
+@JMP *51b
+*51a
+@GRP ygk218.png
+*51b
+In class 2-2
+Some students are playing cards.
+
+*55
+@INP
+@SEL *58 1:Talk
+@SEL *42 2:Leave
+@SEL *57 3:Praise
+@SEL *56 4:Fight
+@INP
+
+*56
+@SND se60.wav
+@TIM 40
+StudentB:Hey! Stop!
+@JMP *55
+
+*57
+StudentC:Shut up.
+ We're in the middle of a card game!
+@JMP *55
+
+*58
+Saito:Does anyone know about that transfer student in class 2-8? Yosuke Arai?
+@INP
+StudentA:I don't know him.
+@FLG 2 0 *55
+@FLG 6 0 *55
+@FLG 3 1 *55
+@INP
+@SND OFF
+Kagawa:What!? Yosuke Arai?
+@INP
+@SND bgm02.ogg
+Saito:!!
+@INP
+@GRP ygk120.png
+Saito:You know him?
+@INP
+Kagawa:I think so.
+ We went to the same elementary school in Kyushu.
+@INP
+Saito:What do you remember about him from that time?
+@INP
+Kagawa:Hm, he was a weird guy. He bragged about having descent from a powerful god.
+@INP
+Kagawa:That guy, did he really come to this school...
+@INP
+Saito:Do you know anything else?
+@INP
+Kagawa:Ah, yeah.
+ Arai's family was the richest in the village; there wasn't a single person who didn't know it.
+@INP
+Kagawa:There's also a secret crest passed down from generation to generation. And...
+@INP
+@SND OFF
+Saito:...? What is it?
+@INP
+Kagawa:Gack!
+Saito:What?
+@INP
+@SND se33.wav
+@GRP ygk074.png
+Kagawa:Argh!!
+@GCP 6
+@TIM 80
+@SND se03.wav
+@GCP 6
+@TIM 20
+@GCP 1
+@TIM 10
+@SND se27.wav
+@GCP 7
+@TIM 10
+@GCP 1
+@TIM 10
+@GCP 7
+@TIM 10
+@GCP 1
+@TIM 10
+@GCP 7
+@TIM 10
+@GCP 1
+@TIM 10
+@GCP 7
+@GCP 1
+@TIM 10
+@GCP 7
+@TIM 10
+@GCP 1
+@TIM 10
+@GCP 7
+@TIM 10
+@GCP 1
+@TIM 10
+@GCP 7
+@TIM 10
+@GCP 1
+@TIM 10
+@GCP 7
+@TIM 10
+@GCP 1
+@TIM 10
+@GCP 2
+@TIM 15
+@GCP 3
+@TIM 15
+@GCP 4
+@TIM 15
+@GCP 5
+@TIM 15
+@GCP 6
+@TIM 100
+Kagawa:Argh!!
+Saito:Hey!!
+@INP
+
+@GRP ygk038.png
+@SND se06.wav
+Students:Oh my god! Kagawa! Kagawa!
+@INP 
+@GCP 600 260 0 260 0 0
+@TIM 15
+@GCP 600 260 0 520 0 0
+@TIM 15
+@GCP 600 260 0 780 0 0
+@TIM 15
+@GCP 600 260 0 1040 0 0
+@TIM 15
+@GCP 600 260 600 0 0 0
+@TIM 15
+@GCP 600 260 600 260 0 0
+@TIM 15
+@GCP 600 260 600 520 0 0
+@TIM 15
+@GCP 600 260 600 780 0 0
+@TIM 15
+@GCP 600 260 600 1040 0 0
+@TIM 15
+@GRP gcls.png
+@TIM 100
+
+@SND OFF
+@GRP ygk111.png
+@INP
+Kagawa:Yosuke Arai? Who's that?
+@SND se32.wav
+Kagawa no longer remembers anything about Arai.
+@FLG 3 1
+@INP
+@SND bgm12.ogg
+@JMP *42
+
+*59
+@SND se19.wav
+@GRP ygk112.png
+@GCP 0
+@TIM 60
+@GCP 1
+@TIM 12
+@GCP 0
+@TIM 8
+@GCP 1
+@TIM 12
+@GCP 0
+@TIM 8
+@GCP 1
+@TIM 12
+@GCP 0
+@TIM 40
+@GCP 1
+@TIM 12
+@GCP 0
+@TIM 8
+@GCP 1
+@TIM 12
+@GCP 0
+@TIM 8
+@GCP 1
+@TIM 12
+@GCP 0
+@TIM 40
+@GCP 2
+@TIM 15
+@GCP 3
+@TIM 15
+@GCP 4
+@TIM 15
+@GCP 2
+@TIM 15
+@GCP 3
+@TIM 15
+@GCP 4
+@TIM 15
+@GCP 0
+@TIM 20
+@GCP 1
+@TIM 4
+@GCP 0
+@TIM 4
+@GCP 1
+@TIM 20
+@GCP 0
+@TIM 40
+@GCP 1
+@TIM 12
+@GCP 2
+@TIM 15
+@GCP 3
+@TIM 15
+@GCP 4
+@TIM 15
+@GCP 2
+@TIM 15
+@GCP 3
+@TIM 15
+@GCP 4
+@TIM 15
+Nobue is here.
+
+Nobue:Hey, Saito.
+Saito:What are you making there?
+@INP
+Nobue:A centralized delivery system of light particles.
+ 
+ Well, you would refer to it as a "laser gun"
+@INP
+Nobue It might just be the weapon we need to defend outselves from Arai.
+@FLG 6 1
+@INP
+
+*60
+
+@SEL *62 1:Talk
+@SEL *42 2:Leave
+@SEL *63 3:Praise
+@SEL *61 4:Fight
+@INP
+
+*61
+@SND OFF
+@SND se20.wav
+@GRP ygk112a.png
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 15
+@GCP 600 260 0 0 0 0
+@TIM 15
+@GCP 600 260 0 260 0 0
+@TIM 20
+@GCP 600 260 0 0 0 0
+@TIM 20
+Nobue:What are you doing...!
+ Such uncivilized behavior is unusual from you.
+@INP
+Saito:Sorry, sometimes you piss me off...
+@INP
+Nobue:You stupid caveman! Agh agh!
+Saito:Sorry, sorry Nobue.
+@INP
+@SND bgm12.ogg
+@GRP ygk112.png
+@JMP *60
+
+*62
+Nobue:Be quiet. Don't interrupt my manufacturing.
+@INP
+@JMP *60
+
+*63
+Nobue:Why thank you.
+ Of course, I do have an IQ of 20,000.
+@INP
+@JMP *60
+
+*64
+@GRP ygk208.png
+@FLG 4 0 *6a
+Kurosawa:Oh, you're here?
+ You got spirit.
+@JMP *6b
+
+*6a
+Kurosawa:Saito, We'll talk to you at lunch.
+ 
+*6b
+Yasuki:Yeah, we'll help you look after school.
+
+*65
+@INP
+@SEL *68 1:Talk
+@SEL *42 2:Leave
+@SEL *67 3:Praise
+@SEL *66 4:Fight
+@INP
+
+*66
+@SND se60.wav
+@TIM 40
+Yasuki:Cut it out!
+Kurosawa:What are you doing?
+@JMP *65
+
+*67
+Yasuki:As nice as your flattery is, It won't make me give you my lunch.
+@JMP *65
+
+*68
+@FLG 4 1 *69
+Kurosawa:I don't have anything to talk about right now.
+@JMP *65
+
+*69
+Yasuki:Ikariya stopped by some time ago.
+@INP
+Kurosawa:I guess he found some clues.
+@FLG 5 1
+@JMP *65
+
+*70
+@FLG 3 1 *72
+
+*71
+@GRP ygk154.png
+No one is here.
+This class is at P.E., so they're in the locker rooms.
+@INP
+@JMP *42
+
+*72
+@FLG 4 1 *71
+@GRP ygk050.png
+Girl:Oh, Saito!
+@INP
+Saito:Oh,it's Minori Akino.
+ We were in the same class last year.
+@INP
+@FLG 7 0 *73
+Minori:Saito..I heard you were just peeking around the girl's locker room, pervert!
+@INP
+Saito:Ah, wh,what are you doing here?
+@INP
+@JMP *74
+
+*73
+Saito:Why are you here?
+*74
+Minori:I left something behind here.
+@INP
+Saito:Ah, well, let me ask you something. Do you know anything about Arai, the transfer student?
+@INP
+Minori:Eh? Arai, the one who came to Class 8?
+ 
+ He just went to the path behind the school.
+@INP
+Minori:He was going there with a girl...
+@INP
+Saito:A girl...?
+@FLG 4 1
+@INP
+@JMP *42
+
+*75
+@FLG 5 1 *76
+@GRP ygk160.png
+At the connecting corridor.
+ 
+Saito:Ken isn't here...
+@INP
+@JMP *42
+
+*76
+@SND OFF
+@GRP ygk250.png
+@SND se32.wav
+
+@SAV Emblem
+
+Saito:What? Tomi... did you see Ken?
+@INP
+Tomizawa:Ikariya is...!
+ Ikariya saw Arai take Yoko Inogashira behind the school!!
+@INP
+Tomizawa:He's chasing the two of them right now! Also, he wanted me to give you this.
+@INP
+
+@SND se21.wav
+@SND se05.wav
+@GRP ygk049.png
+@SND bgm15.ogg
+Saito:What is this?
+@INP
+Tomizawa:Arai left it behind when he went to the bathroom.
+ 
+ It's a crest.
+@INP
+Saito:This thing, what is it used for?
+@INP
+Tomizawa:Saito...what should we do?
+@INP
+Saito:We're going to the ruins!
+Tomi, get everyone together! Quick!
+@INP
+
+@GRP gcls.png
+Arai:Fufu...this riddle will soon be solved...
+@INP
+
+@GRP ygk177.png
+Yoko:J...just who do you think you are!?
+@INP
+@SND se53.wav
+@TIM 1
+@GCP 600 260 0 260 0 0
+@TIM 15
+@GCP 600 260 0 520 0 0
+@TIM 15
+@GRP ygk177a.png
+Arai:Hmph...nice to meet you...well, actually we are reunited after a long time,Yoko Inogashira.
+@INP
+Arai:You and I were once one body, 6,000 years ago...
+@INP
+Yoko:What are you talking about...?
+Arai:Soon, within minutes you will understand... Ikariya!
+@INP
+@GCP 600 260 0 260 0 0
+@TIM 15
+@GCP 600 260 0 520 0 0
+@TIM 15
+@GCP 600 260 0 780 0 0
+@TIM 15
+@GCP 600 260 0 1040 0 0
+@TIM 15
+@SND se60.wav
+@GRP ygk177b.png
+@TIM 1
+@GCP 600 260 0 260 0 0
+@TIM 15
+Ikariya:It's just as I thought.
+ The two of you came together to the mountain! But what are you doing with each other?
+@INP
+Yoko:Whaat? Don't make it sound so weird!!
+@INP
+@GCP 600 260 0 260 0 0
+@TIM 15
+Arai:Well, this must wait.
+ I have to remove a certain distracton... Ikariya...
+ 
+Ikariya:Uh!
+@INP
+
+@GRP ygk077.png
+@SND se59.wav
+Saito:Hold it!
+Arai:Nngh!
+@INP
+Ikariya:E,everyone! You're here!!
+@INP
+Yasuki:You! What are you doing with Yoko!
+@INP
+Arai:Why are you all worried about what I must do with this girl?
+@INP
+
+@GRP ygk078.png
+@SND se10.wav
+Kurosawa:Uuh! Those three guys just surrounded us!
+@INP
+Tomizawa:That guy from yesterday and his friends...They're Arai's followers!!
+@INP
+Arai:They all ignored my advice...kill them!
+@INP
+@GRP ygk115.png
+@SND bgm11.ogg
+Followers:Kiiiie!!
+@SND se15.wav
+The three men attacked the group.
+@INP
+
+@GRP ygk116.png
+@SND se16.wav
+@SND se22.wav
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+Kurosawa:UOOOH!
+@TIM 80
+
+@GRP ygk183.png
+@SND se23.wav
+@SND se14.wav
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+Tomizawa:HAA!
+@TIM 80
+
+@GRP ygk056.png
+@SND se24.wav
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+Saito:HIYAAH!!
+@TIM 100
+
+@GRP ygk032a.png
+Saito:Ha! We defeated your henchmen!
+@INP
+Arai:So?
+@INP
+@SND se33.wav
+@GCP 1
+@TIM 10
+@GCP 2
+@TIM 10
+@GCP 0
+@TIM 30
+@GCP 3
+@TIM 8
+@GCP 4
+@TIM 8
+@GCP 5
+@TIM 8
+@GCP 6
+@TIM 8
+@GCP 7
+@TIM 10
+@SND se60.wav
+@GCP 8
+@TIM 10
+@GCP 9
+@TIM 8
+@SND se18.wav
+@GCP 10
+@TIM 40
+@SND se01.wav
+@SND se17.wav
+@GCP 11
+@TIM 30
+@SND se53.wav
+@GRP ygk032.png
+@SND se07.wav
+Elder:Ghaa!
+Kurosawa:D-damn! T-that monster old man from yesterday!
+@INP
+Nobue:Everyone get down!
+Saito:No...Nobue!
+@INP
+
+@GRP ygk180.png
+@SND OFF
+Nobue:Firing the centralized light particle delivery system machine!!
+@TIM 120
+@SND se25.wav
+@GRP ygk180a.png
+@TIM 1
+@GCP 600 260 0 0 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 520 0 0
+@TIM 8
+@GCP 600 260 0 780 0 0
+@TIM 8
+@GCP 600 260 0 520 0 0
+@TIM 8
+@GCP 600 260 0 780 0 0
+@TIM 8
+@GCP 600 260 0 520 0 0
+@TIM 8
+@GCP 600 260 0 780 0 0
+@TIM 8
+@GCP 600 260 0 520 0 0
+@TIM 8
+@GCP 600 260 0 780 0 0
+@TIM 8
+@GCP 600 260 0 520 0 0
+@TIM 8
+@GCP 600 260 0 1040 0 0
+@TIM 8
+@GCP 600 260 600 0 0 0
+@TIM 8
+@GCP 600 260 600 260 0 0
+@TIM 8
+@GCP 600 260 600 520 0 0
+@TIM 8
+@GCP 600 260 600 780 0 0
+@TIM 8
+@GCP 600 260 600 1040 0 0
+@TIM 4
+@GCP 600 260 0 1040 0 0
+@TIM 4
+@GCP 600 260 600 1040 0 0
+@TIM 4
+@GCP 600 260 0 1040 0 0
+@TIM 4
+@GCP 600 260 600 0 0 0
+@TIM 8
+@GCP 600 260 600 260 0 0
+@TIM 8
+@GCP 600 260 600 520 0 0
+@TIM 8
+@GCP 600 260 600 780 0 0
+@TIM 8
+@GCP 600 260 600 1040 0 0
+@TIM 8
+@GCP 600 260 600 0 0 0
+@TIM 8
+@GCP 600 260 600 260 0 0
+@TIM 12
+@GCP 600 260 600 1040 0 0
+@TIM 4
+@GCP 600 260 600 0 0 0
+@TIM 12
+@GCP 600 260 600 260 0 0
+@TIM 4
+@GCP 600 260 600 520 0 0
+@TIM 8
+@GCP 600 260 600 780 0 0
+@TIM 8
+@GCP 600 260 600 1040 0 0
+@TIM 12
+@GCP 600 260 0 1040 0 0
+@TIM 12
+@GRP ygk135a.png
+@TIM 20
+@GCP 600 260 0 0 0 0
+@TIM 6
+@GCP 600 260 0 260 0 0
+@TIM 6
+@SND se26.wav
+@GCP 600 260 0 520 0 0
+@TIM 4
+@GCP 600 260 600 0 0 0
+@TIM 4
+@GCP 600 260 600 260 0 0
+@TIM 40
+@GCP 600 260 600 520 0 0
+@TIM 140
+
+@GRP ygk135.png
+@SND se27.wav
+@GCP 600 260 0 0 0 0
+@TIM 4
+@GCP 600 260 0 260 0 0
+@TIM 4
+@GCP 600 260 0 0 0 0
+@TIM 4
+@GCP 600 260 0 260 0 0
+@TIM 4
+@GCP 600 260 0 0 0 0
+@TIM 4
+@GCP 600 260 0 260 0 0
+@TIM 4
+@GCP 600 260 0 0 0 0
+@TIM 4
+@GCP 600 260 0 260 0 0
+@TIM 4
+@GCP 600 260 0 0 0 0
+@TIM 4
+@GCP 600 260 0 260 0 0
+@TIM 4
+@GCP 600 260 0 0 0 0
+@TIM 4
+@GCP 600 260 0 260 0 0
+@TIM 4
+@GCP 600 260 0 0 0 0
+@TIM 4
+@GCP 600 260 0 260 0 0
+@TIM 4
+@GCP 600 260 0 0 0 0
+@TIM 4
+Members:You did it!
+Arai:Nngh!
+@TIM 140
+
+@GRP ygk180.png
+Nobue:Arai! Take this!
+ Firing the centralized light particle delivery system machine!!
+@INP
+@SND se25.wav
+@GRP ygk180a.png
+@TIM 1
+@GCP 600 260 0 0 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 520 0 0
+@TIM 8
+@GCP 600 260 0 780 0 0
+@TIM 8
+@GCP 600 260 0 520 0 0
+@TIM 8
+@GCP 600 260 0 780 0 0
+@TIM 8
+@GCP 600 260 0 520 0 0
+@TIM 8
+@GCP 600 260 0 780 0 0
+@TIM 8
+@GCP 600 260 0 520 0 0
+@TIM 8
+@GCP 600 260 0 780 0 0
+@TIM 8
+@SND ag_se06.wav
+@GCP 600 260 0 520 0 0
+@TIM 8
+@GCP 600 260 0 1040 0 0
+@TIM 8
+@GCP 600 260 600 0 0 0
+@TIM 8
+@GCP 600 260 600 260 0 0
+@TIM 8
+@GCP 600 260 600 520 0 0
+@TIM 8
+@GCP 600 260 600 780 0 0
+@TIM 8
+@GCP 600 260 600 1040 0 0
+@TIM 4
+@GCP 600 260 0 1040 0 0
+@TIM 4
+@GCP 600 260 600 1040 0 0
+@TIM 4
+@GCP 600 260 0 1040 0 0
+@TIM 4
+@GCP 600 260 600 0 0 0
+@TIM 8
+@GCP 600 260 600 260 0 0
+@TIM 8
+@GCP 600 260 600 520 0 0
+@TIM 8
+@GCP 600 260 600 780 0 0
+@TIM 8
+@GCP 600 260 600 1040 0 0
+@TIM 8
+@GCP 600 260 600 0 0 0
+@TIM 8
+@GCP 600 260 600 260 0 0
+@TIM 12
+@GCP 600 260 600 1040 0 0
+@TIM 4
+@GCP 600 260 600 0 0 0
+@TIM 12
+@GCP 600 260 600 260 0 0
+@TIM 4
+@GCP 600 260 600 520 0 0
+@TIM 8
+@GCP 600 260 600 780 0 0
+@TIM 8
+@GCP 600 260 600 1040 0 0
+@TIM 12
+@GCP 600 260 0 1040 0 0
+@TIM 12
+
+@GRP ygk188.png
+@SND se28.wav
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 30
+Arai:Myooh!
+Nobue:Damn! It missed!!
+@INP
+
+@GRP ygk121.png
+@SND bgm16.ogg
+Yasuki:That's not the only problem! Look!
+Yoko:YAA!
+@INP
+Kurosawa:He took a direct hit to the stomach, and he's still alive!
+ 
+ T...that old man!
+@INP
+@GRP ygk121a.png
+@TIM 1
+@GCP 600 260 0 1300 0 0
+@TIM 15
+@GCP 600 260 0 1040 0 0
+@TIM 15
+@GCP 600 260 0 780 0 0
+@TIM 15
+@GCP 600 260 0 520 0 0
+@TIM 15
+@GCP 600 260 0 260 0 0
+@TIM 15
+@SND se34.wav
+Arai:Kuroumi! Clear up this problem!
+Elder:Yes!
+@INP
+@GRP ygk121b.png
+@TIM 1
+@GCP 600 260 0 1300 0 0
+@TIM 15
+@GCP 600 260 0 1040 0 0
+@TIM 15
+@GCP 600 260 0 780 0 0
+@TIM 15
+@GCP 600 260 0 520 0 0
+@TIM 15
+@GCP 600 260 0 260 0 0
+@TIM 15
+
+@GRP ygk121c.png
+@ROL 0 40 Up 1 40 5
+@TIM 1
+Elder:Om-ke-kai-bo-om-ke-kai-bo Om-ke...
+@INP
+@SND se29.wav
+
+@GRP ygk139.png
+@GCP 0
+@TIM 8
+@GCP 1
+@TIM 8
+@GCP 0
+@TIM 8
+@GCP 1
+@TIM 8
+@GCP 0
+@TIM 8
+@GCP 1
+@TIM 8
+@GCP 0
+@TIM 8
+@GCP 1
+@TIM 8
+@GCP 0
+@TIM 15
+Saito:AHHH!
+@TIM 80
+@GCP 0
+@TIM 15
+@GCP 1
+@TIM 8
+@GCP 0
+@TIM 15
+@GCP 1
+@TIM 8
+@GCP 0
+@TIM 15
+@GCP 1
+@TIM 8
+@GCP 0
+@TIM 15
+@GCP 1
+@TIM 8
+@GCP 0
+@TIM 15
+@GCP 1
+@TIM 8
+@GCP 0
+@TIM 15
+@GCP 1
+@TIM 8
+Kurosawa:I...I can't move!
+Yasuki:It's like being a statue!
+@INP
+@SND se53.wav
+
+@GRP ygk032a.png
+@GCP 600 260 0 0 0 0
+@TIM 40
+@GRP ygk032b.png
+@GCP 11
+@TIM 12
+@SND se33.wav
+@GCP 10
+@TIM 12
+@GCP 9
+@TIM 13
+@GCP 8
+@TIM 14
+@GCP 7
+@TIM 13
+@GCP 6
+@TIM 12
+@SND se01.wav
+@GCP 5
+@TIM 10
+@GCP 4
+@TIM 6
+@SND ag_se01.wav
+@GCP 3
+@TIM 6
+@GCP 2
+@TIM 4
+@GCP 1
+@TIM 8
+@GCP 0
+@SND se64.wav
+@TIM 60
+Arai:Before I leave...
+@TIM 260
+@GRP ygk195.png
+@SND se30.wav
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+Arai:Taste my stun beam!!
+@TIM 260
+
+@GRP ygk118.png
+@SND se31.wav
+
+@GCP 0
+@TIM 10
+@GCP 3
+@TIM 10
+@GCP 0
+@TIM 10
+@GCP 3
+@TIM 10
+@GCP 1
+@TIM 10
+@GCP 2
+@TIM 10
+@GCP 1
+@TIM 5
+@GCP 2
+@TIM 5
+@GCP 1
+@TIM 5
+@GCP 2
+@TIM 5
+@GCP 1
+@TIM 10
+@GCP 3
+@TIM 2
+@GCP 2
+@TIM 10
+@GCP 1
+@TIM 15
+@GCP 3
+@TIM 2
+@GCP 2
+@TIM 15
+
+Members:AIEEEEEEEEE!!!!
+
+@TIM 250
+
+@GRP ygk136.png
+Arai:They've died...those fools...
+Elder:Master Arai, it seems that Miss Inogashira has fainted.
+@INP
+Arai:It seems trouble always follows Yoko. I'll leave these bodies for the dogs...
+@INP
+@TIM 1
+@GCP 600 260 0 260 0 0
+@TIM 15
+@GCP 600 260 0 520 0 0
+@TIM 15
+@GCP 600 260 0 780 0 0
+@TIM 15
+@GCP 600 260 0 1040 0 0
+@TIM 15
+@GCP 600 260 600 0 0 0
+@TIM 15
+@GCP 600 260 600 260 0 0
+@TIM 15
+@GCP 600 260 600 520 0 0
+@TIM 15
+@GCP 600 260 600 780 0 0
+@TIM 15
+@GCP 600 260 600 1040 0 0
+@TIM 15
+@SND OFF
+
+@GRP gcls.png
+@TIM 185
+Saito:Where am I?
+@INP
+Kurosawa:Saito, is that you?
+ It's pitch-black here and I can't see anything.
+@INP 
+Kurosawa:Hey, is everyone else here?
+@INP
+Yasuki:I'm here.
+@INP
+Tomizawa:What the? Everyone is...?
+@INP
+Nobue:Is it possible that we... are in the afterlife?
+@INP
+Ikariya:No...no, I can't die yet!
+@INP
+
+@SND bgm17.ogg
+@GRP ygk067.png
+Saito:Everyone, look! What? That light!
+Kurosawa:It's here!!
+@INP
+@SND se04.wav
+@TIM 1
+@GCP 600 260 0 260 0 0
+@TIM 15
+@GCP 600 260 0 520 0 0
+@TIM 15
+@GCP 600 260 0 780 0 0
+@TIM 15
+@GCP 600 260 0 1040 0 0
+@TIM 15
+@GRP ygk067a.png
+@SND se53.wav
+@GCP 1
+@TIM 15
+@GCP 2
+@TIM 15
+@GCP 3
+@TIM 15
+@GCP 4
+@TIM 15
+@GCP 5
+@TIM 15
+@GCP 6
+@TIM 15
+@GCP 7
+@TIM 15
+@GCP 8
+@TIM 15
+@GCP 9
+@TIM 15
+@GCP 10
+@TIM 15
+@SND se10.wav
+@GCP 0
+@TIM 15
+@GCP 11
+@TIM 15
+@GCP 0
+@TIM 15
+@GCP 11
+@TIM 15
+@GCP 0
+@TIM 15
+@GCP 11
+@TIM 15
+@TIM 100
+
+Everyone:!!
+@INP
+Saito:Wh...what? This man gives me an eerie feeling!
+@INP
+Face:I am the Sun Mask. I have saved you from death by bringing you here.
+ 
+ You still have a destiny to fullfill.
+@INP
+Yasuki:Destiny?
+@INP
+Sun Mask:You still have things in the world...which must be done!!
+@INP
+Nobue:What are these things?
+@INP
+@SND se06.wav
+Sun Mask:You must prevent the resurrecion of Susanoo, the ultimate god of darkness!
+@INP
+Sun Mask:In ancient times, Susanoo committed a heavenly crime and was cursed.
+ 
+Thus, he was unable to ascend into heaven.
+@INP
+Sun Mask: At his wits' end, he ultimately decided to use his power to destroy himself.
+@INP
+Sun Mask:And so the deed was done over 6000 years ago, but to this day it has not been completed!
+@INP
+Sun Mask:The birth of Yosuke Arai is proof! He is the reincarnation of Susanoo's curse!
+@INP
+Sun Mask:You must not let him carry out his plans! Susanoo must not be resurrected!
+@INP
+Sun Mask:For he who cannot return to heaven shall return to Earth...
+@INP
+Saito:Sun Mask, are you even real?
+@INP
+@SND se10.wav
+@GCP 11
+@TIM 15
+@GCP 0
+@TIM 10
+@GCP 11
+@TIM 15
+@GCP 0
+@TIM 10
+Sun Mask:You...I shall grant you all weapons to use to fight Arai.
+ 
+This will prove that you are not dreaming.
+@INP
+Sun Mask:Also, take this wrist ring!
+ This is proof that you are all Warriors of the Sun!
+@INP
+@GRP ygk067b.png
+@SND se64.wav
+@SND se05.wav
+@GCP 2
+@TIM 8
+@GCP 3
+@TIM 8
+@GCP 4
+@TIM 8
+@GCP 5
+@TIM 8
+@GCP 4
+@TIM 8
+@GCP 3
+@TIM 8
+@GCP 2
+@TIM 8
+@GCP 1
+@TIM 8
+@GCP 1
+@TIM 15
+@GCP 7
+@TIM 15
+@GCP 1
+@TIM 15
+@GCP 7
+@TIM 15
+@GCP 1
+@TIM 15
+@GCP 7
+@TIM 15
+@GCP 2
+@TIM 15
+@GCP 3
+@TIM 15
+@GCP 4
+@TIM 15
+@GCP 5
+@TIM 15
+@GCP 6
+@TIM 15
+@GCP 0
+@TIM 60
+@GRP gcls.png
+@TIM 265
+@SND OFF
+
+@GRP ygk068a.png
+@TIM 1
+@GCP 600 260 0 1040 0 0
+@TIM 15
+@GCP 600 260 0 780 0 0
+@TIM 15
+@GCP 600 260 0 520 0 0
+@TIM 15
+@GCP 600 260 0 260 0 0
+@TIM 15
+@GCP 600 260 0 0 0 0
+@TIM 15
+@GRP ygk068.png
+Saito:We..we're alive...
+@INP
+Ikariya:Was that a dream?
+@INP
+Kurosawa:No! Look!
+@INP
+
+@SND se10.wav
+@GRP ygk198.png
+Tomizawa:This is the ring?
+Nobue:That dream was real!
+@INP
+Kurosawa:We're...
+@INP
+
+@GRP ygk059.png
+@SND se33.wav
+@GCP 2
+@TIM 4
+@GCP 0
+@TIM 4
+@GCP 2
+@TIM 4
+@GCP 2
+@TIM 4
+@GCP 0
+@TIM 4
+@GCP 2
+@TIM 4
+@GCP 0
+@TIM 4
+@GCP 2
+@TIM 8
+@GCP 0
+@TIM 4
+@GCP 2
+@TIM 4
+@GCP 0
+@TIM 4
+@SND se41.wav
+@GCP 2
+@TIM 4
+@GCP 0
+@TIM 4
+@GCP 0
+@TIM 4
+@GCP 1
+@TIM 6
+@GCP 0
+@TIM 2
+@GCP 1
+@TIM 8
+@GCP 0
+@TIM 30
+@SND se56.wav
+@SND se48.wav
+@SND se06.wav
+@GCP 1
+@TIM 40
+Saito:...the Warriors of the Sun!
+@INP
+
+
+@SCN with.eng
+

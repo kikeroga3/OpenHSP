@@ -1,0 +1,190 @@
+@SAV OMAKE
+
+*Omake_Start
+
+@SND OFF
+
+@GRP logo.png
+@SEL *BGM 1:BGM^MODE
+@SEL *Dogu 2:Dogu^Battle
+@SEL *Arai 3:Arai^Battle
+@SEL *Opn 4:Return^to^Start
+@INP
+
+*Dogu
+@SND bgm28.ogg
+@ACT dogu
+@JMP *Omake_Start
+
+*Arai
+@SND bgm40.ogg
+@ACT arai
+@JMP *Omake_Start
+
+*BGM
+
+@SND bgm01.ogg
+01/32
+Mythology that has been distorted
+@INP
+
+@SND bgm02.ogg
+02/32
+GOD GRAVE
+@INP
+
+@SND bgm04.ogg
+03/32
+THEME
+@INP
+
+@SND bgm05.ogg
+04/32
+-DON'T BLOW IT-
+@INP
+
+@SND bgm06.ogg
+05/32
+-Cyber Junction of attack-
+
+@INP
+
+@SND bgm07.ogg
+06/32
+School unattended
+@INP
+
+@SND bgm09.ogg
+07/32
+Ken of the newspaper club
+@INP
+
+@SND bgm11.ogg
+08/32
+-Attack the Oldman-
+@INP
+
+@SND bgm12.ogg
+09/32
+Survey -1
+@INP
+
+@SND bgm13.ogg
+10/32
+Eternal darkness
+@INP
+
+@SND bgm14.ogg
+11/32
+Survey -2
+@INP
+
+@SND bgm15.ogg
+12/32
+Secret crest of evil
+@INP
+
+@SND bgm16.ogg
+13/32
+Power of Darkness
+@INP
+
+@SND bgm17.ogg
+14/32
+WORLD OF SUN MASK
+@INP
+
+@SND bgm18.ogg
+15/32
+WARRIOR OF THE SUN
+@INP
+
+@SND bgm03.ogg
+16/32
+False god worship
+@INP
+
+@SND bgm19.ogg
+17/32
+-Girl in Forest-
+@INP
+
+@SND bgm20.ogg
+18/32
+ARAI HOUSE
+@INP
+
+@SND bgm21.ogg
+19/32
+CURSED SPACE
+@INP
+
+@SND bgm23.ogg
+20/32
+-The Blade of Masamune-
+@INP
+
+@SND bgm25.ogg
+21/32
+Remains
+@INP
+
+@SND bgm26.ogg
+22/32
+Nightfall
+@INP
+
+@SND bgm27.ogg
+23/32
+LEGEND OF SUSANOO
+@INP
+
+@SND bgm28.ogg
+24/32
+EVIL FIST
+@INP
+
+@SND bgm40.ogg
+25/32
+-BODY AEGIS-
+@INP
+
+@SND bgm29.ogg
+26/32
+-RED EYES-
+@INP
+
+@SND bgm30.ogg
+27/32
+LAST MASAMUNE
+@INP
+
+@SND bgm32.ogg
+28/32
+THEME OF VICTORY
+@INP
+
+@SND bgm34.ogg
+29/32
+LOVE'S THEME
+@INP
+
+@SND bgm35.ogg
+30/32
+-RETURN-
+@INP
+
+@SND bgm36.ogg
+31/32
+END TITLE
+@INP
+
+@SND bgm37.ogg
+32/32
+NEXT MORNING
+@INP
+
+@JMP *Omake_Start
+
+*Opn
+

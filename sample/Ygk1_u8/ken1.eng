@@ -1,0 +1,369 @@
+@GRP ygk194.png
+@SND se05.wav
+@TIM 1
+@GCP 600 260 600 780 0 0
+@TIM 15
+@GCP 600 260 600 520 0 0
+@TIM 15
+@GCP 600 260 600 260 0 0
+@TIM 15
+@GCP 600 260 600 0 0 0
+@TIM 15
+@GCP 600 260 0 780 0 0
+@TIM 15
+@GCP 600 260 0 520 0 0
+@TIM 15
+@GCP 600 260 0 260 0 0
+@TIM 15
+@FLG 9 1 *Jp
+@SND bgm20.ogg
+@FLG 8 1 *00
+@FLG 10 1 *00
+@JMP *01
+
+*Jp
+@SND bgm21.ogg
+No one is here.
+ 
+Saito:Where could those two have gone?
+@INP
+@SEL *J0 1:Go^to^Nobue
+@SEL *J1 2:Go^to^Kurosawa
+@INP
+
+*J0
+@SCN nobue.eng
+
+*J1
+@SCN kurosawa.eng
+
+*00
+
+Ikariya:Yo! Saito!
+Saito:I came to see what you found...This?
+@INP
+*01
+Ikariya:This is Yosuke Arai's house.
+Tomizawa:R,really? Someone lives...here?
+@INP
+Saito:So, we're going to break in?
+@INP
+Ikariya:Of course.We can't get started unless if we don't go in.
+@INP
+Saito:Sneaking into someone's house...isn't it a crime?
+@INP
+Tomizawa:Well, isn't it a crime what Arai did?
+@INP
+
+@SND OFF
+@GRP ygk213.png
+@SND bgm21.ogg
+Tomizawa:It sure is gloomy... 
+@INP
+Saito:There's a lot of rooms...
+ Does he have a large family...?
+@INP
+Ikariya:No,there was an incident two years ago...His family died in a fire...
+@INP
+Saito:Now then, what should we do?
+@INP
+
+*02
+@GRP ygk213.png
+@SEL *03 1:Left^room-1
+@SEL *03_1 2:Left^room-2
+@SEL *03_1a 3:Left^room-3
+@SEL *04 4:Go^to^the^second^floor
+@SEL *03_1b 5:Right^room-1
+@SEL *03_1c 6:Rright^room-2
+@SEL *03_1d 7:Right^room-3
+@INP
+
+*03
+@SND se35.wav
+@GRP ygk212.png
+@JMP *03_1msg
+
+*03_1
+@SND se35.wav
+@GRP ygk212_1.png
+Saito:Hey, there's something... that looks like a human is buried!
+@INP
+Tomizawa:A puppet!It looks like it was made of mud!!
+ 
+Ikariya:But it's all in pieces.
+@INP
+Saito:Arai must have made it.
+@INP
+Tomizawa:Maybe... but... why?
+@INP
+Saito:Hmmm...
+@INP
+@JMP *02
+
+*03_1a
+@SND se35.wav
+@GRP ygk212_1a.png
+@JMP *03_1msg
+
+*03_1b
+@SND se35.wav
+@GRP ygk212_1b.png
+@JMP *03_1msg
+
+*03_1c
+@SND se35.wav
+@GRP ygk212_1c.png
+*03_1msg
+There is red clay scattered on the floor.
+@INP
+@JMP *02
+
+*03_1d
+@SND se35.wav
+@GRP ygk212_1d.png
+Saito:Is this, a puppet...?
+@INP
+Tomizawa: That looks like the mask... of the mudmen...
+ 
+Ikariya: What's that?
+@INP
+Tomizawa:It's from Papua New Guinea.
+ ...It's a mask the natives use to communicate with the spirits of their ancestors.
+@INP
+Ikariya:Whoa, you know a lot...
+@INP
+Tomizawa:There's an old comic book that Daijiro Moroboshi made...
+ 
+Saito:Ah, that...
+@INP
+Tomizawa:I was tramatized when I read it in the third grade...
+@INP
+Saito:I see, seeing that artwork and story when you're that young...
+@INP
+Tomizawa:I read it at the barbershop near my home.
+ 
+Ikariya:Oh! I read "Mune Kyun Deka" at my barbershop!
+@INP
+Saito:Let's go to the next place.
+@INP
+@JMP *02
+
+*04
+@GRP ygk210.png
+This is the second floor.
+@INP
+
+*05
+@SEL *06 1:Go^into^the^first^room
+@SEL *06a 2:Go^into^the^second^room
+@SEL *07 3:Go^into^the^room^at^the^end
+@SEL *02 4:Return^to^first^floor
+@INP
+
+*06
+@GRP ygk212_2.png
+@SND se35.wav
+Saito:A small table... is he living here?
+@INP
+Tomizawa:And a pile of issues of "Shonen Someday".Is he reading them?
+@INP
+Ikariya:Hmm, but he just moved didn't he? And these are old issues...
+ 
+Maybe it's from whoever lived here before.
+@INP
+Saito:Tomi, what's in that vase?
+@INP
+Tomizawa:Just dead bugs and dust...
+ The plant inside is completely dead.
+Ikariya:There's no clues here...
+@INP
+Saito:There's some cup noodles... Red soba...
+@INP
+Tomizawa:...It's red soba all right...
+@INP
+@GRP ygk210.png
+@JMP *05
+
+*06a
+@GRP ygk212_2a.png
+@SND se35.wav
+*06a_msg
+There is red clay scattered on the floor.
+@INP
+@GRP ygk210.png
+@JMP *05
+
+*07
+@GRP ygk211.png
+Ikariya:Why is a piece of paper stuck to the door...?
+@INP
+Saito:There's no mistaking it!
+ This must be a special room!He must be holding Yoko here.
+ 
+Ikariya:You think so? It feels deserted.
+@INP
+Tomizawa:Be careful...it might be a trap!
+@INP
+Saito:It'll be fine! Let's open it!!
+@INP
+@SND OFF
+@SND se35.wav
+@TIM 80
+
+@GRP ygk127.png
+@SND se03.wav
+@TIM 250
+@SND bgm22.ogg
+
+@GRP ygk128.png
+@TIM 300
+
+@GRP ygk129.png
+@SND se37.wav
+@TIM 300
+
+@GRP ygk130.png
+@SND se66.wav
+@SND ag_se05.wav
+@GCP 600 260 0 260 0 0
+@TIM 6
+@GCP 600 260 0 0 0 0
+@TIM 6
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 0 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 6
+@GCP 600 260 0 0 0 0
+@TIM 6
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 0 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 0 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 6
+@GCP 600 260 0 0 0 0
+@TIM 6
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 0 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 0 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 200
+@SND OFF
+
+@SND se40.wav
+@GRP ygk229.png
+Ikariya:Ha,ha...I did it!
+@INP
+@SND bgm20.ogg
+Saito:It's just ordinary dirt now...
+ Let's get outta here!!
+@INP
+
+@GRP ygk213a.png
+Everyone descended to the first floor.
+@INP
+@SND se35.wav
+@TIM 1
+@GCP 600 260 0 260 0 0
+@TIM 75
+@SND se35.wav
+@GCP 600 260 0 520 0 0
+@TIM 75
+@SND se35.wav
+@GCP 600 260 0 780 0 0
+@TIM 75
+@SND se35.wav
+@GCP 600 260 0 1040 0 0
+@TIM 125
+
+@GRP ygk227.png
+@SND se39.wav
+@TIM 1
+*YG227
+@GCP 600 260 0 260 0 0
+@TIM 6
+@GCP 600 260 0 0 0 0
+@TIM 6
+@LOP *YG227 6
+Tomizawa:W...who would've expected that!
+@INP
+Saito:It was a trap!!
+@INP
+Ikariya:No, Arai probably still thinks that we're dead...But,what are they!?
+@INP
+Saito:That's it!! They're a guard force against potential intruders! Perhaps they were brought to life by Arai's powers!
+*08
+@INP
+@SEL *10 1:Fight
+@SEL *09 2:Run^Away
+@INP
+
+*09
+Everyone is surrounded, it's impossible to run away.
+@JMP *08
+
+*10
+@SND OFF
+@SND bgm23.ogg
+@GRP ygk200.png
+@SND se41.wav
+*YG200
+@TIM 5
+@GCP 600 260 0 0 0 0
+@TIM 5
+@GCP 600 260 0 260 0 0
+@TIM 5
+@GCP 600 260 0 520 0 0
+@TIM 5
+@GCP 600 260 0 780 0 0
+@TIM 5
+@GCP 600 260 0 1040 0 0
+@TIM 5
+@GCP 600 260 0 1300 0 0
+@TIM 5
+@GCP 600 260 0 1560 0 0
+@LOP *YG200 5
+@SND se48.wav
+Saito:Sun Mask gave me this weapon to use against Arai!
+ 
+ Masamune Sword! Let's go!!
+@INP
+
+Saito's operation:Defeat Clay Warrior!!
+@INP
+
+Ikariya:I'll help!!
+Tomizawa:We all must fight!!
+@INP
+
+
+@ACT dogu
+
+@FLG 64 1 *Won
+
+@GRP gcls.png
+Saito that is down.
+@INP
+@SEL *10 1:Retry
+@SEL *Won 2:Give^up
+@INP
+
+*Won
+
+@SCN ken2.eng
+
+

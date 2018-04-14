@@ -1,0 +1,269 @@
+@GRP gcls.png
+@FLG 8 1 *Jp
+
+@GRP ygk045.png
+@FLG 9 1 *00
+@FLG 10 1 *00
+@JMP *01
+
+*00
+@SND bgm14.ogg
+Kurosawa:Back, Saito?
+*01
+Saito:Anything different now?
+Yasuki:I don't think so.
+@FLG 9 0 *14
+@INP
+@SND OFF
+
+@SND se32.wav
+@GRP ygk045a.png
+@FLG 8 1
+Yaskui:You! Suspicous person!
+ Who are you!?.
+@INP
+@SND se41.wav
+@SND se08.wav
+@GRP ygk045b.png
+Yasuki:NUOOOOH!!
+@TIM 150
+@GRP ygk046.png
+@SND se60.wav
+Yasuki:I got you!
+Young Woman:Eeeeekk!!
+@INP
+Yasuki:Ugooooo!!
+Saito:Ah!! Wait,Yasuki!! Don't hit!!
+ That's a young woman!!
+@INP
+
+@SND bgm34.ogg
+@GRP ygk162.png
+Saito:That was startling...
+Kurosawa:It's Yasuki's fault!
+Yasuki:I was unprepared!
+@INP
+Yasuki:I thought it would be one of Arai's followers.
+@INP
+The girl is about 15 or 16 years old.
+Younger than Saito and his friends.
+@INP
+Saito:Yeah, what are we going to do?
+*02
+@INP
+@SEL *04 1:Talk
+@SEL *07 2:Calm
+@SEL *06 3:"Remove"^her
+@SEL *05 4:Fight
+
+@INP
+
+*04
+@FLG 11 1 *08
+Young Woman:..................
+@JMP *02
+
+*05
+@FLG 13 1 *5C
+@FLG 12 1 *5A
+@FLG 12 1
+Kurosawa:Saito, what are you doing?
+@JMP *5B
+
+*5A
+Kurosawa:Saito, what are you doing this time?
+ 
+*5B
+Saito:No...if I were to hit her, I think it would show my bad side...
+@INP
+Yasuki:Yeah, you're right about that.
+Kurosawa:Are you guys stupid...?
+@FLG 13 1
+@JMP *02
+
+*5C
+@FLG 15 1 *5D
+@FLG 15 1
+@GRP ygk019.png
+@SND se17.wav
+@SND se33.wav
+Saito:Uuh!! Fast!! But, this movement!?
+@INP
+
+@GRP ygk162.png
+Kurosawa:Look at you, fighting this kid, you've got no class at all, dude.
+@INP
+Yasuki:Haha! Aren't you getting more scared?
+ 
+Kurosawa:What the hell are you saying...
+@JMP *02
+
+*5D
+Kurosawa:Quit it!
+@JMP *02
+
+*06
+@FLG 14 1 *6C
+@FLG 12 1 *6A
+@FLG 12 1
+Kurosawa:Saito,what are you doing?
+@JMP *6B
+
+*6A
+Kurosawa:Saito,what are you doing this time?
+ 
+*6B
+Saito:No, I can't do that.It's immoral.
+@INP
+Yasuki:Yeah,you got a point there.
+Kurosawa:...Suit yourself.
+@INP
+Saito:S,stop...It's a joke!
+Yasuki:What...
+@FLG 14 1
+@JMP *02
+
+*6C
+Saito:Th...that's it,I'm doing it!!
+@INP
+Kurosawa:...So, how about you do it?
+@INP
+Saito:I'm...not gonna.
+Yasuki:Psh, wuss.
+@JMP *02
+
+*07
+Saito:Ma'am, forgive me for the impoliteness of my subordinates.
+ 
+ I'm sorry if we scared you.
+@INP
+Saito:Please listen to us with an open mind.
+ 
+Young Woman:.........
+@INP
+Saito:It's all right for you to call me "older brother"...
+@INP
+Yasuki:Wha!
+Kurosawa:What the hell, Saito...
+
+@INP
+@FLG 13 0 *7A
+@FLG 14 0 *7A
+Young Woman:...Ye,yes
+Kurosawa:Really!
+
+@FLG 11 1
+@JMP *02
+
+*7A
+Young Woman:............
+@INP
+Kurosawa:...It's no good.
+Yasuki:And who's supposed to be your subordinate?
+@JMP *02
+
+*08
+@SND bgm19.ogg
+Saito:What are you doing here?
+@INP
+
+Young Woman:I'm looking for my grandpa.
+Saito:Grandpa?
+@INP
+Young Woman:He was invited here by an archeological team about a week ago, but he hasn't returned home yet.
+@INP
+Kurosawa:What does your grandpa look like?
+@INP
+Young Woman:Um...he looks kinda weird...
+ 
+Kurosawa:Weird...what do you mean?
+@INP
+Young Woman:His hairstyle is like from the Yayoi or Jomon era, it's the same with his clothes.
+@INP
+Kurosawa:........Hey!
+Young Woman:........Ah!
+@INP
+
+Saito:Did you ever talk to one of the archaeologists with a mustache and crew cut?
+@INP
+Young Woman:Y,yes,do you know him...?
+@INP
+
+@GRP ygk041.png
+Kurosawa:What is your name?
+Young Woman:My name is Mitsuki Kuromi.
+@INP
+Saito:Kuroumi?
+ 
+The young woman is the old man's(Kuroumi) grandchild.
+@INP
+Saito:Sooooo,what should I do?
+*09
+@INP
+@SEL *10 1:Ask^about^Arai
+@SEL *11 2:Ask^about^the^old^man
+@SEL *12 3:Ask^to^leave^the^ruins
+@SEL *13 4:Take^her^hostage
+@INP
+
+*10
+Mitsuki:I don't know that person.
+@JMP *09
+
+*11
+Mitsuki:Grandpa taught me about black magic handed down from the late Jomon era.
+@INP
+Mitsuki:So he always invited me when he went on expeditions to ancient sites.
+@JMP *09
+
+*12
+Saito:This is a dangerous place.
+ You should leave.
+Mitsuki:But I have to look for grandpa.
+@JMP *09
+
+*13
+@SND OFF
+@SND se06.wav
+@GRP ygk167.png
+Saito:You got this, Yasuki?
+ Take that girl as a hostage.
+Yasuki:Understood.
+@INP
+Kurosawa:But,how are we going to keep her out of sight?
+ 
+ She'll be inconvienent to carry...
+@INP
+Saito:Put her in a bag!
+@INP
+Saito:I'll go check on everyone else.
+ To see if any new information has come up.
+*14
+@INP
+@SEL *15 1:Go^to^Nobue
+@SEL *16 2:Go^to^Ikariya^and^Tomizawa
+@INP
+
+*15
+@SND OFF
+@SCN nobue.eng
+
+*16
+@SND OFF
+@SCN ken1.eng
+
+*Jp
+@SND bgm03.ogg
+@GRP ygk206a.png
+@FLG 16 1
+Saito:Anything change?
+Kurosawa:Yeah...do you feel something strange as well?
+@INP
+Saito:What is this weird feeling?
+Kurosawa:It feels like something could come out at any time.
+@INP
+Yasuki:There's something in there...Something!!
+
+@JMP *14
+
+@SND OFF

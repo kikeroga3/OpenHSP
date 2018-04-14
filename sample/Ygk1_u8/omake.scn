@@ -1,0 +1,190 @@
+@SAV おまけモード
+
+*Omake_Start
+
+@SND OFF
+
+@GRP logo.png
+@SEL *BGM １：ＢＧＭを聴く（全３２曲）
+@SEL *Dogu ２：土偶バトル
+@SEL *Arai ３：新井バトル
+@SEL *Opn ４：ゲームの開始に戻る
+@INP
+
+*Dogu
+@SND bgm28.ogg
+@ACT dogu
+@JMP *Omake_Start
+
+*Arai
+@SND bgm40.ogg
+@ACT arai
+@JMP *Omake_Start
+
+*BGM
+
+@SND bgm01.ogg
+０１／３２
+歪められた神話
+@INP
+
+@SND bgm02.ogg
+０２／３２
+神墓
+@INP
+
+@SND bgm04.ogg
+０３／３２
+ＴＨＥＭＥ
+@INP
+
+@SND bgm05.ogg
+０４／３２
+ＺＥＰＰＥＴＳの演奏・“ＤＯＮ’Ｔ　ＢＬＯＷ　ＩＴ”
+@INP
+
+@SND bgm06.ogg
+０５／３２
+Ｕ戟隊の演奏・“襲撃のサイバージャンクション”
+@INP
+
+@SND bgm07.ogg
+０６／３２
+無人の校舎
+@INP
+
+@SND bgm09.ogg
+０７／３２
+新聞部のケンちゃん
+@INP
+
+@SND bgm11.ogg
+０８／３２
+老人の攻撃　－Ａｔｔａｃｋ　ｔｈｅ　Ｏｌｄｍａｎ－
+@INP
+
+@SND bgm12.ogg
+０９／３２
+調査　－１
+@INP
+
+@SND bgm13.ogg
+１０／３２
+暗き悠久
+@INP
+
+@SND bgm14.ogg
+１１／３２
+調査　－２
+@INP
+
+@SND bgm15.ogg
+１２／３２
+邪悪の秘紋
+@INP
+
+@SND bgm16.ogg
+１３／３２
+闇の力
+@INP
+
+@SND bgm17.ogg
+１４／３２
+太陽仮面の世界
+@INP
+
+@SND bgm18.ogg
+１５／３２
+太陽の戦士
+@INP
+
+@SND bgm03.ogg
+１６／３２
+邪神崇拝
+@INP
+
+@SND bgm19.ogg
+１７／３２
+玄海弥月のテーマ　－Ｇｉｒｌ　ｉｎ　Ｆｏｒｅｓｔ－
+@INP
+
+@SND bgm20.ogg
+１８／３２
+ＡＲＡＩ　ＨＯＵＳＥ
+@INP
+
+@SND bgm21.ogg
+１９／３２
+呪われた空間
+@INP
+
+@SND bgm23.ogg
+２０／３２
+マサムネ・ファイト
+　－Ｔｈｅ　Ｂｌａｄｅ　ｏｆ　Ｍａｓａｍｕｎｅ－
+@INP
+
+@SND bgm25.ogg
+２１／３２
+遺跡
+@INP
+
+@SND bgm26.ogg
+２２／３２
+日暮れ
+@INP
+
+@SND bgm27.ogg
+２３／３２
+荒ノ王伝説
+@INP
+
+@SND bgm28.ogg
+２４／３２
+凶拳・裏骨法
+@INP
+
+@SND bgm40.ogg
+２５／３２
+安木・畜生策　－ＢＯＤＹ　ＡＥＧＩＳ－
+@INP
+
+@SND bgm29.ogg
+２６／３２
+赤い眼　－ＲＥＤ　ＥＹＥＳ－
+@INP
+
+@SND bgm30.ogg
+２７／３２
+最後のマサムネ
+@INP
+
+@SND bgm32.ogg
+２８／３２
+遊撃隊・勝利のテーマ
+@INP
+
+@SND bgm34.ogg
+２９／３２
+愛のテーマ
+@INP
+
+@SND bgm35.ogg
+３０／３２
+帰還　－ＲＥＴＵＲＮ－
+@INP
+
+@SND bgm36.ogg
+３１／３２
+ＥＮＤ　ＴＩＴＬＥ
+@INP
+
+@SND bgm37.ogg
+３２／３２
+ＮＥＸＴ　ＭＯＲＮＩＮＧ
+@INP
+
+@JMP *Omake_Start
+
+*Opn
+

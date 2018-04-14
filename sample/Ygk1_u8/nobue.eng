@@ -1,0 +1,1653 @@
+@FLG 10 1
+@FLG 9 0 *00
+@FLG 16 0 *00
+@JMP *03
+
+*00
+@SND bgm12.ogg
+@GRP ygk168.png
+Saito:Did you find anything?
+Nobue:I'm looking at this book right now.
+@INP
+Saito:(I wonder what everyone else is doing...)
+@INP
+@SEL *01 1:Check^on^Kurosawa's^group
+@SEL *02 2:Check^on^Ikariya's^group
+@INP
+
+*01
+@SND OFF
+@SND bgm14.ogg
+@SCN kurosawa.eng
+
+*02
+@SND OFF
+@SND bgm20.ogg
+@SCN ken1.eng
+
+*03
+
+@GRP ygk169.png
+Saito:Ken and Tomi, you're here?
+Ikariya:We didn't find anything around Arai's house, so we came here.
+@INP
+Saito:Oh? So, Nobue, did you find anything?
+@INP
+@SND bgm13.ogg
+Nobue:I skimmed through the Kojiki and some other Japanese myths.
+@INP
+Nobue:I think the crime of Susanoo that Sun Mask mentioned was the ﾞHeavenly Sinﾞ, the murder of the sun godess Ameterasu.
+@INP
+Nobue:He also murdered the Gokoku no Kami afterwards...
+@INP
+Nobue:These deeds probably indicated natural disasters in the ancient world which were attributed to Susanoo.
+@INP
+Nobue:According to Sun Mask, Susanoo was banished after this and committed suicide. Let's go over what happened after this.
+@INP
+Nobue:He journeyed to Izumo, defeated Yamata no Orochi so he could marry Kushinada-Hime, had a child...
+@INP
+Nobue:...and then fled to the underworld.
+@INP
+Nobue:Is that right, though?
+ Sun Mask said that Susanoo's suicide took place, but was never complete!
+@INP
+Nobue:Also, these are just my thoughts, but...Why would a dying man want to take a wife?
+@INP
+Saito:That I don't know.
+ I guess if you were on the verge of dying, you'd wanna be with a woman, huh?
+@INP
+Nobue:............
+@INP
+Tomizawa:......Uh huh.
+@INP
+Ikariya:Saito has a point there.
+@INP
+Nobue:Whatever. That's just one opinion.
+@INP
+Nobue:Here's my reasoning, the natural disasters and then Kushinada-Hime and Yamata no Orochi after the Heavenly Sin.
+@INP
+Nobue:...Are all these things Susanoo's doing?
+@INP
+Nobue:Susanoo was the child of Izanagi, the God of Creation, but even with the body of a god, he had a wild temperment.
+@INP
+Nobue:Very much the opposite of a noble hero...
+@INP
+Nobue:So could Kushinada-Hime represent Susanoo's noble spirit, and Yamata no Orochi his wicked wild streak? 
+@INP
+Ikariya:Kushinada bore Susanoo's child, and Yamata no Orochi was slain by Susanoo himself...
+@INP
+
+Saito:So Arai is Yamata no Orochi...?
+@INP
+Nobue:That's possible, although I think it's foolish to jump to that conclusion.
+@INP
+Nobue:In the Kojiki, Orochi is flayed to pieces by Susanoo's sword, but other sources say that Orochi fled after
+@INP
+Nobue:two of its eight heads were severed.
+@INP
+Tomizawa:Defeating Orochi may have been part of Susanoo's suicidal nature, but he still wasn't able to kill himself...
+@INP
+Ikariya:That reminds me...Arai went to Yoko at the Urayama ruins and told her once they were one single person...!!
+@INP
+Nobue:That's it!!
+ It's just as I thought!
+ Yoko Inogashira and Yosuke Arai are Kushinada and Orochi...
+@INP
+Nobue:...So they must be descendants of Susanoo, God of Destruction!!
+@SND bgm15.ogg
+@INP
+
+@GRP ygk158.png
+@SND se53.wav
+Saito:If that's true, then what Sun Mask said about Susanoo's resurrection...!
+@INP
+Nobue:Good and evil...When two become one, the blood of the lost god shall awaken...So that means...
+@INP
+Nobue:Susanoo will reappear...
+@INP
+Ikariya:If that's true, then what'll happen?
+@INP
+Nobue:Susanoo is a god with the power to upset the cosmos...If Arai got ahold of such power,then the world would...
+@SND se34.wav
+@INP
+
+@GRP ygk178.png
+@SND se37.wav
+@GCP 600 260 600 1040 0 0
+@TIM 15
+@GCP 600 260 600 780 0 0
+@TIM 15
+@GCP 600 260 600 520 0 0
+@TIM 15
+@GCP 600 260 600 260 0 0
+@TIM 15
+@GCP 600 260 600 0 0 0
+@TIM 15
+@GCP 600 260 0 1040 0 0
+@TIM 15
+@GCP 600 260 0 780 0 0
+@TIM 15
+@GCP 600 260 0 520 0 0
+@TIM 15
+@GCP 600 260 0 260 0 0
+@TIM 15
+Saito:...Be his toy!!
+@INP
+@SND se53.wav
+@GRP ygk174.png
+Saito:Everybody! Let's go to the ruins!! Something is hidden there, Arai must be headed there too!
+@INP
+Saito:We'll ambush him and take him down!! ...We must stop Susanoo from being reborn!!
+@INP
+
+@SND OFF
+@GRP gcls.png
+                 ACT 3
+                Arrival.
+@INP
+
+@GRP ygk206a.png
+@SND bgm21.ogg
+@INP
+@GRP ygk206.png
+Kurosawa:Yo, everyone.
+ Why are all of you here?
+@INP
+Saito:We're going to ambush Arai here.
+ Anything new here?
+@INP
+Yasuki:Since you were last here, it's been getting weirder, do you hear that?
+ 
+Saito:Eh?
+@INP
+Kurosawa:Everyone be quiet and listen.
+@INP
+Ikariya:Is it a rumbling in the ground? 
+@INP
+Nobue:The ground is shaking a bit, right?
+ 
+Tomizawa:Is this a harbinger of a major disaster?
+@INP
+@SND bgm25.ogg
+
+*04
+@GRP ygk087d.png
+Saito:Yeah. What should we think about?
+@INP
+@SEL *05 1:Break^barrier
+@SEL *06 2:How^to^stop^Arai
+@SEL *07 3:Reflect^on^events
+@SEL *10 4:Think^about^Susanoo
+@INP
+
+*05
+@FLG 17 1 *A0
+Saito:Hey everyone, how do you think we can beat this barrier?
+@INP
+Kurosawa:Hmm...
+Ikariya:None of us know magic...
+@INP
+Nobue:We'll just have to wait for Arai.
+@INP
+@JMP *04
+
+*A0
+@FLG 17 2
+@GRP ygk153.png
+@SND se42.wav
+@SND se41.wav
+*YG153
+@TIM 15
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 520 0 0
+@TIM 10
+@GCP 600 260 0 780 0 0
+@LOP *YG153 4
+Saito:I'll use this, UOOOOHHHHHHH!!
+@INP
+
+@GRP ygk161.png
+Kurosawa:What are you doing?
+@INP
+@JMP *04
+
+*06
+@FLG 18 1 *11
+@FLG 24 1 *Ms
+@FLG 24 1
+Saito:Let's plan on how to beat Arai.
+Kurosawa:Plan? Heh,when he comes, we'll fight him!!
+@INP
+Yasuki:And we have the weapons that we recieved from Sun Mask!!
+@INP
+@JMP *04
+
+*Ms
+@GRP ygk040.png
+Saito prepared for the battle with Arai by taking practice swings with his sword.
+@INP
+
+*YG040
+@TIM 30
+@GCP 600 260 0 0 0 0
+@TIM 30
+@SND se16.wav
+@GCP 600 260 0 260 0 0
+@SND se17.wav
+@LOP *YG040 5
+Saito:Hya!! Hya! Hya!! Hya! Hya!! Hya!
+@INP
+@FLG 24 0
+@JMP *04
+
+*07
+@FLG 17 2 *08
+@FLG 17 3 *09
+@FLG 17 1
+Saito:That's it!! If the secret crest could drive off those things at Arai's house...
+@INP
+Saito:Then maybe it should be able to break that barrier at the ruins!
+@INP
+@JMP *04
+
+*08
+@FLG 17 3
+@GRP ygk232.png
+Saito:Yoko's shoe...Yeah...that's not going to be useful.
+@INP
+@JMP *04
+
+*09
+@FLG 18 1
+@GRP ygk048.png
+Saito:That reminds me,how's that girl doing, Yasuki?
+@INP
+
+@GRP ygk069.png
+Yasuki:Ah, she's in this polyethylene bag. She was kicking and struggling a little while ago, but she's calmed down.
+@INP
+Saito:Did you make a small air hole for her?
+ 
+Kurosawa:Well,she's breathing all right.
+@INP
+Saito:Well be careful, dude.If she dies she won't be any good as a hostage.
+@INP
+@JMP *04
+
+*10
+@GRP ygk058.png
+Saito:By uniting Orochi and Kushinada, Susanoo will be resurrected...
+@INP
+Saito:Susanoo is these two sides of right and wrong,to bring them together...
+@INP
+Saito:Arai is the wicked side,and he wants the pure side...?
+@INP
+Saito:...If Arai becomes Susanoo, what is he planning to do?
+@INP
+@JMP *04
+
+*11
+@SND OFF
+Nobue:If you insist on planning, we could set up a trap around here.
+@INP
+
+@GRP ygk173.png
+Tomizawa:I shall dig a pitfall.
+@SND bgm26.ogg
+@INP
+
+@GRP ygk126.png
+Kurosawa:Looks like the sun is setting...
+@INP
+@GCP 600 260 0 260 0 0
+@TIM 15
+@GCP 600 260 0 520 0 0
+@TIM 15
+@GCP 600 260 0 780 0 0
+@TIM 15
+@GCP 600 260 0 1040 0 0
+@TIM 15
+@GCP 600 260 600 0 0 0
+@TIM 15
+@GCP 600 260 600 260 0 0
+@TIM 15
+@GCP 600 260 600 520 0 0
+@TIM 15
+@GCP 600 260 600 780 0 0
+@TIM 15
+@GCP 600 260 600 1040 0 0
+@TIM 1
+@GCP 600 260 600 1040 0 0
+
+@SAV Arrival
+
+@GRP ygk193.png
+@GCP 600 260 600 1040 0 0
+@TIM 15
+@GCP 600 260 600 780 0 0
+@TIM 15
+@GCP 600 260 600 520 0 0
+@TIM 15
+@GCP 600 260 600 260 0 0
+@TIM 15
+@GCP 600 260 600 0 0 0
+@TIM 15
+@GCP 600 260 0 1040 0 0
+@TIM 15
+@GCP 600 260 0 780 0 0
+@TIM 15
+@GCP 600 260 0 520 0 0
+@TIM 15
+@GCP 600 260 0 260 0 0
+@TIM 15
+Yasuki:Arai hasn't come yet...it's already 8 o'clock...
+@INP
+Ikariya:Maybe he isn't going to come today?
+@INP
+Kurosawa:Anyone up for a game of cards?
+@INP
+Tomizawa:Hey guys,I bought some food.
+@INP
+
+@SND OFF
+@SND se45.wav
+@GCP 14
+@TIM 10
+@GCP 11
+@TIM 8
+@GCP 8
+@TIM 6
+@GCP 5
+@TIM 4
+@GCP 2
+@TIM 2
+@GCP 5
+@TIM 10
+@GCP 8
+@TIM 8
+@GCP 11
+@TIM 6
+@GCP 14
+@TIM 4
+@TIM 10
+@GCP 11
+@TIM 8
+@GCP 8
+@TIM 6
+@GCP 5
+@TIM 4
+@GCP 2
+@TIM 2
+@GCP 5
+@TIM 10
+@GCP 8
+@TIM 8
+@GCP 11
+@TIM 6
+@GCP 14
+@TIM 4
+@TIM 10
+@GCP 11
+@TIM 8
+@GCP 8
+@TIM 6
+@GCP 5
+@TIM 4
+@GCP 2
+@TIM 2
+@GRP ygk174.png
+@SND se33.wav
+Saito:Uwaah! W...what the!?
+Nobue:The barrier...is opening!!?
+@INP
+
+@GRP ygk224.png
+@SND se06.wav
+@SND se10.wav
+@SND se45.wav
+*YG224
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 520 0 0
+@TIM 10
+@GCP 600 260 0 780 0 0
+@TIM 10
+@GCP 600 260 600 0 0 0
+@TIM 10
+@GCP 600 260 600 260 0 0
+@TIM 10
+@GCP 600 260 600 520 0 0
+@TIM 10
+@GCP 600 260 600 780 0 0
+@TIM 10
+@LOP *YG224 5
+@SND bgm27.ogg
+Saito:Ah! Arai!!
+@INP
+
+@GRP ygk223.png
+@SND se37.wav
+*YG223a
+@GCP 600 260 0 0 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 520 0 0
+@TIM 10
+@LOP *YG223a 4
+*YG223b
+@GCP 600 260 0 780 0 0
+@TIM 10
+@GCP 600 260 0 1040 0 0
+@TIM 10
+@GCP 600 260 0 1300 0 0
+@TIM 10
+@LOP *YG223b 4
+@GCP 600 260 600 0 0 0
+@TIM 10
+@GCP 600 260 600 260 0 0
+@TIM 12
+@GCP 600 260 600 520 0 0
+@TIM 14
+@GCP 600 260 600 780 0 0
+@TIM 16
+@GCP 600 260 600 1040 0 0
+@TIM 18
+@GCP 600 260 600 1300 0 0
+@TIM 20
+@GCP 600 260 1200 0 0 0
+@TIM 22
+@GCP 600 260 1200 260 0 0
+@TIM 24
+@GCP 600 260 1200 520 0 0
+@TIM 26
+@GCP 600 260 1200 780 0 0
+@TIM 28
+@GCP 600 260 1200 1040 0 0
+@TIM 30
+@GCP 600 260 1200 1300 0 0
+@TIM 32
+@GCP 600 260 1200 1300 0 0
+Arai:Fuuuuu...
+@INP
+@GCP 600 260 1200 1300 0 0
+Arai:Hey! You bastards are alive!
+ You all should have died when you recieved my stun beam! Persistent!
+@INP
+@GCP 600 260 1200 1300 0 0
+Kurosawa:So that's where you went...behind that barrier!
+@INP
+@GCP 600 260 1200 1300 0 0
+Saito:Arai! You bastard,where's Yoko!?
+ What did you do to her in there!?
+@INP
+
+@GRP ygk196.png
+@SND se10.wav
+Arai:I made the preparations to draw out the power hidden in her blood...
+@INP
+Nobue:That's it!! As I expected, you're Yamata no Orochi! You're uniting with Kushinada-Hime to revive Susanoo!?
+@INP
+Arai:What? You said Susanoo just now... I don't know how or where you found that out...
+@INP
+Arai:But you did well to do so much research in such a short time...
+ 
+ I'll give you an A for effor, but...
+@INP
+@GRP ygk196a.png
+@SND se03.wav
+Arai:You're wrong, Nobue!
+@INP
+Arai:You were so close, but you seem to have misunderstood something...
+@INP
+Arai:You called me Yamata no Orochi just now, and you said that Yoko Inogashira was Kushinada-Hime.
+@INP
+Nobue:T-that's right.
+@INP
+Arai:You're just a dumbass know-it-all. I thought you were more clever than this. How disappointing...
+@INP
+Arai:And I was amazed when I heard about your 20,000 IQ...
+@INP
+
+@GRP ygk197.png
+Nobue:W..what, you called me a d...dumbass...gh... My 2...20,000IQ...
+@INP
+Arai:and that he had the power to control the universe.
+ 
+ However, without being fully used, the power was lost.
+@INP
+Saito:What do you mean?
+@INP
+@GRP ygk197a.png
+Arai:Susanoo has two seperate personalities...Each one was inclined toward its own virtues and vices.
+@INP
+Arai:The two sides hating and opposing each other. Conflict was a daily occurrence for Susanoo.
+@INP
+Arai:And so, one day he finally went mad and destroyed the earth.
+@INP
+Arai:But Susanoo was a god, so his immortal body could not easily be destroyed!
+@INP
+Arai:He thought, "How exactly can I destroy myself?"
+@INP
+Arai:The answer was simple: Yoko and me!! Susanoo created a man and a woman...
+ 
+ Do you understand what this means?
+@INP
+
+@GRP ygk196.png
+Nobue:The Ukehi(A "trial by pledge" in Japanese myth)? He used the Ukei and went to see Tsukoyomi...?
+@INP
+Arai:Shut up, you feeble-minded know-it-all monkey!
+@INP
+@GRP ygk197a.png
+Nobue:OO-OO!! AH-AH!!
+@INP
+Saito:What are you talking about?
+@INP
+Arai: Susanoo created a man and woman, Yoko and me in a previous life.
+@INP
+Saito:What!? How dare you talk about Yoko like that!
+@INP
+@GRP ygk197.png
+Arai:Be jealous! Be jealous, Saito!
+ Yoko and I are not strangers!
+ We were one! We were once the same person!
+@INP
+Saito:Keh!!You're wrong!!
+ There must be a mistake!
+ T-that's right! You're half-brother and sister!!
+@INP
+Saito:You have different mothers!!
+ In your face! You and Yoko are half...
+@INP
+Arai:Heheheh...
+Saito:What...What's wrong...
+@INP
+Arai:I'm sorry Saito, but you're not revealing anything new here.
+ 
+ Yoko and I are the two who made one complete person.
+@INP
+Arai:When Susanoo split in two, his power was divided in half.
+ 
+ His sides became the flesh he had wished death upon...
+@INP
+Arai:They each had seperate descendants, and gradually intermixed with humans, turning more human and more human.
+@INP
+Arai:I will unite the Arai family with the Inogashira family!
+ 
+Saito:......!!
+@INP
+@GRP ygk197a.png
+Arai:I, however, am not human.The demi-god's power transcends space and time.
+@INP
+Arai:I will use the girl with the different power and lineage to summon the power of the lost god!!
+@INP
+Arai:Kuroumi, bring out Yoko!
+@INP
+
+@GRP ygk181.png
+Elder:As you command, Master Arai.
+Saito:Ah! Yoko!!
+@INP
+@SND se53.wav
+@GCP 0
+@TIM 8
+@GCP 2
+@TIM 8
+@GCP 4
+@TIM 8
+@GCP 6
+@TIM 8
+@GCP 1
+@TIM 8
+@GCP 3
+@TIM 8
+@GCP 5
+@TIM 8
+@GCP 7
+Arai:Watch!
+ In a second, Susanoo, ruler of the cosmos, will be resurrected!
+@INP
+
+*12
+@GRP ygk235.png
+Saito:W, What should I do!?
+@INP
+@SEL *13 1:Take^out^the^Masamune^Sword
+@SEL *14 2:Use^Arai's^secret^crest
+@INP
+
+*13
+@SND se15.wav
+@GRP ygk134.png
+Saito:Uooh!! Giveee baaaack Yoko!!
+@INP
+@GRP ygk061.png
+@SND se59.wav
+Arai:Shut up!!
+@GCP 0
+@TIM 100
+Saito:!!
+@SND se71.wav
+@TIM 100
+@GCP 1
+@TIM 4
+@GCP 2
+@TIM 4
+@GCP 3
+@TIM 4
+@SND se48.wav
+@GCP 4
+@TIM 4
+@GCP 5
+@TIM 4
+@GCP 4
+@TIM 2
+@GCP 3
+@TIM 4
+@GCP 2
+@TIM 8
+@GCP 1
+@TIM 20
+@GCP 0
+@TIM 100
+
+@GRP ygk033.png
+@SND se33.wav
+@GCP 0
+@TIM 40
+@GCP 1
+@TIM 4
+@GCP 2
+@TIM 6
+@GCP 0
+@TIM 4
+@GCP 1
+@TIM 2
+@GCP 2
+@TIM 4
+@GCP 1
+@TIM 8
+@GCP 0
+@TIM 15
+@GCP 1
+@TIM 4
+@GCP 2
+@TIM 4
+@GCP 1
+@TIM 4
+
+Saito:!!
+@TIM 120
+
+@GRP ygk184.png
+@SND se49.wav
+Saito:Uaaah!!
+@TIM 180
+Saito was brushed off by Arai's Psychokinesis.
+@INP
+@JMP *Ae
+
+*14
+@SND se10.wav
+*Ae
+@GRP ygk153.png
+@SND se41.wav
+Saito:Hold it, Arai!! Look at this!!
+ I have your family's secret crest!
+ If you do anything to Yoko, I'll destroy it!
+@INP
+Arai:Bwahahahah!!
+Saito:What...Strange!?
+@INP
+Arai:This morning, I forgot my family's charm in the bathroom...I never thought that you would take it from me.
+@INP
+Arai:Because of your chat with Kagawa, you made the wrong guess that it is my secret crest.
+@INP
+Saito:A...wrong guess?
+@INP
+Arai:This thing of destruction, this is my real secret crest!
+ 
+ I'll show you!
+@INP
+Saito:Oh!! That's!!
+@INP
+
+@GRP ygk141.png
+@SND se07.wav
+@GCP 600 260 0 780 0 0
+@TIM 15
+@GCP 600 260 0 520 0 0
+@TIM 15
+@GCP 600 260 0 260 0 0
+@TIM 15
+@GCP 600 260 0 0 0 0
+Arai:Fwahahahaha!!
+@INP
+Arai:This is my ancestors' family crest!! As well as...!!
+@INP
+
+@GRP ygk233.png
+@SND se17.wav
+Arai:The Inogashira family crest!!
+ The two of them match together!!
+@INP
+
+@GRP ygk236.png
+@SND se01.wav
+@SND se05.wav
+@SND se42.wav
+*YG236
+@GCP 600 260 600 780 0 0
+@TIM 8
+@GCP 600 260 600 520 0 0
+@TIM 8
+@GCP 600 260 600 260 0 0
+@TIM 8
+@GCP 600 260 600 0 0 0
+@TIM 8
+@GCP 600 260 0 780 0 0
+@TIM 8
+@GCP 600 260 0 520 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 0 0 0
+@TIM 8
+@LOP *YG236 4
+
+@GRP ygk236a.png
+@SND se46.wav
+@GCP 600 260 0 0 0 0
+@TIM 4
+@GCP 600 260 0 260 0 0
+@TIM 4
+@GCP 600 260 0 520 0 0
+@TIM 6
+@GCP 600 260 0 780 0 0
+@TIM 6
+@GCP 600 260 0 1040 0 0
+@TIM 8
+@GCP 600 260 0 1300 0 0
+@TIM 8
+@GCP 600 260 600 0 0 0
+@TIM 10
+@GCP 600 260 600 260 0 0
+@TIM 10
+@GCP 600 260 600 520 0 0
+@TIM 12
+@GCP 600 260 600 780 0 0
+@TIM 12
+@GCP 600 260 600 1040 0 0
+@TIM 10
+@GCP 600 260 600 1300 0 0
+@TIM 10
+@GCP 600 260 1200 0 0 0
+@TIM 10
+@GCP 600 260 1200 260 0 0
+@TIM 10
+@GCP 600 260 1200 520 0 0
+@TIM 10
+@GCP 600 260 1200 780 0 0
+@TIM 10
+@GCP 600 260 1200 1040 0 0
+@TIM 10
+@GCP 600 260 1200 1300 0 0
+@TIM 150
+
+@GRP ygk226.png
+@SND se47.wav
+*YG226
+@GCP 600 260 0 1560 0 0
+@TIM 8
+@GCP 600 260 0 1300 0 0
+@TIM 8
+@GCP 600 260 0 1040 0 0
+@TIM 8
+@GCP 600 260 0 780 0 0
+@TIM 8
+@GCP 600 260 0 520 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 0 0 0
+@TIM 8
+@LOP *YG226 4
+Arai:The energy, the energy is rising!!
+@INP
+
+@GRP ygk174.png
+Ikariya:Susanoo...Susanoo is going to be revived!!
+ 
+Saito:Attack!! Let's go all at once!!
+@INP
+@SND OFF
+@GRP gcls.png
+
+@SND bgm16.ogg 
+                 ACT 4
+          Battle to the Death.
+@INP
+
+@GRP ygk021.png
+@SND se59.wav
+@GCP 17
+Arai:Kuroumi!!
+ Send these guys to hell!!
+@TIM 250
+@SND se53.wav
+@GCP 1
+@TIM 2
+@GCP 2
+@TIM 3
+@GCP 3
+@TIM 4
+@GCP 4
+@TIM 4
+@GCP 5
+@TIM 4
+@GCP 6
+@TIM 4
+@GCP 7
+@TIM 4
+@GCP 8
+@TIM 3
+@GCP 9
+@TIM 3
+@GCP 10
+@TIM 3
+@GCP 11
+@TIM 2
+@GCP 12
+@TIM 3
+@GCP 13
+@TIM 4
+@SND se01.wav
+@GCP 14
+@TIM 5
+@GCP 15
+@TIM 6
+@GCP 16
+@TIM 8
+
+Elder:As you wish, Master.
+@INP
+
+@GRP ygk199.png
+@SND se03.wav
+@GCP 600 260 1200 520 0 0
+@TIM 20
+@GCP 600 260 1200 260 0 0
+@TIM 20
+@GCP 600 260 1200 0 0 0
+@TIM 20
+@GCP 600 260 600 520 0 0
+@TIM 20
+@GCP 600 260 600 260 0 0
+@TIM 20
+@GCP 600 260 600 0 0 0
+@TIM 20
+@GCP 600 260 0 520 0 0
+@TIM 20
+@GCP 600 260 0 260 0 0
+@TIM 20
+@GCP 600 260 0 0 0 0
+@TIM 20
+@SND se29.wav
+Elder:Resign yourself to your fate, youngsters...
+@INP
+Kurosawa:His fighting stance is odd!!
+Ikariya:Those strange movements, is he using Chinese martial arts!?
+@INP
+Saito:Are we done for!?
+@INP
+Yasuki:No!! No!! That's wrong!!
+ It can't be...!!
+Saito:Wh,what is it Yasuki!?
+@INP
+Yasuki:That's it!!
+ No mistake...that's Reverse Koppou!! 
+Ikariya:W...what's that?
+@INP
+@SND se10.wav
+Yasuki:It's a world-renowned style of physical combat, the oldest in Japan, meant as a perfect defense.
+@INP
+Yasuki:They say the people of ancient Japan came up with its attacks to survive the harsh volcanic environment.
+@INP
+Yasuki:One story has it that Takeru Yamato, a Reverse Koppou master, knocked down an elephant with a single kick!
+@INP
+Ikariya:Whoa!! If that's true,then this old guy is gonna be a tough opponent!
+@INP
+Kurosawa:It's giving me the chills.
+@INP
+@SND bgm28.ogg
+Yasuki:Ah, but it's amazing!!
+ The POWER of Koppou, to take out an elephant with one blow.
+@INP
+Yasuki:As an opponent, you'd be unstoppable!!
+
+*15
+@INP
+Saito:Who will attack?
+@INP
+@SEL *17 1:Saito^attacks
+@SEL *18 2:Kurosawa^attacks
+@SEL *20 3:Yasuki^attacks
+@SEL *21 4:Ikariya^attacks
+@SEL *23 5:Nobue^attacks
+@SEL *25 6:Tomizawa^attacks
+@INP
+
+*16
+@GRP ygk199.png
+@GCP 600 260 1200 520 0 0
+@TIM 10
+@GCP 600 260 1200 260 0 0
+@TIM 10
+@GCP 600 260 1200 0 0 0
+@TIM 10
+@GCP 600 260 600 520 0 0
+@TIM 10
+@GCP 600 260 600 260 0 0
+@TIM 10
+@GCP 600 260 600 0 0 0
+@TIM 10
+@GCP 600 260 0 520 0 0
+@TIM 10
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+Elder:Fuooh!!
+@JMP *15
+
+*17
+@FLG 30 2 *17b
+@FLG 30 1 *17a
+@FLG 30 1
+@FLG 29 1
+@GRP ygk240.png
+@SND se15.wav
+Saito:Let's go!! Urahh!!
+@TIM 180
+
+@GRP ygk241.png
+@SND se49.wav
+*Lp241
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 0 0 0
+@TIM 8
+@LOP *Lp241 4
+Saito:Hiiii!!
+@TIM 180
+Kurosawa:What is this technique!?
+Ikariya:He can brush off any attack!!
+@INP
+@JMP *16
+
+*17a
+@FLG 30 2
+@GRP ygk240.png
+@SND se15.wav
+Saito:I'll make you regret it this time!
+@TIM 180
+
+@GRP ygk241a.png
+@SND se68.wav
+@GCP 4
+@TIM 4
+@GCP 5
+@TIM 4
+@GCP 4
+@TIM 4
+@GCP 5
+@TIM 4
+@GCP 4
+@TIM 2
+@GCP 5
+@TIM 2
+@GCP 4
+@TIM 2
+@GCP 5
+@TIM 2
+@GCP 3
+@TIM 4
+@GCP 2
+@TIM 4
+@GCP 1
+@TIM 4
+@GCP 0
+@TIM 4
+@GCP 1
+@TIM 6
+@GCP 0
+@TIM 6
+@TIM 130
+@JMP *16
+
+*17b
+@FLG 30 0
+Saito:Hold it...something's weird!
+ I can't stand!
+@INP
+Nobue:It's no good! You haven't recovered from the last attack！
+ 
+ Look! He's laughing!
+@INP
+Kurosawa:It wasn't a clean hit last time.
+ 
+Saito:Uu
+@INP
+Nobue:Maybe you aren't shouting loud enough, Saito!
+ 
+Saito:I...idiot. You can't win just by yelling. You try it!
+@INP
+@JMP *15
+
+*18
+@FLG 19 1 *19
+@GRP ygk149.png
+@SND se58.wav
+@SND se48.wav
+Kurosawa:It's my turn!! Let's go!!
+ The weapon I recieved from Sun Mask!!
+ Two sets of nunchaku!!
+@INP
+
+@GRP ygk165.png
+@SND se51.wav
+@GCP 0
+@TIM 20
+@GCP 1
+@TIM 10
+@GCP 2
+@TIM 10
+@GCP 3
+@TIM 6
+@GCP 4
+@TIM 10
+@GCP 5
+@TIM 8
+@GCP 3
+@TIM 10
+@GCP 2
+@TIM 10
+@GCP 3
+@TIM 6
+@GCP 4
+@TIM 10
+@GCP 3
+@TIM 6
+@GCP 2
+@TIM 10
+@GCP 1
+@TIM 20
+@GCP 0
+@TIM 0
+@GCP 3
+@TIM 10
+@GCP 2
+@TIM 10
+@GCP 5
+@TIM 10
+@GCP 4
+@TIM 10
+@GCP 1
+@TIM 20
+@GCP 0
+@TIM 20
+@GCP 1
+@TIM 10
+@GCP 2
+@TIM 10
+@GCP 3
+@TIM 6
+@GCP 4
+@TIM 10
+@GCP 5
+@TIM 8
+@GCP 3
+@TIM 10
+@GCP 2
+@TIM 10
+@GCP 2
+@TIM 10
+@GCP 1
+@TIM 20
+@GCP 0
+@TIM 0
+@GCP 3
+@TIM 10
+@GCP 2
+@TIM 10
+@GCP 5
+@TIM 10
+@GCP 4
+@TIM 10
+@GCP 1
+@TIM 20
+
+Kurosawa:Uuh!! What a fast movement!!
+ He can dodge every attack in the blink of an eye!!
+@INP
+@FLG 19 1
+@INP
+@JMP *16
+
+*19
+Kurosawa:It's useless, he can dodge every attack!!
+@JMP *15
+
+*20
+@FLG 19 0 *Ya
+@FLG 20 0 *Ya
+@FLG 21 0 *Ya
+@FLG 22 0 *Ya
+@FLG 23 0 *Ya
+@JMP *27
+
+*Ya
+@GRP ygk185.png
+@SND se59.wav
+*Lp185
+@GCP 600 260 0 260 0 0
+@TIM 15
+@GCP 600 260 0 0 0 0
+@TIM 15
+@LOP *Lp185 4
+Yasuki:Old Man!!
+ Be prepared for my strength!!
+@INP
+
+@GRP ygk237.png
+@SND se54.wav
+*Lp237
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+@LOP *Lp237 4
+Yasuki:Upooh!!
+@FLG 23 1
+@INP
+@JMP *16
+
+*21
+@FLG 20 1 *22
+@GRP ygk164.png
+@SND se42.wav
+@SND se33.wav
+Ikariya:This is my weapon!!
+ Take this! Slingshot attack!!
+@INP
+
+@GRP ygk220.png
+@SND se52.wav
+*Lp220
+@GCP 600 260 0 780 0 0
+@TIM 13
+@GCP 600 260 0 520 0 0
+@TIM 13
+@GCP 600 260 0 260 0 0
+@TIM 13
+@GCP 600 260 0 0 0 0
+@TIM 13
+@LOP *Lp220 4
+Ikariya:Uah!! It's no use!!
+ He just deflects them!
+@FLG 20 1
+@INP
+@JMP *16
+
+*22
+Ikariya:No can do, they just bounce off!
+@JMP *15
+
+*Gk_Yoke
+@GRP ygk180b.png
+Nobue:Firing the centralized light particle delivery system machine!!
+@INP
+@SND se53.wav
+@GCP 0
+@TIM 2
+@GCP 4
+@TIM 2
+@GCP 4
+@TIM 4
+@SND se55.wav
+@GCP 6
+@TIM 8
+@GCP 8
+@TIM 4
+@GCP 1
+@TIM 4
+@GCP 8
+@TIM 4
+@GCP 1
+@TIM 4
+@GCP 3
+@TIM 12
+@GCP 5
+@TIM 12
+@GCP 7
+@TIM 8
+@GCP 9
+@TIM 8
+@GCP 0
+@TIM 20
+
+@GRP ygk156b.png
+@TIM 8
+@SND se56.wav
+@GRP ygk156c.png
+@TIM 8
+@GRP ygk156d.png
+@TIM 8
+@GRP ygk156e.png
+@TIM 8
+@GRP ygk156f.png
+@TIM 8
+@GRP ygk156g.png
+@TIM 8
+@GRP ygk156h.png
+@TIM 8
+@GRP ygk156i.png
+@TIM 8
+Saito:He dodged the laser!
+@INP
+Nobue:No! He can read the angle of my shot, see my movements, he knows everything before I shoot！ This next shot will get him!
+@INP
+@JMP *16
+
+*23
+@FLG 19 0 *Gk_Yoke
+@FLG 20 0 *Gk_Yoke
+@FLG 29 0 *Gk_Yoke
+
+@FLG 21 1 *24
+@GRP ygk180b.png
+Nobue:Firing the centralized light particle delivery system machine!!
+@TIM 180
+@SND se53.wav
+@GCP 0
+@TIM 2
+@GCP 4
+@TIM 2
+@GCP 4
+@TIM 4
+@SND se55.wav
+@GCP 6
+@TIM 8
+@GCP 8
+@TIM 4
+@GCP 1
+@TIM 4
+@GCP 8
+@TIM 4
+@GCP 1
+@TIM 4
+@GCP 3
+@TIM 12
+@GCP 5
+@TIM 12
+@GCP 7
+@TIM 8
+@GCP 9
+@TIM 8
+@GCP 0
+@TIM 60
+@SND OFF
+
+@GRP ygk156a.png
+@SND se59.wav
+@SND se55.wav
+@GCP 600 260 0 1040 0 0
+@TIM 20
+@GCP 600 260 0 780 0 0
+@TIM 4
+@GCP 600 260 0 520 0 0
+@TIM 6
+@GCP 600 260 0 260 0 0
+@TIM 12
+@GCP 600 260 0 0 0 0
+@TIM 92
+
+@GRP ygk156.png
+@SND se56.wav
+*Lp156
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 0 0 0
+@TIM 8
+@LOP *Lp156 9
+Nobue:All right!! A direct hit to the brain!
+@INP
+
+@GRP ygk238b.png
+@SND se05.wav
+
+@GCP 11
+@TIM 10
+@GCP 1
+@TIM 10
+@GCP 2
+@TIM 12
+@GCP 3
+@TIM 12
+@GCP 4
+@TIM 15
+@GCP 5
+@TIM 15
+@GCP 6
+@TIM 15
+@GCP 7
+@TIM 15
+@GCP 8
+@TIM 15
+@GCP 9
+@TIM 12
+@GCP 10
+@TIM 15
+@GCP 0
+@TIM 15
+
+@GRP ygk238a.png
+@TIM 1
+
+* アゴがくがく
+*Lp238a
+@GCP 13
+@TIM 15
+@GCP 1
+@TIM 15
+@LOP *Lp238a 4
+
+* 傷再生
+@SND se04.wav
+@GCP 2
+@TIM 15
+@GCP 3 
+@TIM 15
+@GCP 4
+@TIM 10
+@GCP 5
+@TIM 10
+@GCP 6
+@TIM 12
+@GCP 7
+@TIM 10
+@GCP 8
+@TIM 12
+@GCP 9
+@TIM 12
+@GCP 10
+@TIM 10
+@GCP 11
+@TIM 12
+@GCP 12
+@TIM 15
+@GCP 0
+@TIM 15
+
+@GRP ygk238.png
+@GCP 600 260 0 1300 0 0
+@TIM 30
+@GCP 600 260 0 1040 0 0
+@TIM 25
+@GCP 600 260 0 780 0 0
+@TIM 20
+@GCP 600 260 0 520 0 0
+@TIM 20
+@GCP 600 260 0 260 0 0
+@TIM 20
+@GCP 600 260 0 0 0 0
+@TIM 1
+@SND bgm11.ogg
+Nobue:Uah!! It regenerated!!
+@INP
+@GRP ygk134a.png
+@SND se07.wav
+Arai:Hmph, naturally!!
+ That old man,is not a human being right now, he is carrying the blood of the gods!
+@INP
+Arai:This is his reward for trespassing on sacred ground!!
+ 
+ A foolish man!!
+@INP
+Nobue:What is this!? He's able to regenerate his cell tissue!!
+ 
+ This is his magical power!
+@FLG 21 1
+@INP
+@SND se37.wav
+@JMP *16
+
+*24
+Nobue:It's useless!!
+ The laser can't even hurt him!!
+@JMP *15
+
+*25
+@FLG 22 1 *26
+@GRP ygk140.png
+@SND se53.wav
+@SND se41.wav
+*Lp140
+@TIM 13
+@GCP 600 260 0 260 0 0
+@TIM 11
+@GCP 600 260 0 0 0 0
+@LOP *Lp140 6
+Tomizawa:Sun Mask awakened the power of the Iga school of Ninjitsu in my blood! Let's fight,old man!!
+@INP
+
+@GRP ygk166.png
+@SND se54.wav
+@GCP 600 260 600 780 0 0
+Elder:Sinner!!
+@INP
+@GCP 600 260 600 520 0 0
+@TIM 20
+@GCP 600 260 600 260 0 0
+@TIM 20
+@GCP 600 260 600 0 0 0
+@TIM 20
+@GCP 600 260 0 780 0 0
+@TIM 20
+@GCP 600 260 0 520 0 0
+@TIM 20
+@GCP 600 260 0 260 0 0
+@TIM 20
+@GCP 600 260 0 0 0 0
+@TIM 120
+
+@FLG 22 1
+@JMP *16
+
+*26
+Tomizawa:I can't do anything!
+@JMP *15
+
+*27
+@GRP ygk191.png
+@GCP 8
+Yasuki:Ah, I get it!!
+ You're using that "Opening Fist" move that's all the rage now!!
+@INP
+Yasuki:But, I'm a Warrior of the Sun, and my POWER's been augmented by Sun Mask! Think you can pull that move on me again?
+@INP
+Yasuki:Give me your best shot!!
+@INP
+@SND se34.wav
+@GCP 5
+@TIM 12
+@GCP 2
+@TIM 12
+@GCP 7
+@TIM 15
+@GCP 4
+@TIM 15
+@GCP 1
+@TIM 20
+@GCP 6
+@TIM 10
+@GCP 3
+@TIM 20
+@GCP 0
+@TIM 20
+@GCP 3
+@TIM 20
+@GCP 6
+@TIM 20
+@GCP 1
+@TIM 20
+@GCP 4
+@TIM 20
+@GCP 7
+@TIM 15
+@GCP 4
+@TIM 10
+@GCP 1
+@TIM 10
+@GCP 6
+@TIM 10
+@GCP 3
+@TIM 20
+@GCP 0
+@TIM 40
+@GCP 3
+@TIM 10
+@GCP 6
+@TIM 10
+@GCP 1
+@TIM 10
+@GCP 4
+@TIM 10
+@SND se53.wav
+@GCP 7
+@TIM 15
+@GCP 4
+@TIM 20
+@GCP 1
+@TIM 20
+@GCP 6
+@TIM 20
+@GCP 3
+@TIM 20
+
+@GRP ygk192.png
+@SND se57.wav
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 0 0 0
+@TIM 8
+@LOP *Lp192 14
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 0 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 0 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 0 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 0 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 0 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 0 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 0 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 0 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 0 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 0 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 0 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 0 0 0
+@TIM 8
+Yasuki:Oohhhh!
+@TIM 200
+
+@GRP ygk192a.png
+@SND se58.wav
+@GCP 600 260 0 520 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 520 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 520 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 520 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 520 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 520 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 520 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 520 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 8
+
+@TIM 80
+
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 0 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 0 0 0
+@TIM 8
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 0 0 0
+@TIM 8
+@INP
+@SND OFF
+
+@SCN yasuki.eng
+

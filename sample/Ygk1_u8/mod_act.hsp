@@ -1,0 +1,363 @@
+#module
+
+;EndRoll
+#deffunc act_roll var eg,str fnm
+
+	sdim buf,4096
+	sdim ls,256
+	sdim fn,256
+
+	wxs=600 :wys=354 :en=eg :fn=fnm
+	fys=20 :fxs=20-5*en
+
+	notesel buf
+	noteload fn
+
+	;cn=１画面表示行数
+	;pi=エンドロールデータの読込み開始行
+	cn=wys/fys+3 :pi=0		
+
+*main_roll
+	repeat fys :y=cnt
+		redraw 0
+		;背景画像コピー
+		gmode 0 :pos 0,0 :gcopy 2,0,0,wxs,wys
+		gmode 2
+		;エンドロール表示
+		repeat cn
+			noteget ls,pi+cnt
+			ln=strlen(ls) :if en=0 :ln=ln/2
+			x=(wxs-fxs*ln)/2
+			pos x,-y+fys*cnt :knjput ls,en
+		loop
+		await 50
+	loop
+
+	redraw 1
+	pi+ :if ls!"@END" :goto *main_roll
+
+	return
+
+;斎藤 対 土偶軍団
+#deffunc act_dogu var ret
+
+	wxs=600 :wys=354
+
+	celload "act_dogu_char.png",1
+	celload "act_dogu_back.png",2
+	celdiv 1,120,80,60,40
+
+	mmload "sai_atk.wav",2
+	mmload "sai_dmg.wav",3
+	mmload "sai_run.wav",4
+	mmload "ag_se04.wav",5
+	mmload "ag_se05.wav",6
+
+	;逃走ポーズ(斎藤)
+	dim wp,32
+	wp=42,42,43,43,44,45,45,46,46,47,47,48,48,47,47,48,48,47,47,48,48,49,49,49
+
+	; 敵変数
+	emx=8
+	dim en,emx
+	dim ehp,emx
+	dim ex,emx :dim ey,emx
+	dim edx,emx :dim edy,emx
+	dim da,emx
+
+	; 斎藤変数
+	px=wxs/2 :py=wys/2 :mx=px :my=py
+	hp=15 :nrm=15 :em=3 :wc=0
+	pc=0 :za=0 :ru=0 :bc=0 :ebc=0 :ov=0
+
+*main_dogu
+	; パターンNo.生成元カウンタ(pc)
+	pc+ :pc=pc\256 :pn=(pc/3)\2
+
+	; 斎藤移動
+	await 50
+	if za<6 and bc<1 and ov<1 :mx=mousex :my=limit(mousey,80,wys)
+	;
+	dx=mx-px :dy=my-py
+	if abs(dx)>25 or abs(dy)>25 {
+		pn=(pc/2)\4 :pn=pn+2-2*(pn=3) :ru=1
+	} else {
+		if ru=1 :za=20 :mmplay 2
+		ru=0
+	}
+	; 斎藤攻撃
+	if za>0 :pn=25-za :za- :if pn>18 :pn=18
+	;
+	px+=(dx/8) :py+=(dy/8)
+
+	; 敵発生＆移動
+	em+=(pc=255) :if em>emx :em=emx
+	r=rnd(em)
+	if (pc\24)=0 {
+		if ehp(r)<1 {
+			; 発生
+			ehp(r)=3 :ex(r)=-60 :ey(r)=80+rnd(wys-80)
+		} else {
+			; 移動
+			edx(r)=rnd(5) :edy(r)=rnd(3)-1
+			; 攻撃
+			if edx(r)>2 :da(r)=18 :mmplay 5
+		}
+	}
+
+	repeat emx :c=cnt
+		; 移動範囲制御
+		if ehp(c)>0 {
+			if ex(c)>660 :ex(c)=-60
+			if ey(c)<80 or ey(c)>wys :edy(c)=-edy(c)
+			ex(c)+=edx(c) :ey(c)+=edy(c)
+			en(c)=21+(pc/3)\2
+			if edx(c)!0 or edy(c)!0 :en(c)=23+(pc/3)\6
+		}
+		if da(c)>0 :en(c)=34-(da(c)/3) :da(c)-
+		; コリジョン判定
+		if abs(py-ey(c))<24 and abs(px-ex(c))<60 {
+			if pn=9 or pn=16 {
+				edx(c)=0 :ex(c)-=32 :ehp(c)- :ox=px-60 :oy=py :oc=4
+				if ehp(c)<1 :nrm- :bx=ex(c) :by=ey(c) :ebc=9 :mmplay 6
+				break
+			}
+			if da(c)>0 and bc<1 :bc=6 :za=0 :mmplay 3
+		}
+	loop
+
+	if ov>0 {
+		stick ky :wait 1
+		if ky&272 or (wc=1 and (mx-px)<8) :gosub *gcls_dogu :ret=ov :return
+		if ov=2 :pn=20
+	}
+
+	;逃走ポーズセット(斎藤)
+	if wc>0 {
+		if wc=3 :mx=px+60
+		wc- :pn=wp(23-wc) :if wc<1 :wc=1
+	}
+	redraw 0
+	gmode 0 :pos 0,0 :gcopy 2,0,0,wxs,wys
+	pos 320,42 :gcopy 2,180*((pc/3)\2),wys,180,88
+	gmode 2
+
+	; 斎藤より奥の敵を表示
+	repeat emx :c=cnt
+		if ehp(c)>0 and ey(c)<=py :pos ex(c),ey(c) :celput 1,en(c)
+	loop
+
+	; 斎藤を表示
+	if bc>0 { pn=19 :px=px+rnd(5)-2 :py=py+rnd(5)-2 :bc-
+			hp=hp-(bc=0) :if hp<1 :ov=2
+	}
+	pos px,py :celput 1,pn
+	if oc>0 :pos ox,oy :celput 1,42-oc :oc-
+
+	; 斎藤より手前の敵を表示
+	repeat emx :c=cnt
+		if ehp(c)>0 and ey(c)>py :pos ex(c),ey(c) :celput 1,en(c)
+	loop
+
+	; 敵破砕
+	if ebc>0 {
+		pos bx,by :celput 1,38-(ebc/3) :ebc-
+	} else {
+		if nrm<1 {
+			if ov=0 :ov=1 :mmplay 4 :wc=24
+		}
+	}
+
+	; ライフ＆ノルマ表示
+	pos wxs-16*hp,wys-16 :gcopy 2,wxs,0,16*hp,16
+	pos 0,wys-16 :gcopy 2,wxs,32,240,16
+	pos 0,wys-16 :gcopy 2,wxs,16,16*(15-nrm),16
+	; ゲーム終了表示
+	if ov>0 { x=(wxs-240)/2 :y=(wys-64)/2
+		pos x,y :gcopy 2,wxs,64*ov-16,240,64
+		pos x,y+64 :gcopy 2,wxs,186,240,24
+	}
+	redraw 1
+
+	goto *main_dogu
+
+*gcls_dogu
+	repeat 31
+		redraw 0 :color 0,0,0 :boxf
+		gmode 3,wxs,wys,255-cnt*8 :pos 0,0 :gcopy 2,0,0
+		await 8
+		redraw 1
+	loop
+	celload "gcls.png",2
+	await 400
+	return
+
+;斎藤 対 新井
+#deffunc act_arai var ret
+
+	wxs=600 :wys=354
+
+	celload "act_arai_char.png",1
+	celload "act_arai_back.png",2
+	celdiv 1,120,80,60,40
+
+	mmload "sai_atk.wav",2
+	mmload "sai_dmg.wav",3
+	mmload "sai_won.wav",4
+	mmload "arai_atk.wav",5
+	mmload "arai_dmg.wav",6
+	mmload "arai_won.wav",7
+
+	;勝利ポーズ(斎藤)
+	dim wp_sa,16
+	wp_sa=49,50,51,52,53,54,55,56,59,58,57
+
+	;勝利ポーズ(新井)
+	dim wp_ar,32
+	wp_ar=60,60,61,61,62,62,63,63,64,64,63,63,64,64,63,63,64,64,62,62,61,61,65
+
+	; 斎藤変数
+	px=wxs/2 :py=wys/3*2 :mx=px :my=py
+	hp=15 :em=3 :wc=0
+	pc=0 :za=0 :ru=0 :bc=0 :ebc=0 :ov=0
+
+	; 新井変数
+	ax=80 :ay=wys/2 :ahp=15
+	; 敵弾変数
+	emx=8
+	dim ex,emx :dim ey,emx
+	dim edx,emx :dim edy,emx
+	repeat emx :ex(cnt)=wxs+100 :loop
+
+*main_arai
+	; パターンNo.生成元カウンタ(pc)
+	pc+ :pc=pc\512 :pn=(pc/3)\2
+
+	; 斎藤移動
+	await 50
+	if za<6 and bc<1 and ov<1 :mx=mousex :my=limit(mousey,80,wys)
+	;
+	dx=mx-px :dy=my-py
+	if abs(dx)>25 or abs(dy)>25 {
+		pn=(pc/2)\4 :pn=pn+2-2*(pn=3) :ru=1
+	} else {
+		if ru=1 :za=20 :mmplay 2
+		ru=0
+	}
+	; 斎藤攻撃
+	if za>0 :pn=25-za :za- :if pn>18 :pn=18
+	;
+	px+=(dx/8) :py+=(dy/8)
+
+	;新井アクション
+	if adc>0 {
+		adc- :ax+=adx :ay+=ady :xx=wxs/2 :yy=wys-25			;移動処理
+		if ax<24 or ax>xx :ax=limit(ax,24,xx) :adx=-adx		;
+		if ay<80 or ay>yy :ay=limit(ay,80,yy) :ady=-ady		;
+	} else {
+		;アクション決定
+		ar=rnd(3) :adc=8*(rnd(3)+1) :adx=0 :ady=0
+		if ar=2 :adx=3*(rnd(5)-2) :ady=3*(rnd(5)-2)		;歩く
+		if ar=1 and ov=0 :an=28 :adx=2 :mmplay 5		;ショット！
+	}
+
+	if ar=2 :an=(pc/3)\4 :an=an-2*(an=3)+23		;an=歩きパターンNo.セット
+	if ar=1 {
+		an+=(pc\2) :if an>33 :ar=0				;an=ショットパターンNo.セット
+		if an=32 {
+			repeat emx
+				if ex(cnt)>wxs+80 :c=cnt :break
+			loop
+			ex(c)=ax+25 :ey(c)=ay :edx(c)=8*rnd(2)+16 :edy(c)=rnd(7)-3		;弾座標セット
+		}
+	}
+	if ar=0 :an=pc\2+21							;an=立ちパターンNo.セット
+
+	;新井ダメージ
+	if ar=3 { an=26
+		if ahp<1 and adc=1 {
+			if ov=0 :mmplay 4 :wc=11
+			an=27 :ov=1 :adx=0 :ady=0 :adc=2
+		}
+	}
+
+	; コリジョン判定
+	repeat emx :c=cnt
+		if abs(py-ey(c))<40 and abs(px-ex(c))<40 {
+			aox=ex(c) :aoy=ey(c) :aoc=6
+			ex(c)=wxs+100 :bc=5 :mmplay 3
+		}
+	loop
+
+	if ov>0 {
+		stick ky :wait 1
+		if ky&272 :gosub *gcls_arai :ret=ov :return
+		if ov=2 :pn=20
+	}
+
+	;勝ちポーズセット(斎藤＆新井)
+	if wc>0 { wc-
+		if ov=1 :pn=wp_sa(10-wc) :else :an=wp_ar(22-wc) :adx=0 :ady=0
+		if wc<1 :wc=1
+	}
+
+	redraw 0
+	gmode 0 :pos 0,0 :gcopy 2,0,0,wxs,wys
+	gmode 2
+
+	; 斎藤より奥の新井を表示
+	if ay<=py :pos ax,ay :celput 1,an
+	; 斎藤より奥の敵弾を表示
+	repeat emx :c=cnt
+		if ex(c)<wxs+120 and ey(c)<=py {
+			ex(c)+=edx(c) :ey(c)+=edy(c) :pos ex(c),ey(c) :celput 1,34+(pc/2)\3
+		}
+	loop
+
+	; 斎藤を表示
+	if bc>0 { pn=19 :px=px+rnd(5)-2 :py=py+rnd(5)-2 :bc-
+			hp=hp-3*(bc=0) :if hp<1 :ov=2 :mmplay 7 :wc=23
+	}
+	pos px,py :celput 1,pn
+	if oc>0 :pos ox,oy :celput 1,42-oc :oc-
+	if aoc>0 :pos aox,aoy :celput 1,48-aoc :aoc-
+
+	; 斎藤より手前の新井を表示
+	if ay>py :pos ax,ay :celput 1,an
+	; 斎藤より奥の敵弾を表示
+	repeat emx :c=cnt
+		if ex(c)<wxs+120 and ey(c)>py {
+			ex(c)+=edx(c) :ey(c)+=edy(c) :pos ex(c),ey(c) :celput 1,34+(pc/2)\3
+		}
+	loop
+
+	;斎藤、新井を斬る
+	if (pn=9 or pn=16) and abs(px-ax)<60 and abs(py-ay)<25 {
+		ar=3 :adc=5 :adx=-8 :ahp-=(ahp>0) :mmplay 6 :ox=px-60 :oy=py :oc=4
+	}
+
+	; ライフ表示
+	pos wxs-16*hp,wys-16 :gcopy 2,wxs,0,16*hp,16
+	pos 0,wys-16 :gcopy 2,wxs,16,16*ahp,16
+
+	; ゲーム終了表示
+	if ov>0 { x=(wxs-240)/2 :y=(wys-64)/2
+		pos x,y :gcopy 2,wxs,64*ov-16,240,64
+		pos x,y+64 :gcopy 2,wxs,186,240,24
+	}
+	redraw 1
+
+	goto *main_arai
+
+*gcls_arai
+	repeat 31
+		redraw 0 :color 0,0,0 :boxf
+		gmode 3,wxs,wys,255-cnt*8 :pos 0,0 :gcopy 2,0,0
+		await 8
+		redraw 1
+	loop
+	celload "gcls.png",2
+	await 400
+	return
+
+#global

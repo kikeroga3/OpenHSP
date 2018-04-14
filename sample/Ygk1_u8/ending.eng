@@ -1,0 +1,18 @@
+
+@GRP gcls.png
+@SND bgm36.ogg
+
+@GRP ygk247.png
+
+@ACT roll endroll_en.ini
+
+@GRP gcls.png
+@TIM 220
+
+@SND OFF
+
+@INP
+
+
+@SCN epilogue.eng
+
