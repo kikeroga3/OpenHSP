@@ -1,0 +1,504 @@
+
+@SND OFF
+@GRP ygk150a.png
+@SND se54.wav
+@INP
+@GRP ygk150.png
+@SND se59.wav
+Elder:Hoo!!
+@INP
+
+@GRP ygk151.png
+@SND se71.wav
+Elder:Here's the finishing blow!!
+Saito:Ah!! Yasuki's gonna be beaten to a pulp!!
+@INP
+
+@GRP ygk105.png
+@SND bgm40.ogg
+@SND se58.wav
+@SND se03.wav
+Yasuki:Haa!!
+Mitsuki:Grandpa!!
+@INP
+Elder:Mitsuki...!!
+@INP
+Yasuki:Heh..heh..looks like you were thinking back about your grandkid, huh?
+@INP
+Yasuki:Well the only way to kill me is to go through her!
+@INP
+Yasuki:Think you can do it, sucker?
+@INP
+Elder:Ggh..Ungh..!!
+@INP
+Yasuki:Yeah, 'course you can't, huh?
+ She's just too cu-ute! Right Kuroumi?
+ Right? It's true, huh?
+@INP
+
+@GRP ygk182a.png
+@TIM 140
+@GRP ygk182.png
+@SND se60.wav
+@SND ag_se04.wav
+Saito:Hya!!
+Elder:Ah!
+@INP
+
+@GRP ygk125.png
+@SND se61.wav
+*Lp125
+@ROL 0 10 U 10 1 8
+@ROL 0 0 D 10 1 8
+@ROL 0 10 L 10 1 8
+@ROL 0 0 R 10 1 8
+@LOP *Lp125 12
+@TIM 1
+Kurosawa:DO IT!! Just freakin' DO IT!
+Elder:Blurgh!!
+@INP
+
+
+@GRP ygk124.png
+@SND se07.wav
+*Lp124
+@GCP 1
+@TIM 20
+@GCP 0
+@TIM 20
+@LOP *Lp124 4
+Saito:Heh..So much for that,we've beaten you so badly you can't even stand up!
+@INP
+
+@GRP ygk028a.png
+@SND se41.wav
+
+Saito:Now it's your turn, Arai!!
+@INP
+
+@GRP ygk029.png
+@SND se33.wav
+Arai:How clever!!
+@INP
+
+@GRP ygk028.png
+Saito:It is a crime to manipulate an old man like that!!
+@INP
+Arai:Hoho, now what will you do?
+@INP
+Saito:I'll beat you!!
+@SND se10.wav
+@INP
+Arai:Then come on.But first you've gotta face off against these guys.
+@INP
+@SND se40.wav
+
+@GRP ygk214.png
+@SND se39.wav
+@GCP 6
+@TIM 50
+@SND se40.wav
+@GCP 5
+@TIM 20
+@GCP 4
+@TIM 20
+@GCP 3
+@TIM 20
+@SND se40.wav
+@GCP 2
+@TIM 20
+@GCP 1
+@TIM 20
+@GCP 0
+@TIM 1
+@SND bgm23.ogg
+Saito:!! These things!!
+@INP
+Kurosawa:Saito!! These are those earth monsters that you mentioned!!
+@INP 
+Ikariya:Their weak spot is in the head!! Everyone, aim your attack there!
+@INP 
+Arai:Die!! Face my shock troops!!
+Saito:Bring it on!
+@INP
+
+@GRP ygk034.png
+@SND se17.wav
+@SND se16.wav
+@SND se11.wav
+*Lp034
+@GCP 600 260 0 260 0 0
+@TIM 15
+@SND se26.wav
+@GCP 600 260 0 0 0 0
+@TIM 15
+@LOP *Lp034 4
+@INP
+
+@SND se64.wav
+@GRP ygk035.png
+@SND se58.wav
+@INP
+
+@GRP ygk036a.png
+@SND se59.wav
+@GCP 600 260 600 1300 0 0
+@TIM 50
+@GCP 600 260 600 1040 0 0
+@TIM 13
+@GCP 600 260 600 780 0 0
+@TIM 13
+@GCP 600 260 600 520 0 0
+@TIM 13
+@GCP 600 260 600 260 0 0
+@TIM 13
+@GCP 600 260 600 0 0 0
+@TIM 13
+@GCP 600 260 0 1300 0 0
+@TIM 13
+@GCP 600 260 0 1040 0 0
+@TIM 13
+@GCP 600 260 0 780 0 0
+@TIM 13
+@GCP 600 260 0 520 0 0
+@TIM 13
+@SND se40.wav
+@GCP 600 260 0 260 0 0
+@TIM 13
+@GCP 600 260 0 0 0 0
+@TIM 13
+@GRP ygk036.png
+@INP
+
+@GRP ygk143.png
+@SND se06.wav
+@ROL 0 32 Up 1 32 5
+@TIM 1
+@INP
+
+@GRP ygk070.png
+Saito:Arai!! Those guys were just small fry for us! In a moment I'll annihilate you!!
+@INP 
+@SND OFF
+@SND se34.wav
+Arai:And then it was all over...
+Saito:Eh!?
+@INP 
+
+Arai:Fu...fu...fu
+Saito:What!?
+@INP
+
+@GRP ygk057.png
+@SND bgm29.ogg
+Arai:Hahahahaha!!
+Saito:What's so funny, Arai!!
+@INP 
+
+Kurosawa:Wait, Saito!!
+Nobue:Co..Couldn't make it!!
+Saito:What!?
+@INP
+
+@GRP ygk245.png
+@SND se06.wav
+Arai:In that case...now you finally get to face me...Show me what you've got.
+@INP
+
+@GRP ygk114.png
+Elder:He's been...resurrected...Susanoo, the most powerful god...from the old world...
+@INP
+Elder:It's impossible for anybody to stop him.
+ 
+ We're all done for.
+@INP
+
+@GRP ygk242.png
+@SND se42.wav
+@SND se33.wav
+Ikariya:Resurrected!? Don't make me laugh! There's nothing different about him!! I'll bring him down with my slingshot!
+@INP
+Tomizawa:And I'll hit him at the same time with a shuriken attack!!
+@INP
+
+@GRP ygk244.png
+@SND se53.wav
+*Lp244
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+@LOP *Lp244 9
+Arai:Those toys are nothing against Arai!
+@INP
+
+@GRP ygk245.png
+@TIM 15
+@GCP 600 260 0 260 0 0
+@TIM 15
+@SND se71.wav
+@GCP 600 260 0 520 0 0
+@TIM 15
+@GCP 600 260 0 780 0 0
+@TIM 15
+@GCP 600 260 0 1040 0 0
+@TIM 15
+@GCP 600 260 0 1300 0 0
+@SND se41.wav
+Arai:You guys sure got guts!!
+@INP
+
+@GRP ygk243.png
+@SND se07.wav
+@SND se18.wav
+@SND se26.wav
+Tomziawa:Ah!!
+Ikaria:Bghaa!!
+@INP
+@SND se58.wav
+Yasuki:Ah!! They got their attack returned to them!!
+ 
+Saito:Ken!! Tomi!!
+@INP
+
+
+@GRP ygk180b.png
+Nobue:Ura!! Firing the light beam gun!!
+@INP
+@SND se55.wav
+@SND ag_se06.wav
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 520 0 0
+@TIM 8
+@SND se62.wav
+@GCP 600 260 0 780 0 0
+@TIM 8
+@GCP 600 260 0 1040 0 0
+@TIM 8
+@GCP 600 260 600 0 0 0
+@TIM 12
+@GCP 600 260 600 260 0 0
+@TIM 15
+@GCP 600 260 600 520 0 0
+@TIM 10
+@GCP 600 260 600 780 0 0
+@TIM 8
+@GCP 600 260 600 1040 0 0
+@TIM 8
+@SND se55.wav
+@SND ag_se06.wav
+@GCP 600 260 0 260 0 0
+@TIM 12
+@GCP 600 260 0 520 0 0
+@TIM 4
+@GCP 600 260 0 780 0 0
+@TIM 6
+@GCP 600 260 0 1040 0 0
+@TIM 8
+@SND se62.wav
+@GCP 600 260 600 0 0 0
+@TIM 20
+@GCP 600 260 600 260 0 0
+@TIM 15
+@GCP 600 260 600 520 0 0
+@TIM 10
+@GCP 600 260 600 780 0 0
+@TIM 10
+@GCP 600 260 600 1040 0 0
+@TIM 30
+
+@GRP ygk203.png
+@TIM 7
+@GCP 1
+@TIM 6
+@GCP 2
+@TIM 6
+@GCP 3
+@TIM 6
+@SND se64.wav
+@GCP 4
+@TIM 10
+@SND se65.wav
+@GCP 5
+@TIM 8
+@GCP 6
+@TIM 12
+@GCP 0
+@TIM 8
+@GCP 7
+@TIM 6
+@GCP 8
+@TIM 6
+@GCP 9
+@TIM 6
+@SND se48.wav
+@GCP 10
+@TIM 8
+@SND se62.wav
+@GCP 11
+@TIM 8
+@GCP 12
+@TIM 8
+@GCP 13
+@TIM 10
+@GCP 14
+@TIM 10
+@GCP 15
+@TIM 30
+Arai:Hmph.
+@INP
+
+@GRP ygk189a.png
+@SND se33.wav
+@TIM 30
+@GCP 1
+@TIM 10
+@SND se65.wav
+@GCP 2
+@TIM 10
+@GCP 3
+@TIM 10
+@GCP 4
+@TIM 10
+@SND se49.wav
+@GCP 5
+@TIM 10
+@GCP 6
+@TIM 50
+
+@GRP ygk189.png
+@SND se66.wav
+@SND ag_se05.wav
+*Lp189
+@TIM 4
+@GCP 0
+@TIM 4
+@GCP 2
+@TIM 4
+@GCP 3
+@LOP *Lp189 12
+Nobue:YAAAAA!!
+@INP
+
+Kurosawa:That attack wasn't effective at all!
+@INP
+
+@GRP ygk219.png
+@SND se59.wav
+Saito:Three man charge,Go!!
+@INP
+
+@GRP ygk219a.png
+@SND se33.wav
+Kurosawa:Right,as you say!!
+Yasuki:I entrust my life with you, Saito!!
+@INP 
+
+@GRP ygk076.png
+@SND se53.wav
+Arai:I don't think that's neccessary, because,well...look.
+@INP
+@SND se30.wav
+@GCP 1
+@TIM 8
+@GCP 2
+@TIM 8
+@GCP 3
+@TIM 8
+@GCP 4
+@TIM 8
+@GCP 5
+@TIM 8
+@GCP 6
+@TIM 8
+@GCP 7
+@TIM 8
+@GCP 8
+@TIM 30
+
+@GRP ygk119.png
+@SND se31.wav
+*Lp119
+@TIM 10
+@GCP 1
+@TIM 10
+@GCP 2
+@TIM 10
+@GCP 3
+@TIM 10
+@GCP 4
+@TIM 10
+@GCP 0
+@LOP *Lp119 4
+Group:HAAAAAAHIAAA!!
+@INP
+
+@SAV Showdown
+
+@GRP ygk119a.png
+@SND se53.wav
+@TIM 15
+@GCP 1
+@TIM 15
+@GCP 2
+@TIM 15
+@GCP 3
+@TIM 15
+@GCP 4
+@TIM 15
+@GCP 5
+@TIM 15
+@GCP 6
+@TIM 15
+@GCP 7
+Arai:How'd you like the taste of that great stun ray just now?
+ 
+ It's got ten times normal power.
+@INP
+
+
+@GRP ygk152.png
+@GCP 5
+@TIM 15
+@GCP 1
+@TIM 15
+@GCP 2
+@TIM 15
+@GCP 3
+@TIM 15
+@GCP 4
+@TIM 15
+@GCP 0
+Arai:...Oh, how wonderful that you can stay standing with those deep wounds.
+@INP
+Saito:G...guys!!
+ Damn,now it's do or die!!
+@INP
+
+@SND OFF
+
+*ReTry
+
+@SND bgm23.ogg
+
+Saito's operation:Move the mouse and defeat Arai!
+@INP
+
+@ACT arai
+@FLG 64 1 *Won
+
+@GRP gcls.png
+Saito that is down.
+@INP
+@SEL *ReTry 1:Retry
+@SEL *Los 2:Give^up
+@INP
+
+*Won
+@SCN won.eng
+
+*Los
+@SCN reversal.eng
+
+

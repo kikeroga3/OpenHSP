@@ -1,0 +1,509 @@
+
+@SND OFF
+@GRP ygk150a.png
+@SND se54.wav
+@INP
+@GRP ygk150.png
+@SND se59.wav
+玄海「ほオォ！！」
+@INP
+
+@GRP ygk151.png
+@SND se71.wav
+玄海「とどめじゃあっ！！」
+斎藤「ああっ！！安木が、やられてしまう！！」
+@INP
+
+@GRP ygk105.png
+@SND bgm40.ogg
+@SND se58.wav
+@SND se03.wav
+安木「はあっ！！」
+弥月「おじいちゃん！！」
+@INP
+玄海「弥月…！！」
+@INP
+安木「へっ‥へへ‥孫の顔くらいは、憶えていたようだなァ‥
+　そうだよなァ‥目に入れても痛くねえ孫娘だもんなァ‥
+　俺を殺すには、その孫娘の身体ごと貫くしかねえ！！
+　貴様にそれが出来るかあっ！！」
+@INP
+玄海「ぐぬ‥うぬう‥！！」
+@INP
+安木「出来るわけねえよなァ…
+　かわいいかわいい孫娘だもんなァ…
+　なァ…玄海さんよォ…な？…そうだろォ？」
+@INP
+
+@GRP ygk182a.png
+@SND se53.wav
+@TIM 160
+@SND se16.wav
+@SND se17.wav
+@TIM 10
+@GRP ygk182.png
+@TIM 20
+@SND se60.wav
+@SND se18.wav
+@TIM 20
+@SND se07.wav
+斎藤「でやあ！！」
+玄海「あっ」
+@INP
+
+@GRP ygk125.png
+@SND se61.wav
+*Lp125
+@ROL 0 10 U 10 1 8
+@ROL 0 0 D 10 1 8
+@ROL 0 10 L 10 1 8
+@ROL 0 0 R 10 1 8
+@LOP *Lp125 12
+@TIM 1
+黒爽「やれえ！！やっちまえぇ！！」
+玄海「ぶきいぃ‥！！」
+@INP
+
+
+@GRP ygk124.png
+@SND se07.wav
+*Lp124
+@GCP 1
+@TIM 20
+@GCP 0
+@TIM 20
+@LOP *Lp124 4
+斎藤「へっ‥ここまで徹底的に破壊すれば、当分
+　立ち上がれねえだろォ‥！！」
+@INP
+
+@GRP ygk028a.png
+@SND se41.wav
+
+斎藤「つぎは、貴様の番だあ！！新井ィィィッ！！」
+@INP
+
+@GRP ygk029.png
+@SND se33.wav
+新井「こざかしい！！」
+@INP
+
+@GRP ygk028.png
+斎藤「罪もない老人を操る貴様が許せないッ！！」
+@INP
+新井「ほう‥では、どうする？」
+@INP
+斎藤「倒す！！」
+@SND se10.wav
+@INP
+新井「ならば、来い。もっとも、その前に、こいつらの相手を
+　しなくてはならないが…」
+@INP
+@SND se40.wav
+
+@GRP ygk214.png
+@SND se39.wav
+@GCP 6
+@TIM 50
+@SND se40.wav
+@GCP 5
+@TIM 20
+@GCP 4
+@TIM 20
+@GCP 3
+@TIM 20
+@SND se40.wav
+@GCP 2
+@TIM 20
+@GCP 1
+@TIM 20
+@GCP 0
+@TIM 1
+@SND bgm23.ogg
+斎藤「！！こいつらは！！」
+@INP
+黒爽「これが、お前の言ってた土の怪物か！！斎藤！！」
+@INP 
+怒屋「こいつらの弱点は頭部だッ！！みんな！！頭を狙え！！」
+@INP 
+新井「殺れ！！偶鬼兵どもォ！！」
+斎藤「のぞむところだあっ！！」
+@INP
+
+@GRP ygk034.png
+@SND se17.wav
+@SND se16.wav
+@SND se11.wav
+*Lp034
+@GCP 600 260 0 260 0 0
+@TIM 15
+@SND se26.wav
+@GCP 600 260 0 0 0 0
+@TIM 15
+@LOP *Lp034 4
+@INP
+
+@SND se64.wav
+@GRP ygk035.png
+@SND se58.wav
+@INP
+
+@GRP ygk036a.png
+@SND se59.wav
+@GCP 600 260 600 1300 0 0
+@TIM 50
+@GCP 600 260 600 1040 0 0
+@TIM 13
+@GCP 600 260 600 780 0 0
+@TIM 13
+@GCP 600 260 600 520 0 0
+@TIM 13
+@GCP 600 260 600 260 0 0
+@TIM 13
+@GCP 600 260 600 0 0 0
+@TIM 13
+@GCP 600 260 0 1300 0 0
+@TIM 13
+@GCP 600 260 0 1040 0 0
+@TIM 13
+@GCP 600 260 0 780 0 0
+@TIM 13
+@GCP 600 260 0 520 0 0
+@TIM 13
+@SND se40.wav
+@GCP 600 260 0 260 0 0
+@TIM 13
+@GCP 600 260 0 0 0 0
+@TIM 13
+@GRP ygk036.png
+@INP
+
+@GRP ygk143.png
+@SND se06.wav
+@ROL 0 32 Up 1 32 5
+@TIM 1
+@INP
+
+@GRP ygk070.png
+斎藤「新井！！こんなザコどもは、僕たちの相手にならないぞ！
+　一瞬で、壊滅だあ！！」
+@INP 
+@SND OFF
+@SND se34.wav
+新井「…その一瞬が、命取りだったな‥」
+斎藤「えっ…！？」
+@INP 
+
+新井「フ…フ‥フ」
+斎藤「何だ！？」
+@INP
+
+@GRP ygk057.png
+@SND bgm29.ogg
+新井「はあっはっはっはっ！！」
+斎藤「何がおかしいいぃっ、アライィィ！！」
+@INP 
+
+黒爽「‥まて、斎藤！！」
+野笛「…ま…間に合わなかった…！！」
+斎藤「何だって！？」
+@INP
+
+@GRP ygk245.png
+@SND se06.wav
+新井「…しからば‥ついに‥俺が相手になってやろう‥来いよ」
+@INP
+
+@GRP ygk114.png
+玄海「ふ‥‥復活した‥スサノオが…旧世界の‥最強の神が…
+　もう‥誰にも止める事は、出来ぬ‥この世界は‥滅亡‥する」
+@INP
+
+@GRP ygk242.png
+@SND se42.wav
+@SND se33.wav
+怒屋「わ、笑わせるな！！何が復活だ！！どこも変ってないじゃ
+　ないか！！俺のパチンコ攻撃で、おだぶつにしてやるぜ！！」
+富沢「同時に拙者の手裏剣攻撃だ！！」
+@INP
+
+@GRP ygk244.png
+@SND se53.wav
+*Lp244
+@GCP 600 260 0 260 0 0
+@TIM 10
+@GCP 600 260 0 0 0 0
+@TIM 10
+@LOP *Lp244 9
+新井「そんなオモチャで、このアライにたてつくとは‥‥」
+@INP
+
+@GRP ygk245.png
+@TIM 15
+@GCP 600 260 0 260 0 0
+@TIM 15
+@SND se71.wav
+@GCP 600 260 0 520 0 0
+@TIM 15
+@GCP 600 260 0 780 0 0
+@TIM 15
+@GCP 600 260 0 1040 0 0
+@TIM 15
+@GCP 600 260 0 1300 0 0
+@SND se41.wav
+新井「いい度胸してるよ、君たちはァ！！」
+@INP
+
+@GRP ygk243.png
+@SND se07.wav
+@SND se18.wav
+@SND se26.wav
+富沢「あ！！」
+怒屋「ぶぐあああ！！」
+@INP
+@SND se58.wav
+安木「ああっ！！全て二人に、はね返されてしまった！！」
+斎藤「ケ、ケンちゃん！！富さん！！」
+@INP
+
+
+@GRP ygk180b.png
+野笛「うキゃあアッ！！光子砲発射ァァァッ！！」
+@INP
+@SND se55.wav
+@SND ag_se06.wav
+@GCP 600 260 0 260 0 0
+@TIM 8
+@GCP 600 260 0 520 0 0
+@TIM 8
+@SND se62.wav
+@GCP 600 260 0 780 0 0
+@TIM 8
+@GCP 600 260 0 1040 0 0
+@TIM 8
+@GCP 600 260 600 0 0 0
+@TIM 12
+@GCP 600 260 600 260 0 0
+@TIM 15
+@GCP 600 260 600 520 0 0
+@TIM 10
+@GCP 600 260 600 780 0 0
+@TIM 8
+@GCP 600 260 600 1040 0 0
+@TIM 8
+@SND se55.wav
+@SND ag_se06.wav
+@GCP 600 260 0 260 0 0
+@TIM 12
+@GCP 600 260 0 520 0 0
+@TIM 4
+@GCP 600 260 0 780 0 0
+@TIM 6
+@GCP 600 260 0 1040 0 0
+@TIM 8
+@SND se62.wav
+@GCP 600 260 600 0 0 0
+@TIM 20
+@GCP 600 260 600 260 0 0
+@TIM 15
+@GCP 600 260 600 520 0 0
+@TIM 10
+@GCP 600 260 600 780 0 0
+@TIM 10
+@GCP 600 260 600 1040 0 0
+@TIM 30
+
+@GRP ygk203.png
+@TIM 7
+@GCP 1
+@TIM 6
+@GCP 2
+@TIM 6
+@GCP 3
+@TIM 6
+@SND se64.wav
+@GCP 4
+@TIM 10
+@SND se65.wav
+@GCP 5
+@TIM 8
+@GCP 6
+@TIM 12
+@GCP 0
+@TIM 8
+@GCP 7
+@TIM 6
+@GCP 8
+@TIM 6
+@GCP 9
+@TIM 6
+@SND se48.wav
+@GCP 10
+@TIM 8
+@SND se62.wav
+@GCP 11
+@TIM 8
+@GCP 12
+@TIM 8
+@GCP 13
+@TIM 10
+@GCP 14
+@TIM 10
+@GCP 15
+@TIM 30
+新井「フン」
+@INP
+
+@GRP ygk189a.png
+@SND se33.wav
+@TIM 30
+@GCP 1
+@TIM 10
+@SND se65.wav
+@GCP 2
+@TIM 10
+@GCP 3
+@TIM 10
+@GCP 4
+@TIM 10
+@SND se49.wav
+@GCP 5
+@TIM 10
+@GCP 6
+@TIM 50
+
+@GRP ygk189.png
+@SND se66.wav
+@SND ag_se05.wav
+*Lp189
+@TIM 4
+@GCP 0
+@TIM 4
+@GCP 2
+@TIM 4
+@GCP 3
+@LOP *Lp189 12
+野笛「はきゃＹＡＡＡＡＡァァァーッッ！！」
+@INP
+
+黒爽「と‥飛び道具は効かないようだな‥！！」
+安木「‥あ、ああ」
+@INP
+
+@GRP ygk219.png
+@SND se59.wav
+斎藤「肉弾戦だ！！三人で、行くぞ！！」
+@INP
+
+@GRP ygk219a.png
+@SND se33.wav
+黒爽「ええい、ままよ！！」
+安木「命ァ、あずけたぜ！！斎藤！！」
+@INP 
+
+@GRP ygk076.png
+@SND se53.wav
+新井「その必要はないと思うな。なぜなら‥ほら」
+@INP
+@SND se30.wav
+@GCP 1
+@TIM 8
+@GCP 2
+@TIM 8
+@GCP 3
+@TIM 8
+@GCP 4
+@TIM 8
+@GCP 5
+@TIM 8
+@GCP 6
+@TIM 8
+@GCP 7
+@TIM 8
+@GCP 8
+@TIM 30
+
+@GRP ygk119.png
+@SND se31.wav
+*Lp119
+@TIM 10
+@GCP 1
+@TIM 10
+@GCP 2
+@TIM 10
+@GCP 3
+@TIM 10
+@GCP 4
+@TIM 10
+@GCP 0
+@LOP *Lp119 4
+三人「はああひあああ！！」
+@INP
+
+@SAV 最終決戦　
+
+@GRP ygk119a.png
+@SND se53.wav
+@TIM 15
+@GCP 1
+@TIM 15
+@GCP 2
+@TIM 15
+@GCP 3
+@TIM 15
+@GCP 4
+@TIM 15
+@GCP 5
+@TIM 15
+@GCP 6
+@TIM 15
+@GCP 7
+新井「どうだい‥？さっきの１０倍の威力を持つグレートしびれ
+　光線の味は？…ほう」
+@INP
+
+
+@GRP ygk152.png
+@GCP 5
+@TIM 15
+@GCP 1
+@TIM 15
+@GCP 2
+@TIM 15
+@GCP 3
+@TIM 15
+@GCP 4
+@TIM 15
+@GCP 0
+新井「よくぞ、その深手で立っていられるものだな‥斎藤くん」
+斎藤「み‥みんな‥！！
+　くそう‥こうなったら、もうやるしかない！！」
+@INP
+
+@SND OFF
+
+*ReTry
+
+@SND bgm23.ogg
+
+斎藤を操作して、新井を倒すのだ！！
+　
+マウスを動かした場所に斎藤はダッシュし、斬撃するぞ！
+@INP
+
+@ACT arai
+@FLG 64 1 *Won
+
+@GRP gcls.png
+斎藤は力尽きた…
+@INP
+@SEL *ReTry １：もう一度がんばる
+@SEL *Los ２：もう無理
+@INP
+
+*Won
+@SCN won.scn
+
+*Los
+@SCN reversal.scn
+
