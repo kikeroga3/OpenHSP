@@ -53,6 +53,11 @@ If saved in minutes 19:35 on 31 December.
 
 "1231_1935 Arrival"
 
+4. About Battle Part
+
+In the middle of the story, there is an action part that becomes a battle.
+The operation at that time is only with the mouse.
+
 
 :: Requirement ::
 

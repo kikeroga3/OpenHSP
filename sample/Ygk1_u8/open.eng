@@ -460,7 +460,7 @@ Kurosawa:Isn't that right, Saito?
 Saito:How many times have I told you?
 At this time, I am the team leader "Vachs".
 @INP
-Kurosawa:Sorry...Vachs. By the way, where is Yasukii?
+Kurosawa:Sorry...Vachs. By the way, where is Yasuki?
 @INP
 @SND OFF
 
@@ -569,8 +569,7 @@ Tanaka:What are you five doing here?
 Saito: Y,you're that jock Genji Tanaka! All the chicks dig you 'cause you're better than everyone at sports!
 @INP
 Tanaka:Hahaha! I saw you all on stage.
- Isn't that noice music simply marvelous?
- The audience was delighted! Hahaha!
+ Isn't that noice music simply marvelous? The audience was delighted! Hahaha!
 @INP
 Saito:Grr...! Screw you smartass. You think we're gonna let our art be judged by a guy like you?
 @INP
@@ -826,7 +825,7 @@ Arai:What? You want to hit me?
 Saito:Um,er...pardon me...
 @INP
 
-FLG 0 1 *A8
+@FLG 0 1 *A8
 @JMP *06
 
 *A8
@@ -1564,7 +1563,7 @@ Saito:Now, where to go...
 @SEL *70 4:class^2-4
 @SEL *64 5:class^2-5
 @SEL *59 6:Physics^room
-@SEL *43 7:Girl's^locker^room
+@SEL *43 7:Locker^room
 @SEL *75 8:Connecting^Hall
 @INP
 
