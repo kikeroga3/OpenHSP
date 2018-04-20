@@ -36,14 +36,22 @@ When compiling, you need the following libraries, please check in advance.
 	SDL1.2
 	gtk+-2
 
+Command Example
+
+	sudo apt-get install libgtk2.0-dev
+	sudo apt-get install libgles2-mesa-dev
+	sudo apt-get install libsdl1.2-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev
+
 Since the archive contains only the source, you need to compile with make.
 (If it does not compile properly depending on Linux version or distribution, you will need to modify it.
  It seems that it is confirmed that it can be compiled with Lubuntu 16.04 at present.)
 
-	make
+	sudo make
 
 Execute the make command in the directory where the contents of the archive was expanded.
 The required tools are compiled and the HSP3 is ready for use.
+
+When a mystery error appears, Let's try it once "make clean".
 
 
 # Raspberry Pi installation
@@ -68,7 +76,7 @@ It is also possible to expand the downloaded archive from the [Clone or download
 
 Since the hsplinux archive contains only the source, you need to compile with make.
 
-	make -f makefile.raspbian
+	sudo make -f makefile.raspbian
 		
 Execute the make command in the directory where the contents of the archive was expanded.
 The required tools are compiled and the HSP3 is ready for use.
@@ -91,7 +99,7 @@ HSP3 is based on OpenHSP technology which is open source,
 It is structured to be able to enjoy programming easily on Linux.
 After installation, the following command is generated.
 
-	hsed		script editor (simplified version)
+	hsed		Script editor (simplified version)
 	hspcmp		HSP3 code compiler
 	hsp3cl		HSP3 command line runtime
 	hsp3dish	HSP3Dish runtime
