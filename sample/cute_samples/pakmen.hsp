@@ -1,0 +1,139 @@
+;---Initial value setting---------------
+
+*start
+
+stg=1 :scr=0 :emx=2 :hp=3
+
+;---Preparation of background data------
+
+*next_stg
+
+dim bk,900
+repeat 900 :bk(cnt)=2 :loop
+
+repeat 8 :c=cnt
+	repeat (30-4*c)
+		bk(cnt+62*c)=1 :bk(870+cnt-58*c)=1
+		bk(30*cnt+62*c)=1 :bk(30*cnt+58*c+29)=1
+	loop
+loop
+
+repeat 26
+	bk(392+cnt)=2 :bk(482+cnt)=2
+	bk(73+30*cnt)=2 :bk(76+30*cnt)=2
+loop
+
+repeat 90
+	x=rnd(26) :y=rnd(26) :bk(62+30*y+x)=0
+loop
+
+;---Count food--------------------------
+
+m=0 :repeat 900 :m=m+(bk(cnt)=2) :loop
+
+;---Own coordinates---------------------
+
+px=13 :py=13
+
+;---Enemy coordinates and moving direction--------
+
+repeat emx
+*try
+	x=rnd(30) :y=rnd(30) :dx=abs(px-x) :dy=abs(py-y)
+	i=30*y+x
+	if bk(i)=1 or (dx+dy)<20 :goto *try
+	ex(cnt)=x :ey(cnt)=y :ev(cnt)=rnd(4) :ec(cnt)=rnd(64)
+loop
+
+;---Main routine------------------------
+
+repeat
+	redraw 0
+	color :boxf 0,0,639,479
+
+	;---Display background data-------------------
+
+	repeat 900
+		x=16*(cnt\30)+80:y=16*(cnt/30)
+		if bk(cnt)=1 :color 128,0,0:boxf x,y,x+15,y+15
+		if bk(cnt)=2 :color 200,250,0:boxf x+6,y+6,x+10,y+10
+	loop
+
+	;---Check own destination grid and move-------
+
+	i=30*py+px
+	if bk(i)=2 {
+		bk(i)=0 :m=m-1 :scr=scr+10
+		if m<1 :break
+	}
+	stick k,255
+	if bk(i-1)!1 :px=px-(k=1)
+	if bk(i+1)!1 :px=px+(k=4)
+	if bk(i-30)!1 :py=py-(k=2)
+	if bk(i+30)!1 :py=py+(k=8)
+
+	;---Display own-------------------------------
+
+	xx=px :yy=py :c=32+16+8+4 :ch=2028666414 :gosub *dot5
+
+	;---Enemy direction setting-------------------
+
+	repeat emx
+		e=30*ey(cnt)+ex(cnt)
+		v(0)=(bk(e-30)!1) :v(1)=(bk(e+1)!1)
+		v(2)=(bk(e+30)!1) :v(3)=(bk(e-1)!1)
+		v1=(ev(cnt)+3)\4 :v2=(ev(cnt)+1)\4
+		r=rnd(3)
+		if r=1 and v(v1)!0 :ev(cnt)=v1
+		if r=2 and v(v2)!0 :ev(cnt)=v2
+		if v(ev(cnt))!1 :ev(cnt)=(ev(cnt)+2)\4
+	loop
+
+	;---Enemy Move & Display & Collision judge----
+
+	repeat emx
+		ex(cnt)=ex(cnt)+(ev(cnt)=1)-(ev(cnt)=3)
+		ey(cnt)=ey(cnt)+(ev(cnt)=2)-(ev(cnt)=0)
+		xx=ex(cnt):yy=ey(cnt) :c=ec(cnt)
+		ch=15390709 :gosub *dot5
+		if px=ex(cnt) and py=ey(cnt) :hp=hp-(hp>0)
+	loop
+
+	color 255,255,255
+	pos 0,0 :mes "Stage:"+stg+" Food:"+m+" Score:"+scr+" Life:"+hp
+
+	await 80 :redraw 1
+
+	;---If own life is 0, go outside loop---------
+
+	if hp<1 :break
+loop
+
+;---Waiting for space key---------------
+
+*spc
+	wait 10
+	stick k
+	if k!16 :goto *spc
+
+;---Start from the next stage or the beginning----
+
+	if hp<1 :goto *start
+	stg=stg+1 :emx=emx+(emx<16) :hp=hp+(hp<9)
+	goto *next_stg
+
+;---Dot character display subroutine----
+
+*dot5
+	sz=3 :a=16777216
+	p1=c/16 :p2=(c&12)/4 :p3=c&3
+	color 80*p1+15,80*p2+15,80*p3+15
+	repeat 25
+		if (ch & a) {
+			x=16*xx+sz*(cnt\5)-(sz*5/2)
+			y=16*yy+sz*(cnt/5)-(sz*5/2)
+			boxf 88+x,8+y,88+x+sz,8+y+sz
+		}
+		a=a/2
+	loop
+	return
